@@ -1,0 +1,532 @@
+{
+    "images": [
+        {
+            "placeholder": "{{hero_image}}",
+            "url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1920&q=80",
+            "filename": "hero-coding.jpg",
+            "alt": "Developer workspace with code on screen"
+        },
+        {
+            "placeholder": "{{about_image}}",
+            "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80",
+            "filename": "about-developer.jpg",
+            "alt": "Modern laptop on desk"
+        },
+        {
+            "placeholder": "{{blog_post_1}}",
+            "url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80",
+            "filename": "blog-code-1.jpg",
+            "alt": "Code on dark screen"
+        },
+        {
+            "placeholder": "{{blog_post_2}}",
+            "url": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80",
+            "filename": "blog-laptop.jpg",
+            "alt": "Laptop with code editor"
+        },
+        {
+            "placeholder": "{{blog_post_3}}",
+            "url": "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=800&q=80",
+            "filename": "blog-setup.jpg",
+            "alt": "Developer setup with multiple monitors"
+        },
+        {
+            "placeholder": "{{services_1}}",
+            "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&q=80",
+            "filename": "service-web.jpg",
+            "alt": "Web development"
+        },
+        {
+            "placeholder": "{{services_2}}",
+            "url": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80",
+            "filename": "service-mobile.jpg",
+            "alt": "Mobile app development"
+        },
+        {
+            "placeholder": "{{services_3}}",
+            "url": "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=600&q=80",
+            "filename": "service-ai.jpg",
+            "alt": "AI and Machine Learning"
+        },
+        {
+            "placeholder": "{{team_1}}",
+            "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+            "filename": "team-member-1.jpg",
+            "alt": "Team member portrait"
+        },
+        {
+            "placeholder": "{{team_2}}",
+            "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
+            "filename": "team-member-2.jpg",
+            "alt": "Team member portrait"
+        },
+        {
+            "placeholder": "{{thumbnail}}",
+            "url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80",
+            "filename": "thumbnail.jpg",
+            "alt": "Theme thumbnail"
+        }
+    ],
+    "pages": [
+        {
+            "title": "Home",
+            "slug": "home",
+            "template": "home",
+            "isHomepage": true,
+            "excerpt": "Welcome to our developer-focused website. We build amazing digital experiences.",
+            "featuredImage": "{{hero_image}}",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "hero",
+                        "data": {
+                            "title": "Build Something Amazing",
+                            "subtitle": "We craft exceptional digital experiences with cutting-edge technology",
+                            "image": "{{hero_image}}",
+                            "cta": {
+                                "text": "Get Started",
+                                "url": "/contact"
+                            },
+                            "secondaryCta": {
+                                "text": "Learn More",
+                                "url": "/about"
+                            }
+                        }
+                    },
+                    {
+                        "type": "features",
+                        "data": {
+                            "title": "Why Choose Us",
+                            "items": [
+                                {
+                                    "icon": "code",
+                                    "title": "Clean Code",
+                                    "description": "We write maintainable, scalable code that stands the test of time."
+                                },
+                                {
+                                    "icon": "rocket",
+                                    "title": "Fast Performance",
+                                    "description": "Optimized for speed with best practices in performance engineering."
+                                },
+                                {
+                                    "icon": "shield",
+                                    "title": "Secure by Design",
+                                    "description": "Security is built into every layer of our development process."
+                                },
+                                {
+                                    "icon": "users",
+                                    "title": "User-Centric",
+                                    "description": "Designed with your users in mind for the best experience possible."
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "services",
+                        "data": {
+                            "title": "Our Services",
+                            "subtitle": "Comprehensive solutions for your digital needs",
+                            "items": [
+                                {
+                                    "title": "Web Development",
+                                    "description": "Modern, responsive websites built with the latest technologies.",
+                                    "image": "{{services_1}}",
+                                    "link": "/services/web-development"
+                                },
+                                {
+                                    "title": "Mobile Apps",
+                                    "description": "Native and cross-platform mobile applications.",
+                                    "image": "{{services_2}}",
+                                    "link": "/services/mobile-apps"
+                                },
+                                {
+                                    "title": "AI Solutions",
+                                    "description": "Intelligent automation and machine learning integration.",
+                                    "image": "{{services_3}}",
+                                    "link": "/services/ai-solutions"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "cta",
+                        "data": {
+                            "title": "Ready to Start Your Project?",
+                            "description": "Let's discuss how we can help bring your ideas to life.",
+                            "buttonText": "Contact Us",
+                            "buttonUrl": "/contact"
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Developer Portfolio - Build Something Amazing",
+            "seoDesc": "We craft exceptional digital experiences with cutting-edge technology. Web development, mobile apps, and AI solutions."
+        },
+        {
+            "title": "About Us",
+            "slug": "about",
+            "template": "page",
+            "excerpt": "Learn about our team and mission.",
+            "featuredImage": "{{about_image}}",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "About Our Company",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "We are a team of passionate developers, designers, and innovators dedicated to creating exceptional digital experiences. Founded in 2020, we've helped dozens of businesses transform their digital presence."
+                        }
+                    },
+                    {
+                        "type": "image",
+                        "data": {
+                            "src": "{{about_image}}",
+                            "alt": "Our workspace",
+                            "caption": "Our modern development workspace"
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Our Mission",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "To empower businesses with technology that drives growth, efficiency, and innovation. We believe in writing clean, maintainable code and building products that make a real difference."
+                        }
+                    },
+                    {
+                        "type": "team",
+                        "data": {
+                            "title": "Meet the Team",
+                            "members": [
+                                {
+                                    "name": "John Developer",
+                                    "role": "Lead Engineer",
+                                    "image": "{{team_1}}",
+                                    "bio": "10+ years of experience in full-stack development."
+                                },
+                                {
+                                    "name": "Sarah Designer",
+                                    "role": "UX Director",
+                                    "image": "{{team_2}}",
+                                    "bio": "Creating beautiful, user-friendly interfaces since 2015."
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "About Us - Our Team and Mission",
+            "seoDesc": "Learn about our passionate team of developers and designers dedicated to creating exceptional digital experiences."
+        },
+        {
+            "title": "Services",
+            "slug": "services",
+            "template": "page",
+            "excerpt": "Explore our comprehensive range of development services.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Our Services",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "We offer a comprehensive range of digital services to help your business succeed online."
+                        }
+                    },
+                    {
+                        "type": "services-grid",
+                        "data": {
+                            "services": [
+                                {
+                                    "title": "Web Development",
+                                    "description": "Custom websites and web applications built with modern frameworks like React, Vue, and Next.js.",
+                                    "image": "{{services_1}}",
+                                    "features": [
+                                        "Responsive Design",
+                                        "SEO Optimized",
+                                        "Fast Loading",
+                                        "CMS Integration"
+                                    ]
+                                },
+                                {
+                                    "title": "Mobile Development",
+                                    "description": "Native and cross-platform mobile apps for iOS and Android.",
+                                    "image": "{{services_2}}",
+                                    "features": [
+                                        "React Native",
+                                        "Flutter",
+                                        "Native iOS/Android",
+                                        "App Store Optimization"
+                                    ]
+                                },
+                                {
+                                    "title": "AI & Machine Learning",
+                                    "description": "Intelligent solutions powered by cutting-edge AI technology.",
+                                    "image": "{{services_3}}",
+                                    "features": [
+                                        "Natural Language Processing",
+                                        "Computer Vision",
+                                        "Predictive Analytics",
+                                        "Automation"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Our Services - Web, Mobile & AI Development",
+            "seoDesc": "Comprehensive digital services including web development, mobile apps, and AI solutions."
+        },
+        {
+            "title": "Blog",
+            "slug": "blog",
+            "template": "blog",
+            "excerpt": "Read our latest articles on development and technology.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Latest Articles",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "blog-listing",
+                        "data": {
+                            "postsPerPage": 9,
+                            "showFeaturedImage": true,
+                            "showExcerpt": true,
+                            "showDate": true
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Blog - Development Tips & Tech Insights",
+            "seoDesc": "Read our latest articles on web development, programming best practices, and technology trends."
+        },
+        {
+            "title": "Getting Started with Node.js",
+            "slug": "getting-started-nodejs",
+            "template": "single",
+            "excerpt": "A comprehensive guide to starting your journey with Node.js development.",
+            "featuredImage": "{{blog_post_1}}",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Node.js has revolutionized server-side JavaScript development. In this guide, we'll walk you through everything you need to know to get started."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "What is Node.js?",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows you to run JavaScript on the server side, enabling full-stack JavaScript development."
+                        }
+                    },
+                    {
+                        "type": "code",
+                        "data": {
+                            "language": "javascript",
+                            "code": "const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  res.writeHead(200, { 'Content-Type': 'text/plain' });\n  res.end('Hello, World!');\n});\n\nserver.listen(3000, () => {\n  console.log('Server running at http://localhost:3000/');\n});"
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Why Use Node.js?",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "data": {
+                            "style": "unordered",
+                            "items": [
+                                "JavaScript everywhere - frontend and backend",
+                                "Non-blocking I/O for high performance",
+                                "Massive ecosystem via npm",
+                                "Active community and regular updates"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Getting Started with Node.js - Complete Beginner Guide",
+            "seoDesc": "Learn Node.js from scratch with this comprehensive beginner's guide. Covers installation, basics, and your first server."
+        },
+        {
+            "title": "Best Practices for Clean Code",
+            "slug": "clean-code-best-practices",
+            "template": "single",
+            "excerpt": "Essential tips for writing maintainable, readable code that your team will love.",
+            "featuredImage": "{{blog_post_2}}",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Writing clean code is an art that every developer should master. Clean code is not just about making things work—it's about making code that others (including future you) can easily understand and maintain."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Key Principles",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "data": {
+                            "style": "ordered",
+                            "items": [
+                                "Use meaningful variable and function names",
+                                "Keep functions small and focused",
+                                "Write self-documenting code",
+                                "Follow the DRY principle",
+                                "Handle errors gracefully"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Clean Code Best Practices - Write Better Code Today",
+            "seoDesc": "Master the art of writing clean, maintainable code with these essential best practices for developers."
+        },
+        {
+            "title": "Contact",
+            "slug": "contact",
+            "template": "contact",
+            "excerpt": "Get in touch with our team.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Get In Touch",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Have a project in mind? We'd love to hear from you. Fill out the form below and we'll get back to you within 24 hours."
+                        }
+                    },
+                    {
+                        "type": "contact-form",
+                        "data": {
+                            "fields": [
+                                "name",
+                                "email",
+                                "phone",
+                                "message"
+                            ],
+                            "submitText": "Send Message"
+                        }
+                    },
+                    {
+                        "type": "contact-info",
+                        "data": {
+                            "email": "hello@example.com",
+                            "phone": "+1 (555) 123-4567",
+                            "address": "123 Developer Street, Tech City, TC 12345"
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Contact Us - Let's Build Something Great",
+            "seoDesc": "Get in touch with our development team. We'd love to discuss your next project."
+        }
+    ],
+    "menus": [
+        {
+            "name": "Main Navigation",
+            "slug": "main-menu",
+            "location": "header",
+            "items": [
+                {
+                    "label": "Home",
+                    "url": "/",
+                    "order": 1
+                },
+                {
+                    "label": "About",
+                    "url": "/about",
+                    "order": 2
+                },
+                {
+                    "label": "Services",
+                    "url": "/services",
+                    "order": 3
+                },
+                {
+                    "label": "Blog",
+                    "url": "/blog",
+                    "order": 4
+                },
+                {
+                    "label": "Contact",
+                    "url": "/contact",
+                    "order": 5
+                }
+            ]
+        },
+        {
+            "name": "Footer Menu",
+            "slug": "footer-menu",
+            "location": "footer",
+            "items": [
+                {
+                    "label": "Privacy Policy",
+                    "url": "/privacy",
+                    "order": 1
+                },
+                {
+                    "label": "Terms of Service",
+                    "url": "/terms",
+                    "order": 2
+                },
+                {
+                    "label": "Contact",
+                    "url": "/contact",
+                    "order": 3
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "site_name": "Developer Portfolio",
+        "site_tagline": "Building Amazing Digital Experiences",
+        "social_twitter": "https://twitter.com/example",
+        "social_github": "https://github.com/example",
+        "social_linkedin": "https://linkedin.com/company/example",
+        "footer_copyright": "© 2024 Developer Portfolio. All rights reserved."
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "name": "Business",
+    "slug": "business",
+    "version": "1.0.0",
+    "description": "A sleek, professional business theme inspired by Stripe and Linear. Perfect for SaaS, startups, and corporate websites.",
+    "author": "CMS Team",
+    "thumbnail": "demo/images/thumbnail.jpg",
+    "features": {
+        "darkMode": true,
+        "animations": true,
+        "pricingTables": true,
+        "testimonials": true,
+        "faq": true
+    },
+    "templates": [
+        "home",
+        "page",
+        "pricing",
+        "features",
+        "contact",
+        "404"
+    ],
+    "settings": {
+        "primaryColor": "#635bff",
+        "accentColor": "#00d4ff",
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "enableGradients": true
+    }
+}

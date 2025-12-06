@@ -1,0 +1,722 @@
+{
+    "images": [
+        {
+            "placeholder": "{{hero_image}}",
+            "url": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1600&q=80",
+            "filename": "hero-writing.jpg",
+            "alt": "Writer at desk with coffee and laptop"
+        },
+        {
+            "placeholder": "{{post_1}}",
+            "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&q=80",
+            "filename": "post-laptop.jpg",
+            "alt": "Person typing on laptop"
+        },
+        {
+            "placeholder": "{{post_2}}",
+            "url": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80",
+            "filename": "post-notebook.jpg",
+            "alt": "Notebook with pen"
+        },
+        {
+            "placeholder": "{{post_3}}",
+            "url": "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=800&q=80",
+            "filename": "post-writing.jpg",
+            "alt": "Hand writing in journal"
+        },
+        {
+            "placeholder": "{{post_4}}",
+            "url": "https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?w=800&q=80",
+            "filename": "post-typewriter.jpg",
+            "alt": "Vintage typewriter"
+        },
+        {
+            "placeholder": "{{post_5}}",
+            "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80",
+            "filename": "post-team.jpg",
+            "alt": "Team working on laptops"
+        },
+        {
+            "placeholder": "{{post_6}}",
+            "url": "https://images.unsplash.com/photo-1504805572947-34fad45aed93?w=800&q=80",
+            "filename": "post-motivation.jpg",
+            "alt": "Do something great sign"
+        },
+        {
+            "placeholder": "{{post_7}}",
+            "url": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80",
+            "filename": "post-collaboration.jpg",
+            "alt": "Team collaboration"
+        },
+        {
+            "placeholder": "{{author_1}}",
+            "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+            "filename": "author-1.jpg",
+            "alt": "Author portrait"
+        },
+        {
+            "placeholder": "{{author_2}}",
+            "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
+            "filename": "author-2.jpg",
+            "alt": "Author portrait"
+        },
+        {
+            "placeholder": "{{thumbnail}}",
+            "url": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80",
+            "filename": "thumbnail.jpg",
+            "alt": "Theme thumbnail"
+        }
+    ],
+    "pages": [
+        {
+            "title": "Home",
+            "slug": "home",
+            "template": "home",
+            "isHomepage": true,
+            "excerpt": "Stories, ideas, and insights from creative minds.",
+            "featuredImage": "{{hero_image}}",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "hero",
+                        "data": {
+                            "title": "Stay Curious.",
+                            "subtitle": "Discover stories, thinking, and expertise from writers on any topic.",
+                            "showNewsletter": true
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Blog Pro - Stories, Ideas & Insights",
+            "seoDesc": "Discover stories, thinking, and expertise from writers on any topic."
+        },
+        {
+            "title": "About",
+            "slug": "about",
+            "template": "page",
+            "excerpt": "Learn about our publication and mission.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "About Us",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "We're a community of writers, thinkers, and storytellers sharing ideas that matter. Founded in 2020, we believe in the power of words to inspire, educate, and connect people across the world."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Our Mission",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "To create a platform where quality writing thrives, where diverse voices are heard, and where readers find stories that make them think, feel, and grow."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Our Writers",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "team",
+                        "data": {
+                            "members": [
+                                {
+                                    "name": "Alex Writer",
+                                    "role": "Editor in Chief",
+                                    "image": "{{author_1}}",
+                                    "bio": "Former journalist with 15 years of experience in digital media."
+                                },
+                                {
+                                    "name": "Emma Stories",
+                                    "role": "Senior Writer",
+                                    "image": "{{author_2}}",
+                                    "bio": "Author of three bestselling novels and content strategist."
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "About - Our Publication",
+            "seoDesc": "Learn about our community of writers and storytellers."
+        },
+        {
+            "title": "Contact",
+            "slug": "contact",
+            "template": "page",
+            "excerpt": "Get in touch with our editorial team.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Contact Us",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Have a story idea? Want to contribute? We'd love to hear from you."
+                        }
+                    },
+                    {
+                        "type": "contact-form",
+                        "data": {
+                            "fields": [
+                                "name",
+                                "email",
+                                "message"
+                            ],
+                            "submitText": "Send Message"
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Contact - Get in Touch",
+            "seoDesc": "Contact our editorial team with story ideas or questions."
+        },
+        {
+            "title": "Privacy Policy",
+            "slug": "privacy",
+            "template": "page",
+            "excerpt": "Our privacy policy and data practices.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Privacy Policy",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Last updated: January 2024. This Privacy Policy describes how Blog Pro collects, uses, and shares your personal information when you use our website."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Information We Collect",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "We collect information you provide directly, such as when you create an account, subscribe to our newsletter, or contact us. This includes your name, email address, and any content you submit."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "How We Use Your Information",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "We use your information to provide and improve our services, send newsletters, respond to inquiries, and analyze site usage to enhance user experience."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Privacy Policy - Blog Pro",
+            "seoDesc": "Learn how we handle your personal data and protect your privacy."
+        },
+        {
+            "title": "Terms of Service",
+            "slug": "terms",
+            "template": "page",
+            "excerpt": "Terms and conditions for using our platform.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Terms of Service",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "By accessing or using Blog Pro, you agree to be bound by these Terms of Service and all applicable laws and regulations."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "User Content",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "You retain ownership of content you publish. By posting, you grant us a license to display and distribute your content through our platform."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Acceptable Use",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "You agree not to use the service for any unlawful purpose, to harass others, or to post content that violates intellectual property rights."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Terms of Service - Blog Pro",
+            "seoDesc": "Terms and conditions for using our writing and publishing platform."
+        }
+    ],
+    "postCategories": [
+        {
+            "name": "Productivity",
+            "slug": "productivity",
+            "description": "Tips and strategies to work smarter and achieve more."
+        },
+        {
+            "name": "Writing",
+            "slug": "writing",
+            "description": "Craft, technique, and the art of putting words together."
+        },
+        {
+            "name": "Technology",
+            "slug": "technology",
+            "description": "Exploring how technology shapes our work and lives."
+        },
+        {
+            "name": "Career",
+            "slug": "career",
+            "description": "Navigating work life, growth, and professional development."
+        }
+    ],
+    "posts": [
+        {
+            "title": "The Art of Deep Work",
+            "slug": "art-of-deep-work",
+            "categorySlug": "productivity",
+            "isFeatured": true,
+            "excerpt": "How to cultivate focus in an age of distraction and do your most meaningful work.",
+            "featuredImage": "{{post_1}}",
+            "tags": [
+                "focus",
+                "productivity",
+                "deep work"
+            ],
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "In a world of constant notifications, endless meetings, and infinite scrolling, the ability to focus deeply has become a rare and valuable skill. Cal Newport calls it 'Deep Work' — professional activities performed in a state of distraction-free concentration."
+                        }
+                    },
+                    {
+                        "type": "quote",
+                        "data": {
+                            "text": "The ability to perform deep work is becoming increasingly rare at exactly the same time it is becoming increasingly valuable in our economy.",
+                            "author": "Cal Newport"
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Why Deep Work Matters",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Deep work allows you to quickly master complicated information and produce better results in less time. It's the superpower of the 21st century knowledge worker."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Strategies for Deep Work",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "data": {
+                            "style": "ordered",
+                            "items": [
+                                "Schedule dedicated blocks of uninterrupted time",
+                                "Create a ritual that signals the start of deep work",
+                                "Embrace boredom — train your focus like a muscle",
+                                "Quit social media (or at least limit it drastically)",
+                                "Drain the shallows — minimize low-value busywork"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "The Art of Deep Work - Focus in the Age of Distraction",
+            "seoDesc": "Learn how to cultivate deep focus and do your most meaningful work in a distracted world."
+        },
+        {
+            "title": "Writing as Thinking",
+            "slug": "writing-as-thinking",
+            "categorySlug": "writing",
+            "isFeatured": true,
+            "excerpt": "Why the act of writing forces clarity and leads to better ideas.",
+            "featuredImage": "{{post_2}}",
+            "tags": [
+                "writing",
+                "thinking",
+                "clarity"
+            ],
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "\"I write because I don't know what I think until I read what I say.\" — Flannery O'Connor. This quote captures something profound about the relationship between writing and thinking."
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Writing isn't just a way to communicate ideas you already have. It's a way to discover ideas you didn't know you had. The blank page is not your enemy — it's your thinking partner."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "The Writing Process",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Start with a rough draft. Don't edit as you go. Let the ideas flow freely, then refine. The magic happens in revision, where vague notions crystallize into clear thoughts."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Write Every Day",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "The best writers aren't necessarily the most talented — they're the most consistent. Writing daily, even for just 15 minutes, compounds into remarkable progress over time."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Writing as Thinking",
+            "seoDesc": "Why the act of writing forces clarity and leads to better ideas."
+        },
+        {
+            "title": "The Creator Economy",
+            "slug": "creator-economy",
+            "categorySlug": "career",
+            "isFeatured": false,
+            "excerpt": "Understanding the shift from traditional employment to independent creation.",
+            "featuredImage": "{{post_3}}",
+            "tags": [
+                "creators",
+                "economy",
+                "independent"
+            ],
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "We're witnessing the largest migration of creative talent in history. Millions of people are leaving traditional jobs to become independent creators — writers, podcasters, YouTubers, and online educators."
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Platforms like Substack, Patreon, and Gumroad have made it possible for anyone with valuable knowledge or entertaining content to build a sustainable business."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "The New Creative Class",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Today's most successful creators aren't just content producers — they're entrepreneurs, community builders, and personal brands all in one. The lines between media company and individual have blurred entirely."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "The Creator Economy",
+            "seoDesc": "Understanding the shift from traditional employment to independent creation."
+        },
+        {
+            "title": "Embracing the Boring Technology",
+            "slug": "boring-technology",
+            "categorySlug": "technology",
+            "isFeatured": false,
+            "excerpt": "Why choosing proven, stable tools often beats chasing the latest trends.",
+            "featuredImage": "{{post_4}}",
+            "tags": [
+                "technology",
+                "decisions",
+                "simplicity"
+            ],
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "There's a strong temptation in tech to always use the newest, flashiest tools. But there's wisdom in choosing boring technology — tools that are well-understood, stable, and proven."
+                        }
+                    },
+                    {
+                        "type": "quote",
+                        "data": {
+                            "text": "Choose boring technology. Let the new shiny thing prove itself before adopting it.",
+                            "author": "Dan McKinley"
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Boring doesn't mean bad. PostgreSQL, Linux, and Python are 'boring' technologies that power some of the world's most innovative companies. Their stability lets you focus on building value instead of fighting your tools."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Embracing the Boring Technology",
+            "seoDesc": "Why choosing proven, stable tools often beats chasing the latest trends."
+        },
+        {
+            "title": "Building a Second Brain",
+            "slug": "building-second-brain",
+            "categorySlug": "productivity",
+            "isFeatured": false,
+            "excerpt": "How to create a personal knowledge management system that actually works.",
+            "featuredImage": "{{post_5}}",
+            "tags": [
+                "PKM",
+                "notes",
+                "organization"
+            ],
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "We consume more information than ever before, but most of it flows in and out without making a lasting impact. A 'Second Brain' is a personal system for capturing, organizing, and retrieving the ideas that matter most."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "The PARA Method",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Tiago Forte's PARA method organizes notes into four categories: Projects (active work), Areas (ongoing responsibilities), Resources (topics of interest), and Archives (completed items). This simple structure scales from a few notes to thousands."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Progressive Summarization",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Don't try to process everything at once. Progressively highlight and summarize notes over time as they become more relevant. This lazy, just-in-time approach is more sustainable than upfront cataloging."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Building a Second Brain",
+            "seoDesc": "How to create a personal knowledge management system that actually works."
+        },
+        {
+            "title": "The Power of Constraints",
+            "slug": "power-of-constraints",
+            "categorySlug": "writing",
+            "isFeatured": true,
+            "excerpt": "Why limitations breed creativity and how to use them intentionally.",
+            "featuredImage": "{{post_6}}",
+            "tags": [
+                "creativity",
+                "constraints",
+                "writing"
+            ],
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Give someone unlimited options and they often freeze. Give them strict constraints and watch creativity flourish. Some of the most innovative work comes from working within limitations."
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Twitter's 140 character limit forced people to write more concisely. The 3-minute pop song format shaped decades of musical creativity. Constraints force you to focus on what truly matters."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Artificial Constraints",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "You can create your own constraints intentionally. Set a timer for 25 minutes. Write only with headlines and bullets. Use only three colors in your design. These artificial limitations spark creative solutions."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "The Power of Constraints",
+            "seoDesc": "Why limitations breed creativity and how to use them intentionally."
+        },
+        {
+            "title": "Remote Work is Here to Stay",
+            "slug": "remote-work-future",
+            "categorySlug": "career",
+            "isFeatured": false,
+            "excerpt": "Navigating the permanent shift to distributed teams and flexible work.",
+            "featuredImage": "{{post_7}}",
+            "tags": [
+                "remote",
+                "work",
+                "future"
+            ],
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "The pandemic accelerated remote work adoption by a decade. Now, employees expect flexibility, and companies that don't offer it are losing talent to those that do."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Asynchronous Communication",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Remote-first teams thrive on async communication. Writing things down, using video messages, and respecting time zones leads to better documentation and more thoughtful discourse."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Building Culture Remotely",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Culture doesn't disappear with remote work — it just requires more intentionality. Regular virtual events, transparent communication, and celebrating wins publicly all contribute to a strong remote culture."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Remote Work is Here to Stay",
+            "seoDesc": "Navigating the permanent shift to distributed teams and flexible work."
+        }
+    ],
+    "menus": [
+        {
+            "name": "Main Navigation",
+            "slug": "main-menu",
+            "location": "header",
+            "items": [
+                {
+                    "label": "Home",
+                    "url": "/",
+                    "order": 1
+                },
+                {
+                    "label": "About",
+                    "url": "/about",
+                    "order": 2
+                },
+                {
+                    "label": "Contact",
+                    "url": "/contact",
+                    "order": 3
+                }
+            ]
+        },
+        {
+            "name": "Footer Links",
+            "slug": "footer-menu",
+            "location": "footer",
+            "items": [
+                {
+                    "label": "Privacy",
+                    "url": "/privacy",
+                    "order": 1
+                },
+                {
+                    "label": "Terms",
+                    "url": "/terms",
+                    "order": 2
+                },
+                {
+                    "label": "Contact",
+                    "url": "/contact",
+                    "order": 3
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "site_name": "Blog Pro",
+        "site_tagline": "Stories, Ideas & Insights",
+        "newsletter_enabled": "true",
+        "footer_copyright": "© 2024 Blog Pro. All rights reserved."
+    }
+}

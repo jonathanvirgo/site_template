@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.seoTitle or page.title }} | {{ settings.site_name }}</title>
+  <meta name="description" content="{{ page.seoDesc or page.excerpt }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/themes/news-magazine/assets/css/theme.css">
+</head>
+<body class="{% block bodyClass %}{% endblock %}">
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="site-logo">{{ settings.site_name }}</a>
+      <nav class="main-nav">
+        {% if menus.main %}{% for item in menus.main %}<a href="{{ item.url }}">{{ item.label }}</a>{% endfor %}{% endif %}
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle">🌙</button>
+        <a href="/subscribe" class="btn btn-primary">Subscribe</a>
+      </div>
+    </div>
+  </header>
+  <main>{% block content %}{% endblock %}</main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>{{ settings.footer_copyright }}</p>
+    </div>
+  </footer>
+  <script src="/themes/news-magazine/assets/js/theme.js"></script>
+</body>
+</html>

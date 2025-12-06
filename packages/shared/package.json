@@ -1,0 +1,12 @@
+{
+    "name": "@cms/shared",
+    "version": "1.0.0",
+    "description": "Shared utilities and types for CMS",
+    "main": "src/index.js",
+    "type": "module",
+    "exports": {
+        ".": "./src/index.js",
+        "./constants": "./src/constants.js",
+        "./utils": "./src/utils.js"
+    }
+}

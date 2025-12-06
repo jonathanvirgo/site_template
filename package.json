@@ -1,0 +1,26 @@
+{
+    "name": "wordpress-node",
+    "private": true,
+    "version": "1.0.0",
+    "description": "WordPress-like CMS with theme switching and content crawler",
+    "scripts": {
+        "dev": "concurrently -n api,admin,web -c blue,green,yellow \"pnpm --filter @cms/api dev\" \"pnpm --filter @cms/admin dev\" \"pnpm --filter @cms/web dev\"",
+        "dev:api": "pnpm --filter @cms/api dev",
+        "dev:admin": "pnpm --filter @cms/admin dev",
+        "dev:web": "pnpm --filter @cms/web dev",
+        "build": "pnpm -r build",
+        "db:generate": "pnpm --filter @cms/api prisma generate",
+        "db:migrate": "pnpm --filter @cms/api prisma migrate dev",
+        "db:push": "pnpm --filter @cms/api prisma db push",
+        "db:seed": "pnpm --filter @cms/api prisma db seed",
+        "db:studio": "pnpm --filter @cms/api prisma studio"
+    },
+    "keywords": [
+        "cms",
+        "wordpress",
+        "nodejs",
+        "prisma"
+    ],
+    "author": "",
+    "license": "MIT"
+}

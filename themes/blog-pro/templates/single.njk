@@ -1,0 +1,79 @@
+{% extends "layouts/default.njk" %}
+
+{% block bodyClass %}page-single{% endblock %}
+
+{% block content %}
+<article class="article">
+  {% if page.featuredImage %}
+  <div class="article-hero">
+    <img src="{{ page.featuredImage }}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+  
+  <div class="container container-narrow">
+    <header class="article-header">
+      <h1 class="article-title">{{ page.title }}</h1>
+      {% if page.excerpt %}
+      <p class="article-excerpt">{{ page.excerpt }}</p>
+      {% endif %}
+      <div class="article-meta">
+        <span class="reading-time">5 min read</span>
+      </div>
+    </header>
+    
+    <div class="article-content">
+      {% for block in page.content.blocks %}
+        {% if block.type == 'paragraph' %}
+          <p>{{ block.data.text | safe }}</p>
+        
+        {% elif block.type == 'heading' %}
+          <h{{ block.data.level or 2 }}>{{ block.data.text }}</h{{ block.data.level or 2 }}>
+        
+        {% elif block.type == 'quote' %}
+          <blockquote>
+            <p>{{ block.data.text }}</p>
+            {% if block.data.author %}
+            <cite>— {{ block.data.author }}</cite>
+            {% endif %}
+          </blockquote>
+        
+        {% elif block.type == 'list' %}
+          {% if block.data.style == 'ordered' %}
+            <ol>{% for item in block.data.items %}<li>{{ item }}</li>{% endfor %}</ol>
+          {% else %}
+            <ul>{% for item in block.data.items %}<li>{{ item }}</li>{% endfor %}</ul>
+          {% endif %}
+        
+        {% elif block.type == 'image' %}
+          <figure>
+            <img src="{{ block.data.src }}" alt="{{ block.data.alt }}">
+            {% if block.data.caption %}<figcaption>{{ block.data.caption }}</figcaption>{% endif %}
+          </figure>
+        {% endif %}
+      {% endfor %}
+    </div>
+    
+    <footer class="article-footer">
+      <div class="share-buttons">
+        <span>Share this article:</span>
+        <a href="#" class="share-btn">Twitter</a>
+        <a href="#" class="share-btn">LinkedIn</a>
+        <a href="#" class="share-btn">Copy link</a>
+      </div>
+    </footer>
+  </div>
+</article>
+
+<section class="newsletter-section">
+  <div class="container container-narrow">
+    <div class="newsletter-box">
+      <h3>Enjoyed this article?</h3>
+      <p>Subscribe to get new posts delivered to your inbox.</p>
+      <form class="newsletter-form-large">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}

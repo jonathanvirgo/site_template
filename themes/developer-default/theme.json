@@ -1,0 +1,29 @@
+{
+    "name": "Developer Default",
+    "slug": "developer-default",
+    "version": "1.0.0",
+    "description": "A clean, modern theme perfect for developers and tech blogs. Features a minimalist design with dark mode support.",
+    "author": "CMS Team",
+    "thumbnail": "demo/images/thumbnail.jpg",
+    "features": {
+        "darkMode": true,
+        "customColors": true,
+        "newsletter": true,
+        "syntaxHighlight": true
+    },
+    "templates": [
+        "home",
+        "page",
+        "blog",
+        "single",
+        "contact",
+        "404"
+    ],
+    "settings": {
+        "primaryColor": "#6366f1",
+        "accentColor": "#ec4899",
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "headerStyle": "fixed",
+        "footerColumns": 4
+    }
+}

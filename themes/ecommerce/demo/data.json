@@ -1,0 +1,675 @@
+{
+    "images": [
+        {
+            "placeholder": "{{hero_image}}",
+            "url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600&q=80",
+            "filename": "hero-shop.jpg",
+            "alt": "Modern retail store interior"
+        },
+        {
+            "placeholder": "{{product_1}}",
+            "url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80",
+            "filename": "product-watch.jpg",
+            "alt": "Premium watch"
+        },
+        {
+            "placeholder": "{{product_2}}",
+            "url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80",
+            "filename": "product-headphones.jpg",
+            "alt": "Wireless headphones"
+        },
+        {
+            "placeholder": "{{product_3}}",
+            "url": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=800&q=80",
+            "filename": "product-camera.jpg",
+            "alt": "Polaroid camera"
+        },
+        {
+            "placeholder": "{{product_4}}",
+            "url": "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=800&q=80",
+            "filename": "product-phone.jpg",
+            "alt": "Smartphone"
+        },
+        {
+            "placeholder": "{{product_5}}",
+            "url": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=800&q=80",
+            "filename": "product-perfume.jpg",
+            "alt": "Luxury perfume"
+        },
+        {
+            "placeholder": "{{product_6}}",
+            "url": "https://images.unsplash.com/photo-1491553895911-0055uj67a671?w=800&q=80",
+            "filename": "product-sunglasses.jpg",
+            "alt": "Designer sunglasses"
+        },
+        {
+            "placeholder": "{{product_7}}",
+            "url": "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&q=80",
+            "filename": "product-sneakers.jpg",
+            "alt": "White sneakers"
+        },
+        {
+            "placeholder": "{{product_8}}",
+            "url": "https://images.unsplash.com/photo-1434056886845-ddd6f819e971?w=800&q=80",
+            "filename": "product-bag.jpg",
+            "alt": "Leather bag"
+        },
+        {
+            "placeholder": "{{thumbnail}}",
+            "url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80",
+            "filename": "thumbnail.jpg",
+            "alt": "Theme thumbnail"
+        }
+    ],
+    "pages": [
+        {
+            "title": "Home",
+            "slug": "home",
+            "template": "home",
+            "isHomepage": true,
+            "excerpt": "Discover premium products for modern living.",
+            "featuredImage": "{{hero_image}}",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "hero",
+                        "data": {
+                            "title": "Elevate Your Style",
+                            "subtitle": "Premium products crafted for those who appreciate quality.",
+                            "buttonText": "Shop Now",
+                            "buttonUrl": "#products"
+                        }
+                    },
+                    {
+                        "type": "featured-products",
+                        "data": {
+                            "title": "Featured Products",
+                            "count": 4
+                        }
+                    },
+                    {
+                        "type": "categories",
+                        "data": {
+                            "title": "Shop by Category"
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Premium E-commerce - Quality Products",
+            "seoDesc": "Discover our curated collection of premium products for modern living."
+        },
+        {
+            "title": "About",
+            "slug": "about",
+            "template": "page",
+            "excerpt": "Our story and commitment to quality.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "About Us",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Founded in 2018, we're a team of product enthusiasts dedicated to curating the finest goods from around the world. We believe that everyday objects should be functional, beautiful, and built to last."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Our Promise",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Every product in our collection is personally tested and approved. We work directly with manufacturers to ensure quality and offer the best prices without compromising on craftsmanship."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Sustainability",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "We're committed to reducing our environmental impact. All our packaging is recyclable, and we partner with brands that share our values for ethical production."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "About - Our Story",
+            "seoDesc": "Learn about our commitment to quality products and customer satisfaction."
+        },
+        {
+            "title": "Shipping & Returns",
+            "slug": "shipping-returns",
+            "template": "page",
+            "excerpt": "Information about shipping and our return policy.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Shipping & Returns",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Shipping",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "We offer free shipping on all orders over $100. Standard shipping takes 3-5 business days. Express shipping is available for an additional fee."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Returns",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Not satisfied? Return any item within 30 days for a full refund. Items must be in original condition with tags attached. Contact our support team to initiate a return."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "International Orders",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "We ship worldwide! International orders typically arrive within 7-14 business days. Customs fees may apply depending on your country."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Shipping & Returns Policy",
+            "seoDesc": "Free shipping on orders over $100. Easy 30-day returns on all products."
+        },
+        {
+            "title": "Contact",
+            "slug": "contact",
+            "template": "page",
+            "excerpt": "Get in touch with our customer support team.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Contact Us",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Have a question about an order? Need help choosing the right product? Our team is here to help."
+                        }
+                    },
+                    {
+                        "type": "contact-info",
+                        "data": {
+                            "email": "support@example.com",
+                            "phone": "+1 (555) 123-4567",
+                            "hours": "Monday - Friday, 9am - 6pm EST"
+                        }
+                    },
+                    {
+                        "type": "contact-form",
+                        "data": {
+                            "fields": [
+                                "name",
+                                "email",
+                                "order_number",
+                                "message"
+                            ],
+                            "submitText": "Send Message"
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Contact Us - Customer Support",
+            "seoDesc": "Get in touch with our customer support team for any questions."
+        },
+        {
+            "title": "FAQ",
+            "slug": "faq",
+            "template": "page",
+            "excerpt": "Frequently asked questions about our products and services.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Frequently Asked Questions",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "faq",
+                        "data": {
+                            "items": [
+                                {
+                                    "question": "How long does shipping take?",
+                                    "answer": "Standard shipping takes 3-5 business days within the US. Express shipping (1-2 days) is available for an additional fee."
+                                },
+                                {
+                                    "question": "What is your return policy?",
+                                    "answer": "We accept returns within 30 days of purchase. Items must be unworn, unwashed, and in original packaging with tags attached."
+                                },
+                                {
+                                    "question": "Do you offer international shipping?",
+                                    "answer": "Yes! We ship to over 50 countries. International orders typically arrive within 7-14 business days."
+                                },
+                                {
+                                    "question": "How can I track my order?",
+                                    "answer": "Once your order ships, you'll receive an email with tracking information. You can also log into your account to view order status."
+                                },
+                                {
+                                    "question": "Are your products authentic?",
+                                    "answer": "Absolutely. We work directly with brands and authorized distributors. Every product comes with authenticity guarantee."
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "FAQ - Frequently Asked Questions",
+            "seoDesc": "Find answers to common questions about shipping, returns, and our products."
+        }
+    ],
+    "productCategories": [
+        {
+            "name": "Electronics",
+            "slug": "electronics",
+            "description": "Premium electronics and gadgets for modern life."
+        },
+        {
+            "name": "Accessories",
+            "slug": "accessories",
+            "description": "Stylish accessories to complete your look."
+        },
+        {
+            "name": "Fashion",
+            "slug": "fashion",
+            "description": "Curated fashion items from top designers."
+        }
+    ],
+    "products": [
+        {
+            "name": "Minimalist Watch",
+            "slug": "minimalist-watch",
+            "categorySlug": "accessories",
+            "isFeatured": true,
+            "price": 299.00,
+            "salePrice": 249.00,
+            "sku": "WATCH-001",
+            "stock": 50,
+            "images": [
+                "{{product_1}}"
+            ],
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Our signature minimalist watch combines Japanese quartz movement with a clean, understated design. The 40mm case is crafted from surgical-grade stainless steel, paired with genuine Italian leather strap."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Features",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "data": {
+                            "style": "unordered",
+                            "items": [
+                                "Japanese Miyota quartz movement",
+                                "Sapphire crystal glass (scratch-resistant)",
+                                "Water resistant to 50 meters",
+                                "Italian leather strap with quick-release pins"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "specifications": {
+                "Case Size": "40mm",
+                "Case Material": "Stainless Steel",
+                "Movement": "Japanese Quartz",
+                "Water Resistance": "50m",
+                "Strap": "Italian Leather"
+            },
+            "seoTitle": "Minimalist Watch - Timeless Design",
+            "seoDesc": "Japanese quartz movement with sapphire crystal and Italian leather strap."
+        },
+        {
+            "name": "Wireless Pro Headphones",
+            "slug": "wireless-pro-headphones",
+            "categorySlug": "electronics",
+            "isFeatured": true,
+            "price": 349.00,
+            "sku": "AUDIO-002",
+            "stock": 35,
+            "images": [
+                "{{product_2}}"
+            ],
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Experience studio-quality sound anywhere with our Wireless Pro Headphones. Active noise cancellation blocks out the world, while 40mm custom drivers deliver rich, detailed audio."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Specifications",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "data": {
+                            "style": "unordered",
+                            "items": [
+                                "Active Noise Cancellation (ANC)",
+                                "40mm custom drivers",
+                                "30 hours battery life",
+                                "Quick charge: 10 min = 3 hours playback",
+                                "Bluetooth 5.2 with multipoint connection"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "specifications": {
+                "Driver Size": "40mm",
+                "Battery Life": "30 hours",
+                "Bluetooth": "5.2",
+                "Weight": "254g",
+                "ANC": "Yes"
+            },
+            "seoTitle": "Wireless Pro Headphones - Studio Sound",
+            "seoDesc": "Active noise cancellation with 30-hour battery life and premium sound quality."
+        },
+        {
+            "name": "Instant Camera",
+            "slug": "instant-camera",
+            "categorySlug": "electronics",
+            "isFeatured": true,
+            "price": 129.00,
+            "sku": "CAM-003",
+            "stock": 25,
+            "images": [
+                "{{product_3}}"
+            ],
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Capture memories instantly with our modern take on the classic instant camera. Auto-exposure ensures perfect shots every time, while the built-in flash works in any lighting condition."
+                        }
+                    }
+                ]
+            },
+            "specifications": {
+                "Film Format": "Instax Mini",
+                "Lens": "60mm f/12.7",
+                "Flash": "Built-in automatic",
+                "Battery": "2x AA"
+            },
+            "seoTitle": "Instant Camera - Capture the Moment",
+            "seoDesc": "Modern instant camera with auto-exposure for perfect shots every time."
+        },
+        {
+            "name": "Smart Phone Case",
+            "slug": "smart-phone-case",
+            "categorySlug": "accessories",
+            "isFeatured": false,
+            "price": 49.00,
+            "salePrice": 39.00,
+            "sku": "CASE-004",
+            "stock": 100,
+            "images": [
+                "{{product_4}}"
+            ],
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Slim protection that doesn't compromise style. Our premium phone case features military-grade drop protection in a sleek, minimalist design. Compatible with wireless charging."
+                        }
+                    }
+                ]
+            },
+            "specifications": {
+                "Material": "Polycarbonate + TPU",
+                "Drop Protection": "6ft / 1.8m",
+                "Wireless Charging": "Compatible",
+                "Weight": "28g"
+            },
+            "seoTitle": "Smart Phone Case - Slim Protection",
+            "seoDesc": "Military-grade drop protection in a slim, wireless charging compatible design."
+        },
+        {
+            "name": "Signature Perfume",
+            "slug": "signature-perfume",
+            "categorySlug": "fashion",
+            "isFeatured": true,
+            "price": 185.00,
+            "sku": "PERF-005",
+            "stock": 40,
+            "images": [
+                "{{product_5}}"
+            ],
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "A sophisticated blend of bergamot, jasmine, and sandalwood that evolves throughout the day. Our signature scent is crafted in Grasse, France, using the finest natural ingredients."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Notes",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Top: Bergamot, Pink Pepper. Heart: Jasmine, Rose. Base: Sandalwood, Vanilla, Musk."
+                        }
+                    }
+                ]
+            },
+            "specifications": {
+                "Size": "100ml / 3.4 oz",
+                "Concentration": "Eau de Parfum",
+                "Made In": "France"
+            },
+            "seoTitle": "Signature Perfume - Luxury Fragrance",
+            "seoDesc": "Sophisticated eau de parfum crafted in Grasse, France with natural ingredients."
+        },
+        {
+            "name": "Classic Sunglasses",
+            "slug": "classic-sunglasses",
+            "categorySlug": "accessories",
+            "isFeatured": false,
+            "price": 195.00,
+            "sku": "SUN-006",
+            "stock": 30,
+            "images": [
+                "{{product_6}}"
+            ],
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Timeless aviator design with modern lens technology. Polarized lenses reduce glare while providing 100% UV protection. Handcrafted titanium frames are incredibly lightweight yet durable."
+                        }
+                    }
+                ]
+            },
+            "specifications": {
+                "Frame": "Titanium",
+                "Lens": "Polarized Glass",
+                "UV Protection": "100% UVA/UVB",
+                "Weight": "22g"
+            },
+            "seoTitle": "Classic Sunglasses - Timeless Style",
+            "seoDesc": "Polarized titanium sunglasses with 100% UV protection and timeless design."
+        },
+        {
+            "name": "Urban Sneakers",
+            "slug": "urban-sneakers",
+            "categorySlug": "fashion",
+            "isFeatured": false,
+            "price": 159.00,
+            "sku": "SHOE-007",
+            "stock": 45,
+            "images": [
+                "{{product_7}}"
+            ],
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Clean, contemporary sneakers designed for all-day comfort. Premium leather upper with cushioned insole and durable rubber outsole. The perfect blend of style and substance."
+                        }
+                    }
+                ]
+            },
+            "specifications": {
+                "Upper": "Premium Leather",
+                "Sole": "Rubber",
+                "Insole": "Memory Foam",
+                "Available Sizes": "US 7-13"
+            },
+            "seoTitle": "Urban Sneakers - All-Day Comfort",
+            "seoDesc": "Premium leather sneakers with memory foam insole for all-day comfort."
+        },
+        {
+            "name": "Leather Weekender Bag",
+            "slug": "leather-weekender-bag",
+            "categorySlug": "accessories",
+            "isFeatured": false,
+            "price": 425.00,
+            "sku": "BAG-008",
+            "stock": 20,
+            "images": [
+                "{{product_8}}"
+            ],
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Crafted from full-grain vegetable-tanned leather that ages beautifully over time. Spacious interior with laptop sleeve and multiple pockets. Perfect for short trips or daily use."
+                        }
+                    }
+                ]
+            },
+            "specifications": {
+                "Material": "Full-Grain Leather",
+                "Dimensions": "20\" x 10\" x 9\"",
+                "Laptop Fit": "Up to 15\"",
+                "Pockets": "6 (including laptop sleeve)"
+            },
+            "seoTitle": "Leather Weekender Bag - Premium Travel",
+            "seoDesc": "Full-grain leather weekender bag with laptop sleeve. Perfect for travel."
+        }
+    ],
+    "menus": [
+        {
+            "name": "Main Navigation",
+            "slug": "main-menu",
+            "location": "header",
+            "items": [
+                {
+                    "label": "Shop",
+                    "url": "/products",
+                    "order": 1
+                },
+                {
+                    "label": "About",
+                    "url": "/about",
+                    "order": 2
+                },
+                {
+                    "label": "FAQ",
+                    "url": "/faq",
+                    "order": 3
+                },
+                {
+                    "label": "Contact",
+                    "url": "/contact",
+                    "order": 4
+                }
+            ]
+        },
+        {
+            "name": "Footer Links",
+            "slug": "footer-menu",
+            "location": "footer",
+            "items": [
+                {
+                    "label": "Shipping & Returns",
+                    "url": "/shipping-returns",
+                    "order": 1
+                },
+                {
+                    "label": "FAQ",
+                    "url": "/faq",
+                    "order": 2
+                },
+                {
+                    "label": "Contact",
+                    "url": "/contact",
+                    "order": 3
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "site_name": "Modern Shop",
+        "site_tagline": "Premium Products for Modern Living",
+        "currency": "USD",
+        "currency_symbol": "$",
+        "free_shipping_threshold": "100",
+        "footer_copyright": "© 2024 Modern Shop. All rights reserved."
+    }
+}

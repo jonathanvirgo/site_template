@@ -1,0 +1,208 @@
+{
+    "images": [
+        {
+            "placeholder": "{{hero}}",
+            "url": "https://images.unsplash.com/photo-1593349480506-8433634cdcbe?w=1600&q=80",
+            "filename": "hero-tech.jpg",
+            "alt": "Tech gadgets"
+        },
+        {
+            "placeholder": "{{news_1}}",
+            "url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
+            "filename": "news-1.jpg",
+            "alt": "Technology"
+        },
+        {
+            "placeholder": "{{news_2}}",
+            "url": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&q=80",
+            "filename": "news-2.jpg",
+            "alt": "Computer"
+        },
+        {
+            "placeholder": "{{news_3}}",
+            "url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80",
+            "filename": "news-3.jpg",
+            "alt": "Code"
+        },
+        {
+            "placeholder": "{{news_4}}",
+            "url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80",
+            "filename": "news-4.jpg",
+            "alt": "Cybersecurity"
+        },
+        {
+            "placeholder": "{{news_5}}",
+            "url": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80",
+            "filename": "news-5.jpg",
+            "alt": "Robot"
+        },
+        {
+            "placeholder": "{{thumbnail}}",
+            "url": "https://images.unsplash.com/photo-1593349480506-8433634cdcbe?w=800&q=80",
+            "filename": "thumbnail.jpg",
+            "alt": "Theme thumbnail"
+        }
+    ],
+    "pages": [
+        {
+            "title": "Home",
+            "slug": "home",
+            "template": "home",
+            "isHomepage": true,
+            "excerpt": "The latest in technology, science, and culture.",
+            "featuredImage": "{{hero}}",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "breaking-news",
+                        "data": {
+                            "label": "Breaking",
+                            "text": "AI breakthrough: New model achieves human-level reasoning"
+                        }
+                    },
+                    {
+                        "type": "featured-story",
+                        "data": {
+                            "title": "The Future of Computing",
+                            "excerpt": "How quantum computing will change everything.",
+                            "image": "{{hero}}",
+                            "category": "Technology",
+                            "url": "/future-of-computing"
+                        }
+                    },
+                    {
+                        "type": "news-grid",
+                        "data": {
+                            "title": "Latest Stories",
+                            "stories": [
+                                {
+                                    "title": "Apple announces new AI features",
+                                    "category": "Tech",
+                                    "image": "{{news_1}}",
+                                    "url": "/apple-ai"
+                                },
+                                {
+                                    "title": "The rise of remote work",
+                                    "category": "Business",
+                                    "image": "{{news_2}}",
+                                    "url": "/remote-work"
+                                },
+                                {
+                                    "title": "Cybersecurity threats in 2024",
+                                    "category": "Security",
+                                    "image": "{{news_3}}",
+                                    "url": "/cybersecurity"
+                                },
+                                {
+                                    "title": "AI in healthcare",
+                                    "category": "Science",
+                                    "image": "{{news_4}}",
+                                    "url": "/ai-healthcare"
+                                },
+                                {
+                                    "title": "Robotics revolution",
+                                    "category": "Technology",
+                                    "image": "{{news_5}}",
+                                    "url": "/robotics"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "TechNews - The Latest in Technology",
+            "seoDesc": "Breaking news and in-depth coverage of technology, science, and culture."
+        },
+        {
+            "title": "The Future of Computing",
+            "slug": "future-of-computing",
+            "template": "single",
+            "excerpt": "How quantum computing will change everything we know about technology.",
+            "featuredImage": "{{hero}}",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Quantum computing represents the next frontier in computational power. Unlike classical computers that use bits, quantum computers use qubits that can exist in multiple states simultaneously."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "What Makes Quantum Different",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "The principles of superposition and entanglement allow quantum computers to solve problems that would take classical computers billions of years in just seconds."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "The Future of Computing - Quantum Revolution",
+            "seoDesc": "Deep dive into quantum computing and its implications for the future."
+        },
+        {
+            "title": "About",
+            "slug": "about",
+            "template": "page",
+            "excerpt": "About our publication.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "About TechNews",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "TechNews is a leading technology publication covering the latest in tech, science, and digital culture. Founded in 2020, we've grown to reach millions of readers worldwide."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "About TechNews",
+            "seoDesc": "Learn about our publication and editorial team."
+        }
+    ],
+    "menus": [
+        {
+            "name": "Main Navigation",
+            "slug": "main-menu",
+            "location": "header",
+            "items": [
+                {
+                    "label": "Tech",
+                    "url": "/category/tech",
+                    "order": 1
+                },
+                {
+                    "label": "Science",
+                    "url": "/category/science",
+                    "order": 2
+                },
+                {
+                    "label": "Culture",
+                    "url": "/category/culture",
+                    "order": 3
+                },
+                {
+                    "label": "About",
+                    "url": "/about",
+                    "order": 4
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "site_name": "TechNews",
+        "site_tagline": "The Future, Now",
+        "footer_copyright": "© 2024 TechNews. All rights reserved."
+    }
+}

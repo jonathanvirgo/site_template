@@ -1,0 +1,30 @@
+{
+    "name": "Blog Pro",
+    "slug": "blog-pro",
+    "version": "1.0.0",
+    "description": "A clean, reading-focused blog theme inspired by Medium and Substack. Perfect for writers, journalists, and content creators.",
+    "author": "CMS Team",
+    "thumbnail": "demo/images/thumbnail.jpg",
+    "features": {
+        "darkMode": true,
+        "newsletter": true,
+        "authorProfiles": true,
+        "readingTime": true,
+        "socialShare": true
+    },
+    "templates": [
+        "home",
+        "page",
+        "single",
+        "archive",
+        "author",
+        "404"
+    ],
+    "settings": {
+        "primaryColor": "#1a8917",
+        "accentColor": "#ffc017",
+        "fontFamily": "Georgia, 'Times New Roman', serif",
+        "headingFont": "Inter, system-ui, sans-serif",
+        "maxWidth": "680px"
+    }
+}

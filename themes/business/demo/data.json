@@ -1,0 +1,401 @@
+{
+    "images": [
+        {
+            "placeholder": "{{hero_image}}",
+            "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1600&q=80",
+            "filename": "hero-team.jpg",
+            "alt": "Modern office team collaboration"
+        },
+        {
+            "placeholder": "{{feature_1}}",
+            "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+            "filename": "feature-analytics.jpg",
+            "alt": "Analytics dashboard"
+        },
+        {
+            "placeholder": "{{feature_2}}",
+            "url": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80",
+            "filename": "feature-security.jpg",
+            "alt": "Security concept"
+        },
+        {
+            "placeholder": "{{feature_3}}",
+            "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+            "filename": "feature-automation.jpg",
+            "alt": "Automation dashboard"
+        },
+        {
+            "placeholder": "{{testimonial_1}}",
+            "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+            "filename": "testimonial-1.jpg",
+            "alt": "Business professional"
+        },
+        {
+            "placeholder": "{{testimonial_2}}",
+            "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+            "filename": "testimonial-2.jpg",
+            "alt": "Business professional"
+        },
+        {
+            "placeholder": "{{testimonial_3}}",
+            "url": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80",
+            "filename": "testimonial-3.jpg",
+            "alt": "Business professional"
+        },
+        {
+            "placeholder": "{{about_image}}",
+            "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80",
+            "filename": "about-team.jpg",
+            "alt": "Team meeting"
+        },
+        {
+            "placeholder": "{{thumbnail}}",
+            "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80",
+            "filename": "thumbnail.jpg",
+            "alt": "Theme thumbnail"
+        }
+    ],
+    "pages": [
+        {
+            "title": "Home",
+            "slug": "home",
+            "template": "home",
+            "isHomepage": true,
+            "excerpt": "The modern platform for your business growth.",
+            "featuredImage": "{{hero_image}}",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "hero",
+                        "data": {
+                            "title": "Infrastructure for the internet",
+                            "subtitle": "Millions of companies use our platform to accept payments, grow revenue, and accelerate their business.",
+                            "cta": {
+                                "text": "Start now →",
+                                "url": "/pricing"
+                            },
+                            "secondaryCta": {
+                                "text": "Contact sales",
+                                "url": "/contact"
+                            },
+                            "showLogos": true,
+                            "logos": [
+                                "Stripe",
+                                "Airbnb",
+                                "Shopify",
+                                "Slack",
+                                "Zoom"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "features",
+                        "data": {
+                            "title": "A fully integrated suite of products",
+                            "subtitle": "Everything you need to build a world-class business",
+                            "items": [
+                                {
+                                    "icon": "chart",
+                                    "title": "Real-time Analytics",
+                                    "description": "Get instant insights into your business performance with our powerful analytics dashboard.",
+                                    "image": "{{feature_1}}"
+                                },
+                                {
+                                    "icon": "shield",
+                                    "title": "Enterprise Security",
+                                    "description": "Bank-grade security to keep your data safe. SOC 2 Type II certified.",
+                                    "image": "{{feature_2}}"
+                                },
+                                {
+                                    "icon": "zap",
+                                    "title": "Automation",
+                                    "description": "Automate repetitive tasks and workflows to focus on what matters.",
+                                    "image": "{{feature_3}}"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "stats",
+                        "data": {
+                            "items": [
+                                {
+                                    "value": "99.9%",
+                                    "label": "Uptime SLA"
+                                },
+                                {
+                                    "value": "100M+",
+                                    "label": "API requests/day"
+                                },
+                                {
+                                    "value": "190+",
+                                    "label": "Countries"
+                                },
+                                {
+                                    "value": "24/7",
+                                    "label": "Support"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "testimonials",
+                        "data": {
+                            "title": "Trusted by industry leaders",
+                            "items": [
+                                {
+                                    "quote": "This platform has transformed how we handle payments. The API is incredibly well-designed.",
+                                    "author": "John Smith",
+                                    "role": "CTO, TechCorp",
+                                    "image": "{{testimonial_1}}"
+                                },
+                                {
+                                    "quote": "We've seen a 40% increase in conversion since switching. The analytics are game-changing.",
+                                    "author": "Sarah Johnson",
+                                    "role": "VP Product, StartupX",
+                                    "image": "{{testimonial_2}}"
+                                },
+                                {
+                                    "quote": "The best developer experience I've encountered. Documentation is world-class.",
+                                    "author": "Mike Chen",
+                                    "role": "Lead Engineer, Fintech Inc",
+                                    "image": "{{testimonial_3}}"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "cta",
+                        "data": {
+                            "title": "Ready to get started?",
+                            "description": "Create an account instantly and start building today.",
+                            "buttonText": "Start free trial",
+                            "buttonUrl": "/pricing"
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Business Platform - Infrastructure for Growth",
+            "seoDesc": "The modern platform for your business. Accept payments, grow revenue, and accelerate with enterprise-grade tools."
+        },
+        {
+            "title": "Pricing",
+            "slug": "pricing",
+            "template": "page",
+            "excerpt": "Simple, transparent pricing for every stage of your business.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Pricing",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Choose the plan that's right for your business. All plans include core features."
+                        }
+                    },
+                    {
+                        "type": "pricing",
+                        "data": {
+                            "plans": [
+                                {
+                                    "name": "Starter",
+                                    "price": "$29",
+                                    "period": "/month",
+                                    "description": "Perfect for small teams getting started",
+                                    "features": [
+                                        "Up to 5 users",
+                                        "10GB storage",
+                                        "Basic analytics",
+                                        "Email support"
+                                    ],
+                                    "cta": "Get started"
+                                },
+                                {
+                                    "name": "Professional",
+                                    "price": "$99",
+                                    "period": "/month",
+                                    "description": "For growing teams that need more",
+                                    "features": [
+                                        "Up to 25 users",
+                                        "100GB storage",
+                                        "Advanced analytics",
+                                        "Priority support",
+                                        "API access"
+                                    ],
+                                    "cta": "Get started",
+                                    "popular": true
+                                },
+                                {
+                                    "name": "Enterprise",
+                                    "price": "Custom",
+                                    "period": "",
+                                    "description": "For large organizations with custom needs",
+                                    "features": [
+                                        "Unlimited users",
+                                        "Unlimited storage",
+                                        "Custom analytics",
+                                        "Dedicated support",
+                                        "Custom integrations",
+                                        "SLA guarantee"
+                                    ],
+                                    "cta": "Contact sales"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "faq",
+                        "data": {
+                            "title": "Frequently asked questions",
+                            "items": [
+                                {
+                                    "question": "Can I change plans later?",
+                                    "answer": "Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately."
+                                },
+                                {
+                                    "question": "What payment methods do you accept?",
+                                    "answer": "We accept all major credit cards, PayPal, and bank transfers for annual plans."
+                                },
+                                {
+                                    "question": "Is there a free trial?",
+                                    "answer": "Yes, all plans come with a 14-day free trial. No credit card required."
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Pricing - Simple, Transparent Plans",
+            "seoDesc": "Choose the right plan for your business. All plans include core features with no hidden fees."
+        },
+        {
+            "title": "About",
+            "slug": "about",
+            "template": "page",
+            "excerpt": "Learn about our mission and team.",
+            "featuredImage": "{{about_image}}",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "About Us",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "We're on a mission to increase the GDP of the internet. Founded in 2015, we've grown from a small startup to a global company serving millions of businesses."
+                        }
+                    },
+                    {
+                        "type": "image",
+                        "data": {
+                            "src": "{{about_image}}",
+                            "alt": "Our team",
+                            "caption": "Our global team building the future of commerce"
+                        }
+                    },
+                    {
+                        "type": "stats",
+                        "data": {
+                            "items": [
+                                {
+                                    "value": "1000+",
+                                    "label": "Employees"
+                                },
+                                {
+                                    "value": "25",
+                                    "label": "Countries"
+                                },
+                                {
+                                    "value": "$10B+",
+                                    "label": "Processed annually"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "About - Our Mission and Team",
+            "seoDesc": "Learn about our mission to increase the GDP of the internet and the team making it happen."
+        },
+        {
+            "title": "Contact",
+            "slug": "contact",
+            "template": "page",
+            "excerpt": "Get in touch with our sales team.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Contact Sales",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Ready to learn more? Our team is here to help you find the right solution for your business."
+                        }
+                    },
+                    {
+                        "type": "contact-form",
+                        "data": {
+                            "fields": [
+                                "name",
+                                "email",
+                                "company",
+                                "message"
+                            ],
+                            "submitText": "Submit"
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Contact Sales",
+            "seoDesc": "Get in touch with our sales team to learn more about our platform."
+        }
+    ],
+    "menus": [
+        {
+            "name": "Main Navigation",
+            "slug": "main-menu",
+            "location": "header",
+            "items": [
+                {
+                    "label": "Products",
+                    "url": "/#features",
+                    "order": 1
+                },
+                {
+                    "label": "Pricing",
+                    "url": "/pricing",
+                    "order": 2
+                },
+                {
+                    "label": "About",
+                    "url": "/about",
+                    "order": 3
+                },
+                {
+                    "label": "Contact",
+                    "url": "/contact",
+                    "order": 4
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "site_name": "Business Platform",
+        "site_tagline": "Infrastructure for the internet",
+        "footer_copyright": "© 2024 Business Platform, Inc. All rights reserved."
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.seoTitle or page.title }} | {{ settings.site_name }}</title>
+  <meta name="description" content="{{ page.seoDesc or page.excerpt }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/themes/portfolio/assets/css/theme.css">
+</head>
+<body class="{% block bodyClass %}{% endblock %}">
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="site-logo">{{ settings.site_name or 'Portfolio' }}</a>
+      <nav class="main-nav">
+        {% if menus.main %}
+          {% for item in menus.main %}
+            <a href="{{ item.url }}">{{ item.label }}</a>
+          {% endfor %}
+        {% endif %}
+      </nav>
+    </div>
+  </header>
+
+  <main>{% block content %}{% endblock %}</main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>{{ settings.footer_copyright }}</p>
+      <div class="social-links">
+        {% if settings.social_dribbble %}<a href="{{ settings.social_dribbble }}">Dribbble</a>{% endif %}
+        {% if settings.social_instagram %}<a href="{{ settings.social_instagram }}">Instagram</a>{% endif %}
+      </div>
+    </div>
+  </footer>
+
+  <script src="/themes/portfolio/assets/js/theme.js"></script>
+</body>
+</html>

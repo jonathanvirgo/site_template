@@ -1,0 +1,12 @@
+{% extends "layouts/default.njk" %}
+{% block bodyClass %}page-standard{% endblock %}
+{% block content %}
+<div class="container container-narrow">
+  <article class="page-content">
+    {% for block in page.content.blocks %}
+      {% if block.type == 'heading' %}<h{{ block.data.level or 2 }}>{{ block.data.text }}</h{{ block.data.level or 2 }}>
+      {% elif block.type == 'paragraph' %}<p>{{ block.data.text | safe }}</p>{% endif %}
+    {% endfor %}
+  </article>
+</div>
+{% endblock %}

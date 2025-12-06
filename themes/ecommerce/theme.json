@@ -1,0 +1,26 @@
+{
+    "name": "E-commerce Landing",
+    "slug": "ecommerce",
+    "version": "1.0.0",
+    "description": "A stunning e-commerce landing page theme inspired by Apple and Shopify. Perfect for product launches and online stores.",
+    "author": "CMS Team",
+    "thumbnail": "demo/images/thumbnail.jpg",
+    "features": {
+        "darkMode": false,
+        "productShowcase": true,
+        "animations": true,
+        "videoHero": true,
+        "parallax": true
+    },
+    "templates": [
+        "home",
+        "page",
+        "product",
+        "404"
+    ],
+    "settings": {
+        "primaryColor": "#000000",
+        "accentColor": "#0071e3",
+        "fontFamily": "SF Pro Display, system-ui, sans-serif"
+    }
+}

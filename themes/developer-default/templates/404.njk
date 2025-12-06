@@ -1,0 +1,43 @@
+{% extends "layouts/default.njk" %}
+
+{% block bodyClass %}page-404{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="error-page">
+    <h1 class="error-code">404</h1>
+    <h2 class="error-title">Page Not Found</h2>
+    <p class="error-message">The page you're looking for doesn't exist or has been moved.</p>
+    <a href="/" class="btn btn-primary">Go to Homepage</a>
+  </div>
+</div>
+
+<style>
+.error-page {
+  text-align: center;
+  padding: 100px 20px;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.error-code {
+  font-size: 8rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+.error-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.error-message {
+  color: var(--color-text-muted);
+  margin-bottom: 2rem;
+}
+</style>
+{% endblock %}

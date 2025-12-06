@@ -1,0 +1,96 @@
+{% extends "layouts/default.njk" %}
+
+{% block bodyClass %}page-home{% endblock %}
+
+{% block content %}
+{% for block in page.content.blocks %}
+  {% if block.type == 'hero' %}
+  <section class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">{{ block.data.title }}</h1>
+        <p class="hero-subtitle">{{ block.data.subtitle }}</p>
+        <div class="hero-buttons">
+          <a href="{{ block.data.cta.url }}" class="btn btn-primary btn-lg">{{ block.data.cta.text }}</a>
+          <a href="{{ block.data.secondaryCta.url }}" class="btn btn-ghost btn-lg">{{ block.data.secondaryCta.text }}</a>
+        </div>
+        {% if block.data.showLogos %}
+        <div class="hero-logos">
+          <span>Trusted by</span>
+          {% for logo in block.data.logos %}
+          <span class="logo-item">{{ logo }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+  
+  {% elif block.type == 'features' %}
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>{{ block.data.title }}</h2>
+        <p>{{ block.data.subtitle }}</p>
+      </div>
+      <div class="features-grid">
+        {% for item in block.data.items %}
+        <div class="feature-card">
+          <div class="feature-image">
+            <img src="{{ item.image }}" alt="{{ item.title }}">
+          </div>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  
+  {% elif block.type == 'stats' %}
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        {% for item in block.data.items %}
+        <div class="stat-item">
+          <span class="stat-value">{{ item.value }}</span>
+          <span class="stat-label">{{ item.label }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  
+  {% elif block.type == 'testimonials' %}
+  <section class="testimonials-section">
+    <div class="container">
+      <h2 class="section-title">{{ block.data.title }}</h2>
+      <div class="testimonials-grid">
+        {% for item in block.data.items %}
+        <div class="testimonial-card">
+          <p class="testimonial-quote">"{{ item.quote }}"</p>
+          <div class="testimonial-author">
+            <img src="{{ item.image }}" alt="{{ item.author }}">
+            <div>
+              <strong>{{ item.author }}</strong>
+              <span>{{ item.role }}</span>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  
+  {% elif block.type == 'cta' %}
+  <section class="cta-section">
+    <div class="container">
+      <h2>{{ block.data.title }}</h2>
+      <p>{{ block.data.description }}</p>
+      <a href="{{ block.data.buttonUrl }}" class="btn btn-primary btn-lg">{{ block.data.buttonText }}</a>
+    </div>
+  </section>
+  {% endif %}
+{% endfor %}
+{% endblock %}

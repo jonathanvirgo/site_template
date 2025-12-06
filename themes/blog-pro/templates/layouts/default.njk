@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.seoTitle %}{{ page.seoTitle }}{% else %}{{ page.title }}{% endif %} | {{ settings.site_name }}</title>
+  <meta name="description" content="{{ page.seoDesc or page.excerpt or settings.site_tagline }}">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Theme Styles -->
+  <link rel="stylesheet" href="/themes/blog-pro/assets/css/theme.css">
+</head>
+<body class="{% block bodyClass %}{% endblock %}">
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="site-logo">{{ settings.site_name or 'Blog Pro' }}</a>
+        
+        <nav class="main-nav">
+          <ul class="nav-list">
+            {% if menus.main %}
+              {% for item in menus.main %}
+                <li><a href="{{ item.url }}" {% if currentPath == item.url %}class="active"{% endif %}>{{ item.label }}</a></li>
+              {% endfor %}
+            {% endif %}
+          </ul>
+        </nav>
+        
+        <div class="header-actions">
+          <button class="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3z"/></svg>
+            <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7z"/></svg>
+          </button>
+          <a href="/subscribe" class="btn btn-primary">Subscribe</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="site-main">
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo">{{ settings.site_name or 'Blog Pro' }}</span>
+          <p class="footer-tagline">{{ settings.site_tagline }}</p>
+        </div>
+        
+        <div class="footer-newsletter">
+          <h4>Subscribe to our newsletter</h4>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>{{ settings.footer_copyright or '© 2024 Blog Pro' }}</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/themes/blog-pro/assets/js/theme.js"></script>
+</body>
+</html>

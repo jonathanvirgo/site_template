@@ -1,0 +1,233 @@
+// Prisma Schema for CMS
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  name      String
+  role      Role     @default(EDITOR)
+  avatar    String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  pages     Page[]
+  posts     Post[]
+
+  @@map("users")
+}
+
+enum Role {
+  ADMIN
+  EDITOR
+}
+
+model Theme {
+  id          Int      @id @default(autoincrement())
+  name        String
+  slug        String   @unique
+  description String?  @db.Text
+  thumbnail   String?
+  isActive    Boolean  @default(false)
+  settings    Json?    @default("{}")
+  path        String   // Path to theme folder
+  version     String   @default("1.0.0")
+  features    Json?    @default("{}") // Theme features config
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  pages       Page[]
+
+  @@map("themes")
+}
+
+model Page {
+  id            Int        @id @default(autoincrement())
+  title         String
+  slug          String     @unique
+  content       Json?      // Block-based content
+  template      String     @default("page")
+  excerpt       String?    @db.Text
+  featuredImage String?
+  status        PageStatus @default(DRAFT)
+  isHomepage    Boolean    @default(false)
+  seoTitle      String?
+  seoDesc       String?    @db.Text
+  seoKeywords   String?
+  sortOrder     Int        @default(0)
+  themeId       Int?
+  theme         Theme?     @relation(fields: [themeId], references: [id], onDelete: SetNull)
+  authorId      Int
+  author        User       @relation(fields: [authorId], references: [id])
+  parentId      Int?
+  parent        Page?      @relation("PageHierarchy", fields: [parentId], references: [id], onDelete: SetNull)
+  children      Page[]     @relation("PageHierarchy")
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+
+  @@map("pages")
+}
+
+enum PageStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+model CrawledContent {
+  id        Int         @id @default(autoincrement())
+  sourceUrl String      @db.Text
+  title     String?
+  content   String?     @db.LongText
+  images    Json?       // Array of image URLs
+  metadata  Json?       // Extra metadata
+  status    CrawlStatus @default(PENDING)
+  errorMsg  String?     @db.Text
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+
+  @@map("crawled_contents")
+}
+
+enum CrawlStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  IMPORTED
+  FAILED
+}
+
+model Media {
+  id           Int      @id @default(autoincrement())
+  filename     String
+  originalName String
+  path         String
+  url          String
+  mimetype     String
+  size         Int
+  width        Int?
+  height       Int?
+  alt          String?
+  createdAt    DateTime @default(now())
+
+  @@map("media")
+}
+
+model Setting {
+  id    Int    @id @default(autoincrement())
+  key   String @unique
+  value Json
+
+  @@map("settings")
+}
+
+model Menu {
+  id        Int      @id @default(autoincrement())
+  name      String
+  slug      String   @unique
+  items     Json     // Menu items structure
+  location  String?  // header, footer, sidebar
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("menus")
+}
+
+// ==================== Posts/News System ====================
+
+model PostCategory {
+  id          Int            @id @default(autoincrement())
+  name        String
+  slug        String         @unique
+  description String?        @db.Text
+  image       String?
+  parentId    Int?
+  parent      PostCategory?  @relation("PostCategoryHierarchy", fields: [parentId], references: [id], onDelete: SetNull)
+  children    PostCategory[] @relation("PostCategoryHierarchy")
+  sortOrder   Int            @default(0)
+  posts       Post[]
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+
+  @@map("post_categories")
+}
+
+model Post {
+  id            Int           @id @default(autoincrement())
+  title         String
+  slug          String        @unique
+  content       Json?         // Block-based content
+  excerpt       String?       @db.Text
+  featuredImage String?
+  status        PageStatus    @default(DRAFT)
+  categoryId    Int?
+  category      PostCategory? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  authorId      Int
+  author        User          @relation(fields: [authorId], references: [id])
+  tags          String?       // Comma-separated tags
+  views         Int           @default(0)
+  isFeatured    Boolean       @default(false)
+  seoTitle      String?
+  seoDesc       String?       @db.Text
+  publishedAt   DateTime?
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  @@map("posts")
+}
+
+// ==================== Products System ====================
+
+model ProductCategory {
+  id          Int               @id @default(autoincrement())
+  name        String
+  slug        String            @unique
+  description String?           @db.Text
+  image       String?
+  parentId    Int?
+  parent      ProductCategory?  @relation("ProductCategoryHierarchy", fields: [parentId], references: [id], onDelete: SetNull)
+  children    ProductCategory[] @relation("ProductCategoryHierarchy")
+  sortOrder   Int               @default(0)
+  products    Product[]
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+
+  @@map("product_categories")
+}
+
+model Product {
+  id          Int              @id @default(autoincrement())
+  name        String
+  slug        String           @unique
+  description Json?            // Block-based content
+  shortDesc   String?          @db.Text
+  price       Decimal          @db.Decimal(10, 2)
+  salePrice   Decimal?         @db.Decimal(10, 2)
+  sku         String?
+  images      Json?            // Array of image URLs
+  stock       Int              @default(0)
+  status      ProductStatus    @default(DRAFT)
+  categoryId  Int?
+  category    ProductCategory? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  isFeatured  Boolean          @default(false)
+  specs       Json?            // Product specifications
+  seoTitle    String?
+  seoDesc     String?          @db.Text
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+
+  @@map("products")
+}
+
+enum ProductStatus {
+  DRAFT
+  ACTIVE
+  OUT_OF_STOCK
+  DISCONTINUED
+}

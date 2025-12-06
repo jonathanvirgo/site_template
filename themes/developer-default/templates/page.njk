@@ -1,0 +1,139 @@
+{% extends "layouts/default.njk" %}
+
+{% block bodyClass %}page-single{% endblock %}
+
+{% block content %}
+<article class="page-article">
+  {% if page.featuredImage %}
+    <div class="article-hero">
+      <img src="{{ page.featuredImage }}" alt="{{ page.title }}" class="article-hero-image">
+    </div>
+  {% endif %}
+  
+  <div class="container container-narrow">
+    <header class="article-header">
+      <h1 class="article-title">{{ page.title }}</h1>
+      {% if page.excerpt %}
+        <p class="article-excerpt">{{ page.excerpt }}</p>
+      {% endif %}
+    </header>
+    
+    <div class="article-content">
+      {% for block in page.content.blocks %}
+        {% if block.type == 'paragraph' %}
+          <p>{{ block.data.text | safe }}</p>
+        
+        {% elif block.type == 'heading' %}
+          <h{{ block.data.level or 2 }}>{{ block.data.text }}</h{{ block.data.level or 2 }}>
+        
+        {% elif block.type == 'image' %}
+          <figure class="article-figure">
+            <img src="{{ block.data.src }}" alt="{{ block.data.alt or '' }}">
+            {% if block.data.caption %}
+              <figcaption>{{ block.data.caption }}</figcaption>
+            {% endif %}
+          </figure>
+        
+        {% elif block.type == 'list' %}
+          {% if block.data.style == 'ordered' %}
+            <ol>
+              {% for item in block.data.items %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ol>
+          {% else %}
+            <ul>
+              {% for item in block.data.items %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        
+        {% elif block.type == 'code' %}
+          <pre class="code-block"><code class="language-{{ block.data.language or 'plaintext' }}">{{ block.data.code }}</code></pre>
+        
+        {% elif block.type == 'quote' %}
+          <blockquote>
+            <p>{{ block.data.text }}</p>
+            {% if block.data.author %}
+              <cite>— {{ block.data.author }}</cite>
+            {% endif %}
+          </blockquote>
+        
+        {% elif block.type == 'html' %}
+          {{ block.data.content | safe }}
+          
+        {% elif block.type == 'team' %}
+          <div class="team-section">
+            <h2>{{ block.data.title }}</h2>
+            <div class="team-grid">
+              {% for member in block.data.members %}
+                <div class="team-member">
+                  {% if member.image %}
+                    <img src="{{ member.image }}" alt="{{ member.name }}" class="member-photo">
+                  {% endif %}
+                  <h3 class="member-name">{{ member.name }}</h3>
+                  <p class="member-role">{{ member.role }}</p>
+                  {% if member.bio %}
+                    <p class="member-bio">{{ member.bio }}</p>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+          
+        {% elif block.type == 'services-grid' %}
+          <div class="services-detailed">
+            {% for service in block.data.services %}
+              <div class="service-detailed-card">
+                {% if service.image %}
+                  <img src="{{ service.image }}" alt="{{ service.title }}" class="service-image">
+                {% endif %}
+                <h3>{{ service.title }}</h3>
+                <p>{{ service.description }}</p>
+                {% if service.features %}
+                  <ul class="service-features">
+                    {% for feature in service.features %}
+                      <li>{{ feature }}</li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+          
+        {% elif block.type == 'contact-form' %}
+          <form class="contact-form" action="/api/contact" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">{{ block.data.submitText or 'Send' }}</button>
+          </form>
+          
+        {% elif block.type == 'contact-info' %}
+          <div class="contact-info">
+            {% if block.data.email %}
+              <p><strong>Email:</strong> <a href="mailto:{{ block.data.email }}">{{ block.data.email }}</a></p>
+            {% endif %}
+            {% if block.data.phone %}
+              <p><strong>Phone:</strong> {{ block.data.phone }}</p>
+            {% endif %}
+            {% if block.data.address %}
+              <p><strong>Address:</strong> {{ block.data.address }}</p>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</article>
+{% endblock %}

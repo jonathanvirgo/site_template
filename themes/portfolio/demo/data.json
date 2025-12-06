@@ -1,0 +1,250 @@
+{
+    "images": [
+        {
+            "placeholder": "{{project_1}}",
+            "url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80",
+            "filename": "project-1.jpg",
+            "alt": "Abstract design project"
+        },
+        {
+            "placeholder": "{{project_2}}",
+            "url": "https://images.unsplash.com/photo-1634017839464-5c339bbe3c35?w=800&q=80",
+            "filename": "project-2.jpg",
+            "alt": "Digital art project"
+        },
+        {
+            "placeholder": "{{project_3}}",
+            "url": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80",
+            "filename": "project-3.jpg",
+            "alt": "Brand design project"
+        },
+        {
+            "placeholder": "{{project_4}}",
+            "url": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&q=80",
+            "filename": "project-4.jpg",
+            "alt": "UI design project"
+        },
+        {
+            "placeholder": "{{project_5}}",
+            "url": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80",
+            "filename": "project-5.jpg",
+            "alt": "Photography project"
+        },
+        {
+            "placeholder": "{{project_6}}",
+            "url": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&q=80",
+            "filename": "project-6.jpg",
+            "alt": "Art installation"
+        },
+        {
+            "placeholder": "{{profile}}",
+            "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+            "filename": "profile.jpg",
+            "alt": "Designer profile"
+        },
+        {
+            "placeholder": "{{thumbnail}}",
+            "url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80",
+            "filename": "thumbnail.jpg",
+            "alt": "Theme thumbnail"
+        }
+    ],
+    "pages": [
+        {
+            "title": "Home",
+            "slug": "home",
+            "template": "home",
+            "isHomepage": true,
+            "excerpt": "Creative designer crafting digital experiences.",
+            "featuredImage": "{{project_1}}",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "hero",
+                        "data": {
+                            "title": "Hello, I'm Alex",
+                            "subtitle": "Creative Director & Digital Designer",
+                            "description": "I create stunning digital experiences that connect brands with their audience.",
+                            "cta": {
+                                "text": "View my work",
+                                "url": "#projects"
+                            }
+                        }
+                    },
+                    {
+                        "type": "projects-grid",
+                        "data": {
+                            "title": "Selected Work",
+                            "projects": [
+                                {
+                                    "title": "Abstract Dimensions",
+                                    "category": "Digital Art",
+                                    "image": "{{project_1}}",
+                                    "url": "/project-1"
+                                },
+                                {
+                                    "title": "Neon Dreams",
+                                    "category": "Brand Identity",
+                                    "image": "{{project_2}}",
+                                    "url": "/project-2"
+                                },
+                                {
+                                    "title": "Minimal Brand",
+                                    "category": "Branding",
+                                    "image": "{{project_3}}",
+                                    "url": "/project-3"
+                                },
+                                {
+                                    "title": "Dashboard UI",
+                                    "category": "UI/UX Design",
+                                    "image": "{{project_4}}",
+                                    "url": "/project-4"
+                                },
+                                {
+                                    "title": "Urban Stories",
+                                    "category": "Photography",
+                                    "image": "{{project_5}}",
+                                    "url": "/project-5"
+                                },
+                                {
+                                    "title": "Gallery Space",
+                                    "category": "Installation",
+                                    "image": "{{project_6}}",
+                                    "url": "/project-6"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "cta",
+                        "data": {
+                            "title": "Let's work together",
+                            "description": "Have a project in mind? Let's create something amazing.",
+                            "buttonText": "Get in touch",
+                            "buttonUrl": "/contact"
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Alex Designer - Creative Director & Digital Designer",
+            "seoDesc": "Portfolio of Alex, a creative director specializing in brand identity, UI/UX, and digital design."
+        },
+        {
+            "title": "About",
+            "slug": "about",
+            "template": "page",
+            "excerpt": "Learn about my creative journey.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "About Me",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "image",
+                        "data": {
+                            "src": "{{profile}}",
+                            "alt": "Alex Designer"
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "I'm a creative director with 10+ years of experience crafting digital experiences for leading brands. Based in San Francisco, I specialize in brand identity, UI/UX design, and creative direction."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Experience",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "data": {
+                            "style": "unordered",
+                            "items": [
+                                "Creative Director at Studio X (2020-present)",
+                                "Senior Designer at Digital Agency (2017-2020)",
+                                "UI Designer at Tech Startup (2014-2017)"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "About - Creative Journey",
+            "seoDesc": "Learn about my creative journey and experience in design."
+        },
+        {
+            "title": "Contact",
+            "slug": "contact",
+            "template": "page",
+            "excerpt": "Get in touch for collaborations.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Let's Talk",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Interested in working together? Drop me a message and let's discuss your project."
+                        }
+                    },
+                    {
+                        "type": "contact-form",
+                        "data": {
+                            "fields": [
+                                "name",
+                                "email",
+                                "message"
+                            ],
+                            "submitText": "Send Message"
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Contact",
+            "seoDesc": "Get in touch for collaborations and projects."
+        }
+    ],
+    "menus": [
+        {
+            "name": "Main Navigation",
+            "slug": "main-menu",
+            "location": "header",
+            "items": [
+                {
+                    "label": "Work",
+                    "url": "/#projects",
+                    "order": 1
+                },
+                {
+                    "label": "About",
+                    "url": "/about",
+                    "order": 2
+                },
+                {
+                    "label": "Contact",
+                    "url": "/contact",
+                    "order": 3
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "site_name": "Alex Designer",
+        "site_tagline": "Creative Director & Digital Designer",
+        "social_dribbble": "https://dribbble.com/example",
+        "social_instagram": "https://instagram.com/example",
+        "footer_copyright": "© 2024 Alex Designer"
+    }
+}

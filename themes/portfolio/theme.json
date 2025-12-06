@@ -1,0 +1,28 @@
+{
+    "name": "Portfolio",
+    "slug": "portfolio",
+    "version": "1.0.0",
+    "description": "A visual portfolio theme inspired by Behance and Dribbble. Perfect for designers, photographers, and creative professionals.",
+    "author": "CMS Team",
+    "thumbnail": "demo/images/thumbnail.jpg",
+    "features": {
+        "darkMode": true,
+        "gallery": true,
+        "projectShowcase": true,
+        "lightbox": true,
+        "animations": true
+    },
+    "templates": [
+        "home",
+        "page",
+        "project",
+        "archive",
+        "404"
+    ],
+    "settings": {
+        "primaryColor": "#ff3366",
+        "accentColor": "#00e5ff",
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "gridColumns": 3
+    }
+}

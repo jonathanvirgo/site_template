@@ -1,0 +1,33 @@
+{% extends "layouts/default.njk" %}
+{% block bodyClass %}page-standard{% endblock %}
+{% block content %}
+<div class="container container-narrow">
+  <article class="page-content">
+    {% for block in page.content.blocks %}
+      {% if block.type == 'heading' %}
+        <h{{ block.data.level or 2 }}>{{ block.data.text }}</h{{ block.data.level or 2 }}>
+      {% elif block.type == 'paragraph' %}
+        <p>{{ block.data.text | safe }}</p>
+      {% elif block.type == 'image' %}
+        <figure><img src="{{ block.data.src }}" alt="{{ block.data.alt }}"></figure>
+      {% elif block.type == 'list' %}
+        <ul>{% for item in block.data.items %}<li>{{ item }}</li>{% endfor %}</ul>
+      {% elif block.type == 'contact-form' %}
+        <form class="contact-form">
+          {% for field in block.data.fields %}
+          <div class="form-group">
+            <label>{{ field | capitalize }}</label>
+            {% if field == 'message' %}
+            <textarea name="{{ field }}" rows="5" required></textarea>
+            {% else %}
+            <input type="{{ 'email' if field == 'email' else 'text' }}" name="{{ field }}" required>
+            {% endif %}
+          </div>
+          {% endfor %}
+          <button type="submit" class="btn btn-primary">{{ block.data.submitText }}</button>
+        </form>
+      {% endif %}
+    {% endfor %}
+  </article>
+</div>
+{% endblock %}

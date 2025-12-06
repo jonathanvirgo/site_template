@@ -1,0 +1,42 @@
+{% extends "layouts/default.njk" %}
+{% block bodyClass %}page-home{% endblock %}
+{% block content %}
+{% for block in page.content.blocks %}
+  {% if block.type == 'breaking-news' %}
+  <div class="breaking-news">
+    <span class="label">{{ block.data.label }}</span>
+    <span class="text">{{ block.data.text }}</span>
+  </div>
+  {% elif block.type == 'featured-story' %}
+  <section class="featured-story">
+    <div class="container">
+      <a href="{{ block.data.url }}" class="featured-card">
+        <div class="featured-image"><img src="{{ block.data.image }}" alt="{{ block.data.title }}"></div>
+        <div class="featured-content">
+          <span class="category">{{ block.data.category }}</span>
+          <h1>{{ block.data.title }}</h1>
+          <p>{{ block.data.excerpt }}</p>
+        </div>
+      </a>
+    </div>
+  </section>
+  {% elif block.type == 'news-grid' %}
+  <section class="news-section">
+    <div class="container">
+      <h2 class="section-title">{{ block.data.title }}</h2>
+      <div class="news-grid">
+        {% for story in block.data.stories %}
+        <a href="{{ story.url }}" class="news-card">
+          <div class="card-image"><img src="{{ story.image }}" alt="{{ story.title }}"></div>
+          <div class="card-content">
+            <span class="category">{{ story.category }}</span>
+            <h3>{{ story.title }}</h3>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "layouts/default.njk" %}
+{% block bodyClass %}page-single{% endblock %}
+{% block content %}
+<article class="article">
+  {% if page.featuredImage %}<div class="article-hero"><img src="{{ page.featuredImage }}" alt="{{ page.title }}"></div>{% endif %}
+  <div class="container container-narrow">
+    <header class="article-header">
+      <h1>{{ page.title }}</h1>
+      {% if page.excerpt %}<p class="excerpt">{{ page.excerpt }}</p>{% endif %}
+    </header>
+    <div class="article-content">
+      {% for block in page.content.blocks %}
+        {% if block.type == 'paragraph' %}<p>{{ block.data.text | safe }}</p>
+        {% elif block.type == 'heading' %}<h{{ block.data.level or 2 }}>{{ block.data.text }}</h{{ block.data.level or 2 }}>{% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</article>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends "layouts/default.njk" %}
+
+{% block bodyClass %}page-standard{% endblock %}
+
+{% block content %}
+<div class="container container-narrow">
+  <article class="page-content">
+    {% for block in page.content.blocks %}
+      {% if block.type == 'heading' %}
+        <h{{ block.data.level or 2 }}>{{ block.data.text }}</h{{ block.data.level or 2 }}>
+      
+      {% elif block.type == 'paragraph' %}
+        <p>{{ block.data.text | safe }}</p>
+      
+      {% elif block.type == 'image' %}
+        <figure>
+          <img src="{{ block.data.src }}" alt="{{ block.data.alt }}">
+          {% if block.data.caption %}<figcaption>{{ block.data.caption }}</figcaption>{% endif %}
+        </figure>
+      
+      {% elif block.type == 'team' %}
+        {% if block.data.title %}<h2>{{ block.data.title }}</h2>{% endif %}
+        <div class="team-grid">
+          {% for member in block.data.members %}
+          <div class="team-member">
+            <img src="{{ member.image }}" alt="{{ member.name }}" class="member-photo">
+            <h3>{{ member.name }}</h3>
+            <p class="member-role">{{ member.role }}</p>
+            <p class="member-bio">{{ member.bio }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      
+      {% elif block.type == 'contact-form' %}
+        <form class="contact-form">
+          {% for field in block.data.fields %}
+            <div class="form-group">
+              <label for="{{ field }}">{{ field | capitalize }}</label>
+              {% if field == 'message' %}
+                <textarea id="{{ field }}" name="{{ field }}" rows="5" required></textarea>
+              {% else %}
+                <input type="{{ 'email' if field == 'email' else 'text' }}" id="{{ field }}" name="{{ field }}" required>
+              {% endif %}
+            </div>
+          {% endfor %}
+          <button type="submit" class="btn btn-primary">{{ block.data.submitText }}</button>
+        </form>
+      {% endif %}
+    {% endfor %}
+  </article>
+</div>
+{% endblock %}

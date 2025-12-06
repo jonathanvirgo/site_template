@@ -1,0 +1,78 @@
+{% extends "layouts/default.njk" %}
+
+{% block bodyClass %}page-standard{% endblock %}
+
+{% block content %}
+<div class="container container-narrow">
+  <div class="page-content">
+    {% for block in page.content.blocks %}
+      {% if block.type == 'heading' %}
+        <h{{ block.data.level or 2 }} class="{% if block.data.level == 1 %}page-title{% endif %}">{{ block.data.text }}</h{{ block.data.level or 2 }}>
+      
+      {% elif block.type == 'paragraph' %}
+        <p>{{ block.data.text | safe }}</p>
+      
+      {% elif block.type == 'image' %}
+        <figure>
+          <img src="{{ block.data.src }}" alt="{{ block.data.alt }}">
+          {% if block.data.caption %}<figcaption>{{ block.data.caption }}</figcaption>{% endif %}
+        </figure>
+      
+      {% elif block.type == 'stats' %}
+        <div class="inline-stats">
+          {% for item in block.data.items %}
+          <div class="stat-item">
+            <span class="stat-value">{{ item.value }}</span>
+            <span class="stat-label">{{ item.label }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      
+      {% elif block.type == 'pricing' %}
+        <div class="pricing-grid">
+          {% for plan in block.data.plans %}
+          <div class="pricing-card {% if plan.popular %}popular{% endif %}">
+            {% if plan.popular %}<span class="popular-badge">Most Popular</span>{% endif %}
+            <h3>{{ plan.name }}</h3>
+            <div class="price">{{ plan.price }}<span>{{ plan.period }}</span></div>
+            <p>{{ plan.description }}</p>
+            <ul>
+              {% for feature in plan.features %}
+              <li>✓ {{ feature }}</li>
+              {% endfor %}
+            </ul>
+            <a href="/contact" class="btn {% if plan.popular %}btn-primary{% else %}btn-outline{% endif %}">{{ plan.cta }}</a>
+          </div>
+          {% endfor %}
+        </div>
+      
+      {% elif block.type == 'faq' %}
+        <div class="faq-section">
+          <h2>{{ block.data.title }}</h2>
+          {% for item in block.data.items %}
+          <details class="faq-item">
+            <summary>{{ item.question }}</summary>
+            <p>{{ item.answer }}</p>
+          </details>
+          {% endfor %}
+        </div>
+      
+      {% elif block.type == 'contact-form' %}
+        <form class="contact-form">
+          {% for field in block.data.fields %}
+          <div class="form-group">
+            <label for="{{ field }}">{{ field | capitalize }}</label>
+            {% if field == 'message' %}
+            <textarea id="{{ field }}" name="{{ field }}" rows="5" required></textarea>
+            {% else %}
+            <input type="{{ 'email' if field == 'email' else 'text' }}" id="{{ field }}" name="{{ field }}" required>
+            {% endif %}
+          </div>
+          {% endfor %}
+          <button type="submit" class="btn btn-primary">{{ block.data.submitText }}</button>
+        </form>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

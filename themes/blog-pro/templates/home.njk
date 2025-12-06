@@ -1,0 +1,68 @@
+{% extends "layouts/default.njk" %}
+
+{% block bodyClass %}page-home{% endblock %}
+
+{% block content %}
+{% for block in page.content.blocks %}
+  {% if block.type == 'hero' %}
+  <section class="hero-section">
+    <div class="container">
+      <h1 class="hero-title">{{ block.data.title }}</h1>
+      <p class="hero-subtitle">{{ block.data.subtitle }}</p>
+      
+      {% if block.data.showNewsletter %}
+      <form class="hero-newsletter">
+        <input type="email" placeholder="{{ block.data.newsletterText or 'Enter your email' }}" required>
+        <button type="submit" class="btn btn-primary">Get Started</button>
+      </form>
+      {% endif %}
+    </div>
+  </section>
+  
+  {% elif block.type == 'featured-posts' %}
+  <section class="featured-section">
+    <div class="container">
+      <h2 class="section-title">{{ block.data.title }}</h2>
+      <div class="featured-grid">
+        <!-- Featured posts would be dynamically loaded -->
+        <article class="featured-card featured-large">
+          <div class="card-image">
+            <img src="{{ page.featuredImage }}" alt="">
+          </div>
+          <div class="card-content">
+            <span class="card-category">Featured</span>
+            <h3>{{ page.title }}</h3>
+            <p>{{ page.excerpt }}</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+  {% elif block.type == 'recent-posts' %}
+  <section class="posts-section">
+    <div class="container">
+      <h2 class="section-title">{{ block.data.title }}</h2>
+      <div class="posts-grid">
+        <!-- Posts would be dynamically loaded from API -->
+        <p class="no-posts">Posts will appear here when published.</p>
+      </div>
+    </div>
+  </section>
+  
+  {% elif block.type == 'newsletter-cta' %}
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-box">
+        <h2>{{ block.data.title }}</h2>
+        <p>{{ block.data.description }}</p>
+        <form class="newsletter-form-large">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-primary btn-lg">{{ block.data.buttonText }}</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+{% endfor %}
+{% endblock %}

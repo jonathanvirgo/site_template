@@ -1,0 +1,28 @@
+{
+    "name": "News Magazine",
+    "slug": "news-magazine",
+    "version": "1.0.0",
+    "description": "A bold news and magazine theme inspired by The Verge. Perfect for tech blogs, news sites, and digital publications.",
+    "author": "CMS Team",
+    "thumbnail": "demo/images/thumbnail.jpg",
+    "features": {
+        "darkMode": true,
+        "breakingNews": true,
+        "categories": true,
+        "newsletter": true,
+        "socialShare": true
+    },
+    "templates": [
+        "home",
+        "page",
+        "single",
+        "category",
+        "404"
+    ],
+    "settings": {
+        "primaryColor": "#fa4659",
+        "accentColor": "#20e3b2",
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "headingFont": "Archivo Black, sans-serif"
+    }
+}

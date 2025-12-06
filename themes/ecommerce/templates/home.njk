@@ -1,0 +1,65 @@
+{% extends "layouts/default.njk" %}
+{% block bodyClass %}page-home{% endblock %}
+{% block content %}
+{% for block in page.content.blocks %}
+  {% if block.type == 'hero' %}
+  <section class="hero">
+    <div class="container">
+      <span class="tagline">{{ block.data.tagline }}</span>
+      <h1>{{ block.data.title }}</h1>
+      <p class="subtitle">{{ block.data.subtitle }}</p>
+      <div class="hero-buttons">
+        <a href="{{ block.data.cta.url }}" class="btn btn-primary">{{ block.data.cta.text }}</a>
+        <a href="{{ block.data.secondaryCta.url }}" class="btn btn-link">{{ block.data.secondaryCta.text }} ↓</a>
+      </div>
+    </div>
+    <div class="hero-image"><img src="{{ block.data.image }}" alt="Product"></div>
+  </section>
+  {% elif block.type == 'product-showcase' %}
+  <section class="showcase" id="features">
+    <div class="container">
+      <h2>{{ block.data.title }}</h2>
+      <p>{{ block.data.description }}</p>
+    </div>
+    <div class="showcase-image"><img src="{{ block.data.image }}" alt="Product"></div>
+  </section>
+  {% elif block.type == 'features-split' %}
+  <section class="features-split">
+    <div class="container">
+      {% for item in block.data.items %}
+      <div class="feature-row">
+        <div class="feature-content"><h3>{{ item.title }}</h3><p>{{ item.description }}</p></div>
+        <div class="feature-image"><img src="{{ item.image }}" alt="{{ item.title }}"></div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% elif block.type == 'product-gallery' %}
+  <section class="gallery">
+    <div class="container"><h2>{{ block.data.title }}</h2></div>
+    <div class="gallery-scroll">
+      {% for img in block.data.images %}<img src="{{ img }}" alt="Product">{% endfor %}
+    </div>
+  </section>
+  {% elif block.type == 'specs' %}
+  <section class="specs" id="specs">
+    <div class="container">
+      <h2>{{ block.data.title }}</h2>
+      <div class="specs-grid">
+        {% for item in block.data.items %}
+        <div class="spec-item"><span class="spec-value">{{ item.value }}</span><span class="spec-label">{{ item.label }}</span></div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% elif block.type == 'cta' %}
+  <section class="cta">
+    <div class="container">
+      <h2>{{ block.data.title }}</h2>
+      <p>{{ block.data.description }}</p>
+      <a href="{{ block.data.buttonUrl }}" class="btn btn-primary btn-lg">{{ block.data.buttonText }}</a>
+    </div>
+  </section>
+  {% endif %}
+{% endfor %}
+{% endblock %}
