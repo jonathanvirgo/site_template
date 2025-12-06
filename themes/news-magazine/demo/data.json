@@ -1,44 +1,62 @@
 {
     "images": [
         {
-            "placeholder": "{{hero}}",
-            "url": "https://images.unsplash.com/photo-1593349480506-8433634cdcbe?w=1600&q=80",
-            "filename": "hero-tech.jpg",
-            "alt": "Tech gadgets"
+            "placeholder": "{{hero_image}}",
+            "url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1600&q=80",
+            "filename": "hero-news.jpg",
+            "alt": "News on newspaper"
         },
         {
             "placeholder": "{{news_1}}",
-            "url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
-            "filename": "news-1.jpg",
-            "alt": "Technology"
+            "url": "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=800&q=80",
+            "filename": "news-ai.jpg",
+            "alt": "Artificial intelligence concept"
         },
         {
             "placeholder": "{{news_2}}",
-            "url": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&q=80",
-            "filename": "news-2.jpg",
-            "alt": "Computer"
+            "url": "https://images.unsplash.com/photo-1518770660439-464b0e3e5d9e?w=800&q=80",
+            "filename": "news-climate.jpg",
+            "alt": "Climate change landscape"
         },
         {
             "placeholder": "{{news_3}}",
-            "url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80",
-            "filename": "news-3.jpg",
-            "alt": "Code"
+            "url": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
+            "filename": "news-social.jpg",
+            "alt": "Social media apps"
         },
         {
             "placeholder": "{{news_4}}",
-            "url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80",
-            "filename": "news-4.jpg",
-            "alt": "Cybersecurity"
+            "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+            "filename": "news-space.jpg",
+            "alt": "Space exploration"
         },
         {
             "placeholder": "{{news_5}}",
+            "url": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80",
+            "filename": "news-health.jpg",
+            "alt": "Healthcare innovation"
+        },
+        {
+            "placeholder": "{{news_6}}",
+            "url": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80",
+            "filename": "news-bitcoin.jpg",
+            "alt": "Cryptocurrency"
+        },
+        {
+            "placeholder": "{{news_7}}",
             "url": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80",
-            "filename": "news-5.jpg",
-            "alt": "Robot"
+            "filename": "news-robot.jpg",
+            "alt": "Robotics technology"
+        },
+        {
+            "placeholder": "{{news_8}}",
+            "url": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=800&q=80",
+            "filename": "news-vr.jpg",
+            "alt": "Virtual reality"
         },
         {
             "placeholder": "{{thumbnail}}",
-            "url": "https://images.unsplash.com/photo-1593349480506-8433634cdcbe?w=800&q=80",
+            "url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=80",
             "filename": "thumbnail.jpg",
             "alt": "Theme thumbnail"
         }
@@ -49,126 +67,514 @@
             "slug": "home",
             "template": "home",
             "isHomepage": true,
-            "excerpt": "The latest in technology, science, and culture.",
-            "featuredImage": "{{hero}}",
+            "excerpt": "Breaking news, analysis, and in-depth coverage.",
+            "featuredImage": "{{hero_image}}",
             "content": {
                 "blocks": [
                     {
                         "type": "breaking-news",
                         "data": {
-                            "label": "Breaking",
-                            "text": "AI breakthrough: New model achieves human-level reasoning"
+                            "count": 3
                         }
                     },
                     {
-                        "type": "featured-story",
+                        "type": "featured-articles",
                         "data": {
-                            "title": "The Future of Computing",
-                            "excerpt": "How quantum computing will change everything.",
-                            "image": "{{hero}}",
-                            "category": "Technology",
-                            "url": "/future-of-computing"
+                            "count": 4
                         }
                     },
                     {
-                        "type": "news-grid",
+                        "type": "category-sections",
                         "data": {
-                            "title": "Latest Stories",
-                            "stories": [
-                                {
-                                    "title": "Apple announces new AI features",
-                                    "category": "Tech",
-                                    "image": "{{news_1}}",
-                                    "url": "/apple-ai"
-                                },
-                                {
-                                    "title": "The rise of remote work",
-                                    "category": "Business",
-                                    "image": "{{news_2}}",
-                                    "url": "/remote-work"
-                                },
-                                {
-                                    "title": "Cybersecurity threats in 2024",
-                                    "category": "Security",
-                                    "image": "{{news_3}}",
-                                    "url": "/cybersecurity"
-                                },
-                                {
-                                    "title": "AI in healthcare",
-                                    "category": "Science",
-                                    "image": "{{news_4}}",
-                                    "url": "/ai-healthcare"
-                                },
-                                {
-                                    "title": "Robotics revolution",
-                                    "category": "Technology",
-                                    "image": "{{news_5}}",
-                                    "url": "/robotics"
-                                }
+                            "categories": [
+                                "technology",
+                                "science",
+                                "business"
                             ]
                         }
                     }
                 ]
             },
-            "seoTitle": "TechNews - The Latest in Technology",
-            "seoDesc": "Breaking news and in-depth coverage of technology, science, and culture."
-        },
-        {
-            "title": "The Future of Computing",
-            "slug": "future-of-computing",
-            "template": "single",
-            "excerpt": "How quantum computing will change everything we know about technology.",
-            "featuredImage": "{{hero}}",
-            "content": {
-                "blocks": [
-                    {
-                        "type": "paragraph",
-                        "data": {
-                            "text": "Quantum computing represents the next frontier in computational power. Unlike classical computers that use bits, quantum computers use qubits that can exist in multiple states simultaneously."
-                        }
-                    },
-                    {
-                        "type": "heading",
-                        "data": {
-                            "text": "What Makes Quantum Different",
-                            "level": 2
-                        }
-                    },
-                    {
-                        "type": "paragraph",
-                        "data": {
-                            "text": "The principles of superposition and entanglement allow quantum computers to solve problems that would take classical computers billions of years in just seconds."
-                        }
-                    }
-                ]
-            },
-            "seoTitle": "The Future of Computing - Quantum Revolution",
-            "seoDesc": "Deep dive into quantum computing and its implications for the future."
+            "seoTitle": "Tech Daily - Breaking Technology News",
+            "seoDesc": "Get the latest technology news, reviews, and analysis from our expert team."
         },
         {
             "title": "About",
             "slug": "about",
             "template": "page",
-            "excerpt": "About our publication.",
+            "excerpt": "About our publication and editorial team.",
             "content": {
                 "blocks": [
                     {
                         "type": "heading",
                         "data": {
-                            "text": "About TechNews",
+                            "text": "About Tech Daily",
                             "level": 1
                         }
                     },
                     {
                         "type": "paragraph",
                         "data": {
-                            "text": "TechNews is a leading technology publication covering the latest in tech, science, and digital culture. Founded in 2020, we've grown to reach millions of readers worldwide."
+                            "text": "Tech Daily is an independent publication covering the latest in technology, science, and digital culture. Founded in 2015, we're committed to accurate, in-depth reporting that helps our readers understand the forces shaping our world."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Our Mission",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "To provide thoughtful, well-researched coverage of technology and its impact on society. We avoid clickbait and sensationalism in favor of stories that truly matter."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Editorial Standards",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "All articles are fact-checked before publication. We clearly label opinion pieces and disclose any potential conflicts of interest. Corrections are posted promptly and prominently."
                         }
                     }
                 ]
             },
-            "seoTitle": "About TechNews",
-            "seoDesc": "Learn about our publication and editorial team."
+            "seoTitle": "About - Tech Daily",
+            "seoDesc": "Learn about our mission and editorial standards."
+        },
+        {
+            "title": "Contact",
+            "slug": "contact",
+            "template": "page",
+            "excerpt": "Contact our newsroom.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Contact Us",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Have a news tip? Want to pitch a story? We'd love to hear from you."
+                        }
+                    },
+                    {
+                        "type": "contact-info",
+                        "data": {
+                            "newsroom": "news@techdaily.example",
+                            "tips": "tips@techdaily.example",
+                            "advertising": "ads@techdaily.example"
+                        }
+                    },
+                    {
+                        "type": "contact-form",
+                        "data": {
+                            "fields": [
+                                "name",
+                                "email",
+                                "subject",
+                                "message"
+                            ],
+                            "submitText": "Send"
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Contact - Tech Daily",
+            "seoDesc": "Contact our newsroom with tips or story ideas."
+        },
+        {
+            "title": "Advertise",
+            "slug": "advertise",
+            "template": "page",
+            "excerpt": "Advertising opportunities with Tech Daily.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Advertise With Us",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Tech Daily reaches over 5 million monthly readers interested in technology, business, and innovation. Our audience includes tech professionals, executives, and early adopters."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Ad Formats",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "data": {
+                            "style": "unordered",
+                            "items": [
+                                "Display advertising (banner, sidebar, native)",
+                                "Sponsored content and branded articles",
+                                "Newsletter sponsorship",
+                                "Podcast advertising",
+                                "Event partnerships"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Contact our advertising team at ads@techdaily.example for media kit and rates."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Advertise - Tech Daily",
+            "seoDesc": "Reach 5M+ tech-savvy readers through display ads, sponsored content, and more."
+        }
+    ],
+    "postCategories": [
+        {
+            "name": "Technology",
+            "slug": "technology",
+            "description": "Latest technology news, reviews, and analysis."
+        },
+        {
+            "name": "Science",
+            "slug": "science",
+            "description": "Scientific discoveries and research breakthroughs."
+        },
+        {
+            "name": "Business",
+            "slug": "business",
+            "description": "Tech industry news, startups, and market analysis."
+        },
+        {
+            "name": "Culture",
+            "slug": "culture",
+            "description": "Digital culture, social media, and internet trends."
+        }
+    ],
+    "posts": [
+        {
+            "title": "AI Revolution: How Machine Learning is Transforming Every Industry",
+            "slug": "ai-revolution-machine-learning",
+            "categorySlug": "technology",
+            "isFeatured": true,
+            "excerpt": "From healthcare to finance, artificial intelligence is reshaping how businesses operate and make decisions.",
+            "featuredImage": "{{news_1}}",
+            "tags": [
+                "AI",
+                "machine learning",
+                "technology"
+            ],
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Artificial intelligence has moved beyond the realm of science fiction into everyday reality. Today, AI systems are diagnosing diseases, driving cars, writing code, and even creating art. But this is just the beginning."
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "According to recent industry reports, AI adoption has accelerated dramatically in the past year, with 75% of enterprises now running AI applications in production. The technology is no longer a competitive advantage—it's becoming a necessity for survival."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Healthcare Leads the Way",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Perhaps nowhere is AI's impact more profound than in healthcare. Machine learning models are now detecting cancer earlier than human radiologists, predicting patient outcomes, and accelerating drug discovery. One recent study showed AI systems achieving 94% accuracy in diagnosing certain conditions—surpassing the average physician."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "The Workforce Challenge",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "As AI capabilities expand, so do concerns about job displacement. However, experts suggest the reality is more nuanced. While some roles will be automated, new jobs are emerging in AI development, ethics, and human-AI collaboration. The key is adaptation and continuous learning."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "AI Revolution: Machine Learning Transforms Every Industry",
+            "seoDesc": "How artificial intelligence is reshaping healthcare, finance, and beyond."
+        },
+        {
+            "title": "Climate Tech Startups Secure Record $50 Billion in Funding",
+            "slug": "climate-tech-record-funding",
+            "categorySlug": "business",
+            "isFeatured": true,
+            "excerpt": "Investors are betting big on technologies to combat climate change, from carbon capture to alternative proteins.",
+            "featuredImage": "{{news_2}}",
+            "tags": [
+                "climate",
+                "startups",
+                "investment"
+            ],
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Climate technology has emerged as one of the hottest sectors in venture capital. New data shows that climate-focused startups raised a record $50 billion in funding last year, a 40% increase from the previous year."
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "The surge reflects growing investor confidence that climate solutions can deliver both environmental impact and substantial financial returns. Major players like Sequoia, Andreessen Horowitz, and Breakthrough Energy Ventures are leading the charge."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Hot Areas",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "data": {
+                            "style": "unordered",
+                            "items": [
+                                "Carbon capture and storage ($12B)",
+                                "Alternative proteins and food tech ($8B)",
+                                "Electric vehicles and batteries ($15B)",
+                                "Clean energy generation ($10B)",
+                                "Sustainable materials ($5B)"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Climate Tech Startups Raise Record $50B",
+            "seoDesc": "Investors pour billions into climate solutions from carbon capture to EVs."
+        },
+        {
+            "title": "The End of Social Media As We Know It",
+            "slug": "end-of-social-media",
+            "categorySlug": "culture",
+            "isFeatured": true,
+            "excerpt": "Users are fleeing major platforms in search of smaller, more authentic online communities.",
+            "featuredImage": "{{news_3}}",
+            "tags": [
+                "social media",
+                "internet",
+                "culture"
+            ],
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "The era of massive, centralized social networks may be coming to an end. User engagement on major platforms is declining, particularly among younger demographics who are migrating to smaller, more focused communities."
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "This shift reflects growing disillusionment with algorithmic feeds, privacy concerns, and toxic content. Users are craving authenticity over performance, depth over breadth, and community over audience."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "What's Rising",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Discord servers, private Telegram groups, and niche forums are thriving. Newsletter platforms like Substack are creating new models for creator-audience relationships. The future of social appears more fragmented—and perhaps healthier."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "The End of Social Media As We Know It",
+            "seoDesc": "Why users are leaving big platforms for smaller, authentic communities."
+        },
+        {
+            "title": "SpaceX Successfully Launches First Commercial Moon Mission",
+            "slug": "spacex-commercial-moon-mission",
+            "categorySlug": "science",
+            "isFeatured": false,
+            "excerpt": "Private lunar exploration enters new era as SpaceX delivers commercial payload to the Moon's surface.",
+            "featuredImage": "{{news_4}}",
+            "tags": [
+                "space",
+                "SpaceX",
+                "moon"
+            ],
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "In a milestone for commercial space exploration, SpaceX successfully delivered a private payload to the lunar surface early this morning. The mission marks the first time a purely commercial venture has achieved a controlled Moon landing."
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "The lander, developed in partnership with several space technology companies, carries scientific instruments and technology demonstrations. It's expected to operate for at least 14 Earth days, gathering data about the lunar environment."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "SpaceX Launches First Commercial Moon Mission",
+            "seoDesc": "Private lunar exploration reaches new milestone with successful landing."
+        },
+        {
+            "title": "New mRNA Technology Shows Promise Against Cancer",
+            "slug": "mrna-cancer-breakthrough",
+            "categorySlug": "science",
+            "isFeatured": false,
+            "excerpt": "The same platform used for COVID vaccines is being adapted to train the immune system to fight tumors.",
+            "featuredImage": "{{news_5}}",
+            "tags": [
+                "health",
+                "cancer",
+                "mRNA"
+            ],
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Researchers are reporting breakthrough results in using mRNA technology—the same platform behind COVID-19 vaccines—to develop personalized cancer treatments. Early trials show remarkable response rates in patients with previously difficult-to-treat cancers."
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "The approach works by creating custom vaccines that teach each patient's immune system to recognize and attack their specific tumor. Unlike traditional treatments, this personalized approach targets cancer cells while largely sparing healthy tissue."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "mRNA Technology Shows Promise Against Cancer",
+            "seoDesc": "Personalized cancer vaccines using mRNA show breakthrough results in trials."
+        },
+        {
+            "title": "Bitcoin Hits New All-Time High as Institutional Adoption Surges",
+            "slug": "bitcoin-new-all-time-high",
+            "categorySlug": "business",
+            "isFeatured": false,
+            "excerpt": "Major financial institutions are finally embracing cryptocurrency, driving prices to record levels.",
+            "featuredImage": "{{news_6}}",
+            "tags": [
+                "bitcoin",
+                "crypto",
+                "finance"
+            ],
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Bitcoin has surged to a new all-time high as institutional investors continue to pour money into cryptocurrency. The world's largest digital asset crossed the milestone this week amid growing adoption by banks, hedge funds, and corporations."
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "The rally is driven by several factors: the approval of Bitcoin ETFs, increasing regulatory clarity, and growing acceptance of crypto as a legitimate asset class. Major financial institutions that once dismissed Bitcoin are now offering it to clients."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Bitcoin Hits All-Time High on Institutional Adoption",
+            "seoDesc": "Cryptocurrency reaches record prices as banks and institutions embrace digital assets."
+        },
+        {
+            "title": "Humanoid Robots Enter the Workforce",
+            "slug": "humanoid-robots-workforce",
+            "categorySlug": "technology",
+            "isFeatured": false,
+            "excerpt": "After years of development, human-shaped robots are finally moving from labs to warehouses and factories.",
+            "featuredImage": "{{news_7}}",
+            "tags": [
+                "robots",
+                "automation",
+                "workers"
+            ],
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Humanoid robots are no longer just a vision of the future—they're entering the workforce today. Several companies have begun deploying human-shaped robots in warehouses, manufacturing facilities, and even retail environments."
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "These robots are designed to work alongside humans, handling repetitive or physically demanding tasks. Unlike traditional industrial robots that require custom infrastructure, humanoids can operate in spaces designed for people, using the same tools and equipment."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Humanoid Robots Enter the Workforce",
+            "seoDesc": "Human-shaped robots move from labs to warehouses and factories."
+        },
+        {
+            "title": "Meta's Next VR Headset Could Finally Go Mainstream",
+            "slug": "meta-vr-headset-mainstream",
+            "categorySlug": "technology",
+            "isFeatured": false,
+            "excerpt": "Lighter, cheaper, and more capable—the next generation of VR hardware aims to break out of the niche.",
+            "featuredImage": "{{news_8}}",
+            "tags": [
+                "VR",
+                "Meta",
+                "headset"
+            ],
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Meta is preparing to unveil its next-generation VR headset, and early reports suggest it could be the device that finally brings virtual reality to the mainstream. The new hardware is reportedly lighter, more powerful, and significantly cheaper than previous models."
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Key improvements include full-color mixed reality, eye tracking for foveated rendering, and an all-new processor designed specifically for XR applications. The company is also focusing heavily on comfort, addressing one of the biggest barriers to VR adoption."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Meta's Next VR Headset Could Go Mainstream",
+            "seoDesc": "Lighter, cheaper, and more capable VR hardware aims for mass adoption."
         }
     ],
     "menus": [
@@ -178,8 +584,8 @@
             "location": "header",
             "items": [
                 {
-                    "label": "Tech",
-                    "url": "/category/tech",
+                    "label": "Technology",
+                    "url": "/category/technology",
                     "order": 1
                 },
                 {
@@ -188,21 +594,43 @@
                     "order": 2
                 },
                 {
-                    "label": "Culture",
-                    "url": "/category/culture",
+                    "label": "Business",
+                    "url": "/category/business",
                     "order": 3
                 },
                 {
+                    "label": "Culture",
+                    "url": "/category/culture",
+                    "order": 4
+                }
+            ]
+        },
+        {
+            "name": "Footer Links",
+            "slug": "footer-menu",
+            "location": "footer",
+            "items": [
+                {
                     "label": "About",
                     "url": "/about",
-                    "order": 4
+                    "order": 1
+                },
+                {
+                    "label": "Advertise",
+                    "url": "/advertise",
+                    "order": 2
+                },
+                {
+                    "label": "Contact",
+                    "url": "/contact",
+                    "order": 3
                 }
             ]
         }
     ],
     "settings": {
-        "site_name": "TechNews",
-        "site_tagline": "The Future, Now",
-        "footer_copyright": "© 2024 TechNews. All rights reserved."
+        "site_name": "Tech Daily",
+        "site_tagline": "Breaking Technology News & Analysis",
+        "footer_copyright": "© 2024 Tech Daily. All rights reserved."
     }
 }
