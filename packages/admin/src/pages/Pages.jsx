@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Card, Table, Button, Tag, Space, Modal, message, Typography, Input } from 'antd';
+import { Card, Table, Button, Tag, Space, Modal, message, Typography, Input, Tooltip } from 'antd';
 import {
     PlusOutlined,
     EditOutlined,
     DeleteOutlined,
     EyeOutlined,
     SearchOutlined,
-    HomeOutlined
+    HomeOutlined,
+    AppstoreOutlined
 } from '@ant-design/icons';
 import { pageApi } from '../services/api';
 
@@ -124,25 +125,39 @@ export default function Pages() {
         {
             title: 'Actions',
             key: 'actions',
-            width: 200,
+            width: 240,
             render: (_, record) => (
                 <Space>
-                    <Button
-                        type="text"
-                        icon={<EditOutlined />}
-                        onClick={() => navigate(`/pages/${record.id}`)}
-                    />
-                    <Button
-                        type="text"
-                        icon={<EyeOutlined />}
-                        onClick={() => handlePublish(record)}
-                    />
-                    <Button
-                        type="text"
-                        danger
-                        icon={<DeleteOutlined />}
-                        onClick={() => handleDelete(record)}
-                    />
+                    <Tooltip title="Visual Builder">
+                        <Button
+                            type="text"
+                            icon={<AppstoreOutlined />}
+                            onClick={() => navigate(`/pages/${record.id}/builder`)}
+                            style={{ color: '#1890ff' }}
+                        />
+                    </Tooltip>
+                    <Tooltip title="Edit">
+                        <Button
+                            type="text"
+                            icon={<EditOutlined />}
+                            onClick={() => navigate(`/pages/${record.id}`)}
+                        />
+                    </Tooltip>
+                    <Tooltip title={record.status === 'PUBLISHED' ? 'Unpublish' : 'Publish'}>
+                        <Button
+                            type="text"
+                            icon={<EyeOutlined />}
+                            onClick={() => handlePublish(record)}
+                        />
+                    </Tooltip>
+                    <Tooltip title="Delete">
+                        <Button
+                            type="text"
+                            danger
+                            icon={<DeleteOutlined />}
+                            onClick={() => handleDelete(record)}
+                        />
+                    </Tooltip>
                 </Space>
             ),
         },

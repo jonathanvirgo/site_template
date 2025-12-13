@@ -1,0 +1,96 @@
+{# Product Category Banner - Nutrihome style #}
+<section class="product-category-section {% if section.settings.background == 'alt' %}bg-alt{% endif %}">
+    <div class="container">
+        {# Section Header #}
+        <div class="section-header-row">
+            <h2 class="section-title">
+                {% if section.settings.icon %}
+                <span class="title-icon">{{ section.settings.icon | safe }}</span>
+                {% endif %}
+                {{ section.settings.title | default('Sản phẩm nổi bật') }}
+            </h2>
+            {% if section.settings.viewAllUrl %}
+            <a href="{{ section.settings.viewAllUrl }}" class="view-all-link">
+                Xem tất cả
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </a>
+            {% endif %}
+        </div>
+        
+        {# Banner + Products Grid #}
+        <div class="product-banner-grid">
+            {# Large Banner #}
+            <div class="category-banner">
+                {% if section.settings.bannerImage %}
+                <a href="{{ section.settings.bannerUrl | default('#') }}" class="banner-link">
+                    <img src="{{ section.settings.bannerImage }}" alt="{{ section.settings.bannerAlt | default(section.settings.title) }}" loading="lazy">
+                    {% if section.settings.bannerOverlay %}
+                    <div class="banner-overlay">
+                        <h3>{{ section.settings.bannerTitle }}</h3>
+                        <p>{{ section.settings.bannerSubtitle }}</p>
+                        <span class="banner-cta">{{ section.settings.bannerCta | default('Xem ngay') }}</span>
+                    </div>
+                    {% endif %}
+                </a>
+                {% else %}
+                <div class="banner-placeholder">
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <polyline points="21 15 16 10 5 21"></polyline>
+                    </svg>
+                    <span>Banner danh mục</span>
+                </div>
+                {% endif %}
+            </div>
+            
+            {# Products Grid #}
+            <div class="category-products">
+                {% if section.settings.products and section.settings.products.length %}
+                    {% set displayProducts = section.settings.products %}
+                {% elif section.settings.categoryId %}
+                    {% set displayProducts = products | selectattr('categoryId', 'eq', section.settings.categoryId) | slice(0, 6) %}
+                {% else %}
+                    {% set displayProducts = products | slice(0, 6) %}
+                {% endif %}
+                
+                {% for product in displayProducts %}
+                <div class="product-mini-card">
+                    <a href="/products/{{ product.slug }}" class="product-mini-image">
+                        {% if product.featuredImage %}
+                        <img src="{{ product.featuredImage }}" alt="{{ product.name }}" loading="lazy">
+                        {% else %}
+                        <div class="product-image-placeholder">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                        </div>
+                        {% endif %}
+                        {% if product.salePrice %}
+                        <span class="product-badge badge-sale">-{{ ((product.price - product.salePrice) / product.price * 100) | round }}%</span>
+                        {% endif %}
+                    </a>
+                    <div class="product-mini-info">
+                        <h4 class="product-mini-name">
+                            <a href="/products/{{ product.slug }}">{{ product.name | truncate(40) }}</a>
+                        </h4>
+                        <div class="product-mini-price">
+                            {% if product.salePrice %}
+                            <span class="price-sale">{{ product.salePrice | number_format }}₫</span>
+                            <span class="price-original">{{ product.price | number_format }}₫</span>
+                            {% else %}
+                            <span class="price-current">{{ product.price | number_format }}₫</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

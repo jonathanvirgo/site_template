@@ -1,0 +1,67 @@
+{# Featured News - Large story + side stories #}
+<section class="featured-news-section">
+    <div class="container">
+        <div class="featured-news-grid">
+            {# Main Featured Story #}
+            <div class="featured-main">
+                {% if section.settings.featured %}
+                    {% set featured = section.settings.featured %}
+                {% elif posts and posts.length %}
+                    {% set featured = posts[0] %}
+                {% endif %}
+                
+                {% if featured %}
+                <a href="/blog/{{ featured.slug }}" class="featured-card featured-large">
+                    <div class="featured-image">
+                        {% if featured.featuredImage %}
+                        <img src="{{ featured.featuredImage }}" alt="{{ featured.title }}" loading="lazy">
+                        {% else %}
+                        <div class="featured-image-placeholder"></div>
+                        {% endif %}
+                    </div>
+                    <div class="featured-overlay">
+                        {% if featured.category %}
+                        <span class="featured-category">{{ featured.category.name | default(featured.category) }}</span>
+                        {% endif %}
+                        <h2 class="featured-title">{{ featured.title }}</h2>
+                        <p class="featured-excerpt">{{ featured.excerpt | truncate(150) }}</p>
+                        <div class="featured-meta">
+                            <span class="meta-date">{{ featured.createdAt | date('DD/MM/YYYY') }}</span>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+            
+            {# Side Stories #}
+            <div class="featured-side">
+                {% if section.settings.sideStories and section.settings.sideStories.length %}
+                    {% set sideItems = section.settings.sideStories %}
+                {% elif posts and posts.length > 1 %}
+                    {% set sideItems = posts | slice(1, 5) %}
+                {% endif %}
+                
+                {% if sideItems %}
+                {% for item in sideItems %}
+                <a href="/blog/{{ item.slug }}" class="featured-card featured-small">
+                    <div class="featured-image">
+                        {% if item.featuredImage %}
+                        <img src="{{ item.featuredImage }}" alt="{{ item.title }}" loading="lazy">
+                        {% else %}
+                        <div class="featured-image-placeholder"></div>
+                        {% endif %}
+                    </div>
+                    <div class="featured-content">
+                        {% if item.category %}
+                        <span class="featured-category">{{ item.category.name | default(item.category) }}</span>
+                        {% endif %}
+                        <h3 class="featured-title">{{ item.title }}</h3>
+                        <span class="meta-date">{{ item.createdAt | date('DD/MM/YYYY') }}</span>
+                    </div>
+                </a>
+                {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

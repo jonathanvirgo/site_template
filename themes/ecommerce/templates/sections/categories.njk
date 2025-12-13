@@ -1,0 +1,31 @@
+{# Category Showcase Section Template #}
+<section class="categories-section section-categories">
+    <div class="container">
+        {% if section.settings.title %}
+            <div class="section-header">
+                <h2>{{ section.settings.title }}</h2>
+                {% if section.settings.subtitle %}<p>{{ section.settings.subtitle }}</p>{% endif %}
+            </div>
+        {% endif %}
+        
+        <div class="categories-grid">
+            {% set cats = sectionCategories[section.id] or (productCategories if section.settings.type == 'product' else postCategories) %}
+            {% for cat in cats %}
+                <a href="/{{ 'products' if section.settings.type == 'product' else 'blog' }}/category/{{ cat.slug }}" class="category-card">
+                    <div class="category-icon">
+                        <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="4" y="4" width="10" height="10" rx="2"/>
+                            <rect x="18" y="4" width="10" height="10" rx="2"/>
+                            <rect x="4" y="18" width="10" height="10" rx="2"/>
+                            <rect x="18" y="18" width="10" height="10" rx="2"/>
+                        </svg>
+                    </div>
+                    <h3>{{ cat.name }}</h3>
+                    {% if section.settings.showCount and cat._count %}
+                        <p>{{ cat._count.products or cat._count.posts or 0 }} items</p>
+                    {% endif %}
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -11,6 +11,7 @@ import Themes from './pages/Themes';
 import ThemeDetail from './pages/ThemeDetail';
 import Pages from './pages/Pages';
 import PageEditor from './pages/PageEditor';
+import PageBuilderEditor from './pages/PageBuilderEditor';
 import Posts from './pages/Posts';
 import PostEditor from './pages/PostEditor';
 import PostCategories from './pages/PostCategories';
@@ -57,6 +58,7 @@ function App() {
                 <Route path="pages" element={<Pages />} />
                 <Route path="pages/new" element={<PageEditor />} />
                 <Route path="pages/:id" element={<PageEditor />} />
+                <Route path="pages/:id/builder" element={<PageBuilderEditor />} />
                 <Route path="posts" element={<Posts />} />
                 <Route path="posts/new" element={<PostEditor />} />
                 <Route path="posts/:id" element={<PostEditor />} />

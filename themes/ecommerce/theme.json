@@ -1,26 +1,35 @@
 {
-    "name": "E-commerce Landing",
+    "name": "Modern E-commerce",
     "slug": "ecommerce",
-    "version": "1.0.0",
-    "description": "A stunning e-commerce landing page theme inspired by Apple and Shopify. Perfect for product launches and online stores.",
-    "author": "CMS Team",
+    "version": "2.0.0",
+    "description": "Premium e-commerce theme with modern design, featuring product showcases, blog integration, and responsive layouts. Inspired by Apple and Shopify aesthetics.",
+    "author": "Developer Team",
+    "authorUrl": "https://example.com",
     "thumbnail": "demo/images/thumbnail.jpg",
     "features": {
         "darkMode": false,
         "productShowcase": true,
+        "productGallery": true,
+        "blogIntegration": true,
+        "newsletter": true,
         "animations": true,
-        "videoHero": true,
-        "parallax": true
+        "responsiveDesign": true
     },
     "templates": [
         "home",
         "page",
+        "products",
         "product",
+        "blog",
+        "single",
+        "archive",
         "404"
     ],
     "settings": {
-        "primaryColor": "#000000",
-        "accentColor": "#0071e3",
-        "fontFamily": "SF Pro Display, system-ui, sans-serif"
+        "primaryColor": "#0071e3",
+        "accentColor": "#ff6b35",
+        "fontFamily": "Inter, -apple-system, sans-serif",
+        "headerStyle": "fixed",
+        "maxWidth": "1200px"
     }
 }

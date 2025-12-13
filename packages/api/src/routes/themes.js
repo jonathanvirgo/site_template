@@ -53,6 +53,44 @@ router.get('/:slug', async (req, res, next) => {
     }
 });
 
+// Get pages using this theme
+router.get('/:slug/pages', async (req, res, next) => {
+    try {
+        const { slug } = req.params;
+        const theme = await prisma.theme.findUnique({
+            where: { slug }
+        });
+
+        if (!theme) {
+            return res.status(404).json({
+                success: false,
+                message: 'Theme not found'
+            });
+        }
+
+        const pages = await prisma.page.findMany({
+            where: { themeId: theme.id },
+            select: {
+                id: true,
+                title: true,
+                slug: true,
+                template: true,
+                status: true,
+                isHomepage: true,
+                createdAt: true
+            },
+            orderBy: { sortOrder: 'asc' }
+        });
+
+        res.json({
+            success: true,
+            data: pages
+        });
+    } catch (error) {
+        next(error);
+    }
+});
+
 // Activate theme
 router.post('/:slug/activate', authenticate, requireAdmin, async (req, res, next) => {
     try {

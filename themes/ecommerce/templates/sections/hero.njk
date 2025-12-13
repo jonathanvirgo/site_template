@@ -1,0 +1,22 @@
+{# Hero Section Template #}
+<section class="hero section-hero" {% if section.settings.backgroundImage %}style="background-image: url('{{ section.settings.backgroundImage }}');"{% endif %}>
+    <div class="hero-overlay" style="background: {{ section.settings.overlayColor or 'rgba(0,0,0,0.4)' }};"></div>
+    <div class="container">
+        <div class="hero-content" style="text-align: {{ section.settings.textAlign or 'center' }};">
+            {% if section.settings.tagline %}
+                <span class="hero-tagline">{{ section.settings.tagline }}</span>
+            {% endif %}
+            <h1>{{ section.settings.title or 'Welcome' }}</h1>
+            {% if section.settings.subtitle %}
+                <p class="hero-subtitle">{{ section.settings.subtitle }}</p>
+            {% endif %}
+            {% if section.settings.buttons and section.settings.buttons.length %}
+                <div class="hero-buttons">
+                    {% for btn in section.settings.buttons %}
+                        <a href="{{ btn.url or '#' }}" class="btn btn-{{ btn.style or 'primary' }} btn-lg">{{ btn.text }}</a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>

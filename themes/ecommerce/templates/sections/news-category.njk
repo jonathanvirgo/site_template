@@ -1,0 +1,68 @@
+{# News Category Section - Grid of posts by category #}
+<section class="news-category-section {% if section.settings.background == 'alt' %}bg-alt{% endif %}">
+    <div class="container">
+        <div class="section-header-row">
+            <h2 class="section-title">
+                {% if section.settings.icon %}
+                <span class="title-icon">{{ section.settings.icon | safe }}</span>
+                {% endif %}
+                {{ section.settings.title | default('Tin tức mới nhất') }}
+            </h2>
+            {% if section.settings.viewAllUrl %}
+            <a href="{{ section.settings.viewAllUrl }}" class="view-all-link">
+                Xem tất cả
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </a>
+            {% endif %}
+        </div>
+        
+        <div class="news-category-grid">
+            {# Get posts from settings or global posts #}
+            {% if section.settings.posts and section.settings.posts.length %}
+                {% set displayPosts = section.settings.posts %}
+            {% elif section.settings.categoryId %}
+                {% set displayPosts = posts | selectattr('categoryId', 'eq', section.settings.categoryId) | slice(0, 6) %}
+            {% else %}
+                {% set displayPosts = posts | slice(0, 6) %}
+            {% endif %}
+            
+            {% for post in displayPosts %}
+            <article class="news-category-card">
+                <a href="/blog/{{ post.slug }}" class="card-image-link">
+                    {% if post.featuredImage %}
+                    <img src="{{ post.featuredImage }}" alt="{{ post.title }}" loading="lazy">
+                    {% else %}
+                    <div class="card-image-placeholder">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                            <polyline points="21 15 16 10 5 21"></polyline>
+                        </svg>
+                    </div>
+                    {% endif %}
+                </a>
+                <div class="card-content">
+                    {% if post.category %}
+                    <a href="/category/{{ post.category.slug | default(post.category | lower | replace(' ', '-')) }}" class="card-category">
+                        {{ post.category.name | default(post.category) }}
+                    </a>
+                    {% endif %}
+                    <h3 class="card-title">
+                        <a href="/blog/{{ post.slug }}">{{ post.title }}</a>
+                    </h3>
+                    <p class="card-excerpt">{{ post.excerpt | truncate(100) }}</p>
+                    <div class="card-meta">
+                        <span class="meta-date">{{ post.createdAt | date('DD/MM/YYYY') }}</span>
+                        {% if post.views %}
+                        <span class="meta-views">{{ post.views }} lượt xem</span>
+                        {% endif %}
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>

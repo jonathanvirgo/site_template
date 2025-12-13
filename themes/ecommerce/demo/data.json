@@ -55,10 +55,196 @@
             "alt": "Leather bag"
         },
         {
+            "placeholder": "{{product_9}}",
+            "url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80",
+            "filename": "product-nike.jpg",
+            "alt": "Nike sneakers"
+        },
+        {
+            "placeholder": "{{product_10}}",
+            "url": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800&q=80",
+            "filename": "product-smartwatch.jpg",
+            "alt": "Smart watch"
+        },
+        {
+            "placeholder": "{{product_11}}",
+            "url": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&q=80",
+            "filename": "product-headphones2.jpg",
+            "alt": "Pink headphones"
+        },
+        {
+            "placeholder": "{{product_12}}",
+            "url": "https://images.unsplash.com/photo-1608156639585-b3a776ea2bfe?w=800&q=80",
+            "filename": "product-earbuds.jpg",
+            "alt": "Wireless earbuds"
+        },
+        {
+            "placeholder": "{{product_13}}",
+            "url": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=800&q=80",
+            "filename": "product-jordans.jpg",
+            "alt": "Jordan sneakers"
+        },
+        {
+            "placeholder": "{{product_14}}",
+            "url": "https://images.unsplash.com/photo-1547949003-9792a18a2601?w=800&q=80",
+            "filename": "product-tshirt.jpg",
+            "alt": "T-shirt"
+        },
+        {
+            "placeholder": "{{product_15}}",
+            "url": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&q=80",
+            "filename": "product-jacket.jpg",
+            "alt": "Leather jacket"
+        },
+        {
+            "placeholder": "{{product_16}}",
+            "url": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80",
+            "filename": "product-backpack.jpg",
+            "alt": "Backpack"
+        },
+        {
+            "placeholder": "{{product_17}}",
+            "url": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=800&q=80",
+            "filename": "product-skincare.jpg",
+            "alt": "Skincare products"
+        },
+        {
+            "placeholder": "{{product_18}}",
+            "url": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=800&q=80",
+            "filename": "product-keyboard.jpg",
+            "alt": "Mechanical keyboard"
+        },
+        {
+            "placeholder": "{{product_19}}",
+            "url": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800&q=80",
+            "filename": "product-mouse.jpg",
+            "alt": "Gaming mouse"
+        },
+        {
+            "placeholder": "{{product_20}}",
+            "url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+            "filename": "product-wallet.jpg",
+            "alt": "Leather wallet"
+        },
+        {
+            "placeholder": "{{blog_1}}",
+            "url": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
+            "filename": "blog-shopping.jpg",
+            "alt": "Online shopping"
+        },
+        {
+            "placeholder": "{{blog_2}}",
+            "url": "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=80",
+            "filename": "blog-fashion.jpg",
+            "alt": "Fashion shopping"
+        },
+        {
+            "placeholder": "{{blog_3}}",
+            "url": "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=800&q=80",
+            "filename": "blog-store.jpg",
+            "alt": "Retail store"
+        },
+        {
+            "placeholder": "{{blog_4}}",
+            "url": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&q=80",
+            "filename": "blog-trends.jpg",
+            "alt": "Fashion trends"
+        },
+        {
+            "placeholder": "{{blog_5}}",
+            "url": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&q=80",
+            "filename": "blog-style.jpg",
+            "alt": "Style guide"
+        },
+        {
             "placeholder": "{{thumbnail}}",
             "url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80",
             "filename": "thumbnail.jpg",
             "alt": "Theme thumbnail"
+        },
+        {
+            "placeholder": "{{product_21}}",
+            "url": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&q=80",
+            "filename": "product-shoes2.jpg",
+            "alt": "Running shoes"
+        },
+        {
+            "placeholder": "{{product_22}}",
+            "url": "https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?w=800&q=80",
+            "filename": "product-monitor.jpg",
+            "alt": "Monitor"
+        },
+        {
+            "placeholder": "{{product_23}}",
+            "url": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&q=80",
+            "filename": "product-monitor2.jpg",
+            "alt": "Gaming monitor"
+        },
+        {
+            "placeholder": "{{product_24}}",
+            "url": "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=80",
+            "filename": "product-tablet.jpg",
+            "alt": "Tablet"
+        },
+        {
+            "placeholder": "{{product_25}}",
+            "url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&q=80",
+            "filename": "product-laptop.jpg",
+            "alt": "Laptop"
+        },
+        {
+            "placeholder": "{{blog_6}}",
+            "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+            "filename": "blog-tech.jpg",
+            "alt": "Technology"
+        },
+        {
+            "placeholder": "{{blog_7}}",
+            "url": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80",
+            "filename": "blog-lifestyle2.jpg",
+            "alt": "Work lifestyle"
+        },
+        {
+            "placeholder": "{{product_21}}",
+            "url": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&q=80",
+            "filename": "product-shoes2.jpg",
+            "alt": "Running shoes"
+        },
+        {
+            "placeholder": "{{product_22}}",
+            "url": "https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?w=800&q=80",
+            "filename": "product-monitor.jpg",
+            "alt": "Monitor"
+        },
+        {
+            "placeholder": "{{product_23}}",
+            "url": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&q=80",
+            "filename": "product-monitor2.jpg",
+            "alt": "Gaming monitor"
+        },
+        {
+            "placeholder": "{{product_24}}",
+            "url": "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=80",
+            "filename": "product-tablet.jpg",
+            "alt": "Tablet"
+        },
+        {
+            "placeholder": "{{product_25}}",
+            "url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&q=80",
+            "filename": "product-laptop.jpg",
+            "alt": "Laptop"
+        },
+        {
+            "placeholder": "{{blog_6}}",
+            "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+            "filename": "blog-tech.jpg",
+            "alt": "Technology"
+        },
+        {
+            "placeholder": "{{blog_7}}",
+            "url": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80",
+            "filename": "blog-lifestyle2.jpg",
+            "alt": "Work lifestyle"
         }
     ],
     "pages": [
@@ -70,52 +256,183 @@
             "excerpt": "Discover premium products for modern living.",
             "featuredImage": "{{hero_image}}",
             "content": {
-                "blocks": [
+                "sections": [
                     {
+                        "id": "section_hero_1",
                         "type": "hero",
-                        "data": {
+                        "order": 0,
+                        "settings": {
                             "title": "Elevate Your Style",
-                            "subtitle": "Premium products crafted for those who appreciate quality.",
-                            "buttonText": "Shop Now",
-                            "buttonUrl": "#products"
+                            "subtitle": "Discover curated products crafted for those who appreciate quality and modern design.",
+                            "tagline": "Premium Collection",
+                            "backgroundImage": "{{hero_image}}",
+                            "overlayColor": "rgba(0,0,0,0.4)",
+                            "textAlign": "center",
+                            "buttons": [
+                                {
+                                    "text": "Shop Collection",
+                                    "url": "/products",
+                                    "style": "primary"
+                                },
+                                {
+                                    "text": "Explore",
+                                    "url": "#featured",
+                                    "style": "outline"
+                                }
+                            ]
                         }
                     },
                     {
-                        "type": "featured-products",
-                        "data": {
+                        "id": "section_products_featured",
+                        "type": "product_grid",
+                        "order": 1,
+                        "settings": {
                             "title": "Featured Products",
-                            "count": 4
+                            "subtitle": "Hand-picked items from our latest collection",
+                            "categoryId": null,
+                            "limit": 4,
+                            "columns": 4,
+                            "showFeaturedOnly": true
                         }
                     },
                     {
+                        "id": "section_categories_1",
                         "type": "categories",
-                        "data": {
-                            "title": "Shop by Category"
+                        "order": 2,
+                        "settings": {
+                            "title": "Shop by Category",
+                            "subtitle": "Find exactly what you're looking for",
+                            "type": "product",
+                            "showCount": true
+                        }
+                    },
+                    {
+                        "id": "section_products_new",
+                        "type": "product_grid",
+                        "order": 3,
+                        "settings": {
+                            "title": "New Arrivals",
+                            "subtitle": "The latest additions to our collection",
+                            "categoryId": null,
+                            "limit": 8,
+                            "columns": 4,
+                            "showFeaturedOnly": false
+                        }
+                    },
+                    {
+                        "id": "section_banner_promo",
+                        "type": "banner",
+                        "order": 4,
+                        "settings": {
+                            "title": "Summer Sale - Up to 50% Off",
+                            "subtitle": "Limited time offer on selected items",
+                            "backgroundColor": "#0071e3",
+                            "textColor": "#ffffff",
+                            "buttonText": "Shop Sale",
+                            "buttonUrl": "/products?sale=true"
+                        }
+                    },
+                    {
+                        "id": "section_posts_1",
+                        "type": "post_grid",
+                        "order": 5,
+                        "settings": {
+                            "title": "From Our Blog",
+                            "subtitle": "Tips, trends, and product insights",
+                            "categoryId": null,
+                            "limit": 3,
+                            "columns": 3,
+                            "showExcerpt": true
+                        }
+                    },
+                    {
+                        "id": "section_trust_1",
+                        "type": "trust_badges",
+                        "order": 6,
+                        "settings": {
+                            "title": "",
+                            "items": [
+                                {
+                                    "icon": "truck",
+                                    "title": "Free Shipping",
+                                    "desc": "On orders over $100"
+                                },
+                                {
+                                    "icon": "shield",
+                                    "title": "Secure Payment",
+                                    "desc": "100% secure checkout"
+                                },
+                                {
+                                    "icon": "refresh",
+                                    "title": "Easy Returns",
+                                    "desc": "30-day return policy"
+                                },
+                                {
+                                    "icon": "headphones",
+                                    "title": "24/7 Support",
+                                    "desc": "Always here to help"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "section_newsletter_1",
+                        "type": "newsletter",
+                        "order": 7,
+                        "settings": {
+                            "title": "Stay in the Loop",
+                            "subtitle": "Subscribe for exclusive offers, new arrivals, and style inspiration.",
+                            "buttonText": "Subscribe"
                         }
                     }
                 ]
             },
-            "seoTitle": "Premium E-commerce - Quality Products",
-            "seoDesc": "Discover our curated collection of premium products for modern living."
+            "seoTitle": "Modern Shop - Premium Products for Modern Living",
+            "seoDesc": "Discover our curated collection of premium products. Free shipping on orders over $100."
         },
         {
-            "title": "About",
+            "title": "About Us",
             "slug": "about",
             "template": "page",
-            "excerpt": "Our story and commitment to quality.",
+            "excerpt": "Learn about our story and commitment to quality.",
             "content": {
                 "blocks": [
                     {
                         "type": "heading",
                         "data": {
-                            "text": "About Us",
+                            "text": "Our Story",
                             "level": 1
                         }
                     },
                     {
                         "type": "paragraph",
                         "data": {
-                            "text": "Founded in 2018, we're a team of product enthusiasts dedicated to curating the finest goods from around the world. We believe that everyday objects should be functional, beautiful, and built to last."
+                            "text": "Founded in 2018, Modern Shop began with a simple mission: to curate the finest products from around the world and make them accessible to everyone who appreciates quality and design."
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "We believe that everyday objects should be functional, beautiful, and built to last. That's why we personally test every product in our collection before adding it to our store."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Our Values",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "data": {
+                            "style": "unordered",
+                            "items": [
+                                "Quality over quantity",
+                                "Sustainable practices",
+                                "Exceptional customer service",
+                                "Fair pricing"
+                            ]
                         }
                     },
                     {
@@ -128,32 +445,98 @@
                     {
                         "type": "paragraph",
                         "data": {
-                            "text": "Every product in our collection is personally tested and approved. We work directly with manufacturers to ensure quality and offer the best prices without compromising on craftsmanship."
+                            "text": "Every product comes with our quality guarantee and 30-day return policy. We're committed to your satisfaction."
                         }
-                    },
+                    }
+                ]
+            },
+            "seoTitle": "About Us - Our Story",
+            "seoDesc": "Learn about Modern Shop's mission and commitment to quality products."
+        },
+        {
+            "title": "Contact",
+            "slug": "contact",
+            "template": "page",
+            "excerpt": "Get in touch with our customer support team.",
+            "content": {
+                "blocks": [
                     {
                         "type": "heading",
                         "data": {
-                            "text": "Sustainability",
-                            "level": 2
+                            "text": "Contact Us",
+                            "level": 1
                         }
                     },
                     {
                         "type": "paragraph",
                         "data": {
-                            "text": "We're committed to reducing our environmental impact. All our packaging is recyclable, and we partner with brands that share our values for ethical production."
+                            "text": "Have a question about an order? Need help choosing the right product? We're here to help."
+                        }
+                    },
+                    {
+                        "type": "contact-info",
+                        "data": {
+                            "email": "support@modernshop.com",
+                            "phone": "+1 (555) 123-4567",
+                            "hours": "Monday - Friday, 9am - 6pm EST"
                         }
                     }
                 ]
             },
-            "seoTitle": "About - Our Story",
-            "seoDesc": "Learn about our commitment to quality products and customer satisfaction."
+            "seoTitle": "Contact Us - Customer Support",
+            "seoDesc": "Get in touch with our customer support team for any questions."
+        },
+        {
+            "title": "FAQ",
+            "slug": "faq",
+            "template": "page",
+            "excerpt": "Find answers to common questions.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Frequently Asked Questions",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "faq",
+                        "data": {
+                            "items": [
+                                {
+                                    "question": "How long does shipping take?",
+                                    "answer": "Standard shipping takes 3-5 business days. Express shipping (1-2 days) is available."
+                                },
+                                {
+                                    "question": "What is your return policy?",
+                                    "answer": "We accept returns within 30 days of purchase. Items must be in original condition."
+                                },
+                                {
+                                    "question": "Do you ship internationally?",
+                                    "answer": "Yes! We ship to over 50 countries worldwide."
+                                },
+                                {
+                                    "question": "How can I track my order?",
+                                    "answer": "You'll receive a tracking number via email once your order ships."
+                                },
+                                {
+                                    "question": "Are your products authentic?",
+                                    "answer": "Absolutely. All products come with authenticity guarantee."
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "FAQ - Frequently Asked Questions",
+            "seoDesc": "Find answers to common questions about shipping, returns, and our products."
         },
         {
             "title": "Shipping & Returns",
             "slug": "shipping-returns",
             "template": "page",
-            "excerpt": "Information about shipping and our return policy.",
+            "excerpt": "Information about our shipping and return policies.",
             "content": {
                 "blocks": [
                     {
@@ -186,117 +569,13 @@
                     {
                         "type": "paragraph",
                         "data": {
-                            "text": "Not satisfied? Return any item within 30 days for a full refund. Items must be in original condition with tags attached. Contact our support team to initiate a return."
-                        }
-                    },
-                    {
-                        "type": "heading",
-                        "data": {
-                            "text": "International Orders",
-                            "level": 2
-                        }
-                    },
-                    {
-                        "type": "paragraph",
-                        "data": {
-                            "text": "We ship worldwide! International orders typically arrive within 7-14 business days. Customs fees may apply depending on your country."
+                            "text": "Not satisfied? Return any item within 30 days for a full refund. Items must be in original condition with tags attached."
                         }
                     }
                 ]
             },
             "seoTitle": "Shipping & Returns Policy",
-            "seoDesc": "Free shipping on orders over $100. Easy 30-day returns on all products."
-        },
-        {
-            "title": "Contact",
-            "slug": "contact",
-            "template": "page",
-            "excerpt": "Get in touch with our customer support team.",
-            "content": {
-                "blocks": [
-                    {
-                        "type": "heading",
-                        "data": {
-                            "text": "Contact Us",
-                            "level": 1
-                        }
-                    },
-                    {
-                        "type": "paragraph",
-                        "data": {
-                            "text": "Have a question about an order? Need help choosing the right product? Our team is here to help."
-                        }
-                    },
-                    {
-                        "type": "contact-info",
-                        "data": {
-                            "email": "support@example.com",
-                            "phone": "+1 (555) 123-4567",
-                            "hours": "Monday - Friday, 9am - 6pm EST"
-                        }
-                    },
-                    {
-                        "type": "contact-form",
-                        "data": {
-                            "fields": [
-                                "name",
-                                "email",
-                                "order_number",
-                                "message"
-                            ],
-                            "submitText": "Send Message"
-                        }
-                    }
-                ]
-            },
-            "seoTitle": "Contact Us - Customer Support",
-            "seoDesc": "Get in touch with our customer support team for any questions."
-        },
-        {
-            "title": "FAQ",
-            "slug": "faq",
-            "template": "page",
-            "excerpt": "Frequently asked questions about our products and services.",
-            "content": {
-                "blocks": [
-                    {
-                        "type": "heading",
-                        "data": {
-                            "text": "Frequently Asked Questions",
-                            "level": 1
-                        }
-                    },
-                    {
-                        "type": "faq",
-                        "data": {
-                            "items": [
-                                {
-                                    "question": "How long does shipping take?",
-                                    "answer": "Standard shipping takes 3-5 business days within the US. Express shipping (1-2 days) is available for an additional fee."
-                                },
-                                {
-                                    "question": "What is your return policy?",
-                                    "answer": "We accept returns within 30 days of purchase. Items must be unworn, unwashed, and in original packaging with tags attached."
-                                },
-                                {
-                                    "question": "Do you offer international shipping?",
-                                    "answer": "Yes! We ship to over 50 countries. International orders typically arrive within 7-14 business days."
-                                },
-                                {
-                                    "question": "How can I track my order?",
-                                    "answer": "Once your order ships, you'll receive an email with tracking information. You can also log into your account to view order status."
-                                },
-                                {
-                                    "question": "Are your products authentic?",
-                                    "answer": "Absolutely. We work directly with brands and authorized distributors. Every product comes with authenticity guarantee."
-                                }
-                            ]
-                        }
-                    }
-                ]
-            },
-            "seoTitle": "FAQ - Frequently Asked Questions",
-            "seoDesc": "Find answers to common questions about shipping, returns, and our products."
+            "seoDesc": "Free shipping on orders over $100. Easy 30-day returns."
         }
     ],
     "productCategories": [
@@ -314,6 +593,31 @@
             "name": "Fashion",
             "slug": "fashion",
             "description": "Curated fashion items from top designers."
+        },
+        {
+            "name": "Home & Living",
+            "slug": "home-living",
+            "description": "Beautiful products for your home."
+        },
+        {
+            "name": "Sports & Fitness",
+            "slug": "sports-fitness",
+            "description": "Athletic gear and fitness equipment"
+        },
+        {
+            "name": "Beauty & Care",
+            "slug": "beauty-care",
+            "description": "Beauty and personal care products"
+        },
+        {
+            "name": "Sports & Fitness",
+            "slug": "sports-fitness",
+            "description": "Athletic gear and fitness equipment"
+        },
+        {
+            "name": "Beauty & Care",
+            "slug": "beauty-care",
+            "description": "Beauty and personal care products"
         }
     ],
     "products": [
@@ -322,295 +626,2329 @@
             "slug": "minimalist-watch",
             "categorySlug": "accessories",
             "isFeatured": true,
-            "price": 299.00,
-            "salePrice": 249.00,
+            "price": 299,
+            "salePrice": 249,
             "sku": "WATCH-001",
             "stock": 50,
             "images": [
                 "{{product_1}}"
             ],
+            "shortDesc": "Japanese quartz movement with sapphire crystal and Italian leather strap.",
             "description": {
                 "blocks": [
                     {
                         "type": "paragraph",
                         "data": {
-                            "text": "Our signature minimalist watch combines Japanese quartz movement with a clean, understated design. The 40mm case is crafted from surgical-grade stainless steel, paired with genuine Italian leather strap."
-                        }
-                    },
-                    {
-                        "type": "heading",
-                        "data": {
-                            "text": "Features",
-                            "level": 2
-                        }
-                    },
-                    {
-                        "type": "list",
-                        "data": {
-                            "style": "unordered",
-                            "items": [
-                                "Japanese Miyota quartz movement",
-                                "Sapphire crystal glass (scratch-resistant)",
-                                "Water resistant to 50 meters",
-                                "Italian leather strap with quick-release pins"
-                            ]
+                            "text": "Our signature minimalist watch combines Japanese quartz movement with a clean, understated design."
                         }
                     }
                 ]
             },
-            "specifications": {
+            "specs": {
                 "Case Size": "40mm",
-                "Case Material": "Stainless Steel",
                 "Movement": "Japanese Quartz",
-                "Water Resistance": "50m",
-                "Strap": "Italian Leather"
-            },
-            "seoTitle": "Minimalist Watch - Timeless Design",
-            "seoDesc": "Japanese quartz movement with sapphire crystal and Italian leather strap."
+                "Water Resistance": "50m"
+            }
         },
         {
             "name": "Wireless Pro Headphones",
             "slug": "wireless-pro-headphones",
             "categorySlug": "electronics",
             "isFeatured": true,
-            "price": 349.00,
+            "price": 349,
             "sku": "AUDIO-002",
             "stock": 35,
             "images": [
                 "{{product_2}}"
             ],
+            "shortDesc": "Active noise cancellation with 30-hour battery life.",
             "description": {
                 "blocks": [
                     {
                         "type": "paragraph",
                         "data": {
-                            "text": "Experience studio-quality sound anywhere with our Wireless Pro Headphones. Active noise cancellation blocks out the world, while 40mm custom drivers deliver rich, detailed audio."
-                        }
-                    },
-                    {
-                        "type": "heading",
-                        "data": {
-                            "text": "Specifications",
-                            "level": 2
-                        }
-                    },
-                    {
-                        "type": "list",
-                        "data": {
-                            "style": "unordered",
-                            "items": [
-                                "Active Noise Cancellation (ANC)",
-                                "40mm custom drivers",
-                                "30 hours battery life",
-                                "Quick charge: 10 min = 3 hours playback",
-                                "Bluetooth 5.2 with multipoint connection"
-                            ]
+                            "text": "Experience studio-quality sound anywhere with ANC technology."
                         }
                     }
                 ]
             },
-            "specifications": {
+            "specs": {
                 "Driver Size": "40mm",
                 "Battery Life": "30 hours",
-                "Bluetooth": "5.2",
-                "Weight": "254g",
                 "ANC": "Yes"
-            },
-            "seoTitle": "Wireless Pro Headphones - Studio Sound",
-            "seoDesc": "Active noise cancellation with 30-hour battery life and premium sound quality."
+            }
         },
         {
             "name": "Instant Camera",
             "slug": "instant-camera",
             "categorySlug": "electronics",
             "isFeatured": true,
-            "price": 129.00,
+            "price": 129,
             "sku": "CAM-003",
             "stock": 25,
             "images": [
                 "{{product_3}}"
             ],
+            "shortDesc": "Capture memories instantly with auto-exposure technology.",
             "description": {
                 "blocks": [
                     {
                         "type": "paragraph",
                         "data": {
-                            "text": "Capture memories instantly with our modern take on the classic instant camera. Auto-exposure ensures perfect shots every time, while the built-in flash works in any lighting condition."
+                            "text": "Modern take on the classic instant camera."
                         }
                     }
                 ]
             },
-            "specifications": {
+            "specs": {
                 "Film Format": "Instax Mini",
-                "Lens": "60mm f/12.7",
-                "Flash": "Built-in automatic",
-                "Battery": "2x AA"
-            },
-            "seoTitle": "Instant Camera - Capture the Moment",
-            "seoDesc": "Modern instant camera with auto-exposure for perfect shots every time."
+                "Flash": "Built-in automatic"
+            }
         },
         {
             "name": "Smart Phone Case",
             "slug": "smart-phone-case",
             "categorySlug": "accessories",
             "isFeatured": false,
-            "price": 49.00,
-            "salePrice": 39.00,
+            "price": 49,
+            "salePrice": 39,
             "sku": "CASE-004",
             "stock": 100,
             "images": [
                 "{{product_4}}"
             ],
+            "shortDesc": "Slim protection with military-grade drop protection.",
             "description": {
                 "blocks": [
                     {
                         "type": "paragraph",
                         "data": {
-                            "text": "Slim protection that doesn't compromise style. Our premium phone case features military-grade drop protection in a sleek, minimalist design. Compatible with wireless charging."
+                            "text": "Wireless charging compatible."
                         }
                     }
                 ]
             },
-            "specifications": {
+            "specs": {
                 "Material": "Polycarbonate + TPU",
-                "Drop Protection": "6ft / 1.8m",
-                "Wireless Charging": "Compatible",
-                "Weight": "28g"
-            },
-            "seoTitle": "Smart Phone Case - Slim Protection",
-            "seoDesc": "Military-grade drop protection in a slim, wireless charging compatible design."
+                "Drop Protection": "6ft"
+            }
         },
         {
             "name": "Signature Perfume",
             "slug": "signature-perfume",
             "categorySlug": "fashion",
             "isFeatured": true,
-            "price": 185.00,
+            "price": 185,
             "sku": "PERF-005",
             "stock": 40,
             "images": [
                 "{{product_5}}"
             ],
+            "shortDesc": "Sophisticated blend crafted in Grasse, France.",
             "description": {
                 "blocks": [
                     {
                         "type": "paragraph",
                         "data": {
-                            "text": "A sophisticated blend of bergamot, jasmine, and sandalwood that evolves throughout the day. Our signature scent is crafted in Grasse, France, using the finest natural ingredients."
-                        }
-                    },
-                    {
-                        "type": "heading",
-                        "data": {
-                            "text": "Notes",
-                            "level": 2
-                        }
-                    },
-                    {
-                        "type": "paragraph",
-                        "data": {
-                            "text": "Top: Bergamot, Pink Pepper. Heart: Jasmine, Rose. Base: Sandalwood, Vanilla, Musk."
+                            "text": "Notes of bergamot, jasmine, and sandalwood."
                         }
                     }
                 ]
             },
-            "specifications": {
-                "Size": "100ml / 3.4 oz",
-                "Concentration": "Eau de Parfum",
-                "Made In": "France"
-            },
-            "seoTitle": "Signature Perfume - Luxury Fragrance",
-            "seoDesc": "Sophisticated eau de parfum crafted in Grasse, France with natural ingredients."
+            "specs": {
+                "Size": "100ml",
+                "Concentration": "Eau de Parfum"
+            }
         },
         {
             "name": "Classic Sunglasses",
             "slug": "classic-sunglasses",
             "categorySlug": "accessories",
             "isFeatured": false,
-            "price": 195.00,
+            "price": 195,
             "sku": "SUN-006",
             "stock": 30,
             "images": [
                 "{{product_6}}"
             ],
+            "shortDesc": "Polarized titanium sunglasses with 100% UV protection.",
             "description": {
                 "blocks": [
                     {
                         "type": "paragraph",
                         "data": {
-                            "text": "Timeless aviator design with modern lens technology. Polarized lenses reduce glare while providing 100% UV protection. Handcrafted titanium frames are incredibly lightweight yet durable."
+                            "text": "Timeless aviator design."
                         }
                     }
                 ]
             },
-            "specifications": {
+            "specs": {
                 "Frame": "Titanium",
-                "Lens": "Polarized Glass",
-                "UV Protection": "100% UVA/UVB",
-                "Weight": "22g"
-            },
-            "seoTitle": "Classic Sunglasses - Timeless Style",
-            "seoDesc": "Polarized titanium sunglasses with 100% UV protection and timeless design."
+                "Lens": "Polarized Glass"
+            }
         },
         {
             "name": "Urban Sneakers",
             "slug": "urban-sneakers",
             "categorySlug": "fashion",
             "isFeatured": false,
-            "price": 159.00,
+            "price": 159,
             "sku": "SHOE-007",
             "stock": 45,
             "images": [
                 "{{product_7}}"
             ],
+            "shortDesc": "Premium leather sneakers with memory foam insole.",
             "description": {
                 "blocks": [
                     {
                         "type": "paragraph",
                         "data": {
-                            "text": "Clean, contemporary sneakers designed for all-day comfort. Premium leather upper with cushioned insole and durable rubber outsole. The perfect blend of style and substance."
+                            "text": "All-day comfort in contemporary style."
                         }
                     }
                 ]
             },
-            "specifications": {
+            "specs": {
                 "Upper": "Premium Leather",
-                "Sole": "Rubber",
-                "Insole": "Memory Foam",
-                "Available Sizes": "US 7-13"
-            },
-            "seoTitle": "Urban Sneakers - All-Day Comfort",
-            "seoDesc": "Premium leather sneakers with memory foam insole for all-day comfort."
+                "Sizes": "US 7-13"
+            }
         },
         {
             "name": "Leather Weekender Bag",
             "slug": "leather-weekender-bag",
             "categorySlug": "accessories",
-            "isFeatured": false,
-            "price": 425.00,
+            "isFeatured": true,
+            "price": 425,
             "sku": "BAG-008",
             "stock": 20,
             "images": [
                 "{{product_8}}"
             ],
+            "shortDesc": "Full-grain vegetable-tanned leather with laptop sleeve.",
             "description": {
                 "blocks": [
                     {
                         "type": "paragraph",
                         "data": {
-                            "text": "Crafted from full-grain vegetable-tanned leather that ages beautifully over time. Spacious interior with laptop sleeve and multiple pockets. Perfect for short trips or daily use."
+                            "text": "Perfect for short trips."
                         }
                     }
                 ]
             },
-            "specifications": {
+            "specs": {
                 "Material": "Full-Grain Leather",
-                "Dimensions": "20\" x 10\" x 9\"",
-                "Laptop Fit": "Up to 15\"",
-                "Pockets": "6 (including laptop sleeve)"
+                "Dimensions": "20\" x 10\" x 9\""
+            }
+        },
+        {
+            "name": "Running Shoes Pro",
+            "slug": "running-shoes-pro",
+            "categorySlug": "fashion",
+            "isFeatured": true,
+            "price": 179,
+            "salePrice": 149,
+            "sku": "SHOE-009",
+            "stock": 60,
+            "images": [
+                "{{product_9}}"
+            ],
+            "shortDesc": "Lightweight performance running shoes with responsive cushioning.",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Engineered for speed."
+                        }
+                    }
+                ]
             },
-            "seoTitle": "Leather Weekender Bag - Premium Travel",
-            "seoDesc": "Full-grain leather weekender bag with laptop sleeve. Perfect for travel."
+            "specs": {
+                "Weight": "250g",
+                "Drop": "8mm"
+            }
+        },
+        {
+            "name": "Smart Watch Ultra",
+            "slug": "smart-watch-ultra",
+            "categorySlug": "electronics",
+            "isFeatured": true,
+            "price": 449,
+            "sku": "WATCH-010",
+            "stock": 28,
+            "images": [
+                "{{product_10}}"
+            ],
+            "shortDesc": "Advanced health tracking with always-on display.",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "GPS, heart rate, and blood oxygen monitoring."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Display": "AMOLED",
+                "Battery": "7 days",
+                "Water Resistance": "100m"
+            }
+        },
+        {
+            "name": "Studio Headphones",
+            "slug": "studio-headphones",
+            "categorySlug": "electronics",
+            "isFeatured": false,
+            "price": 199,
+            "sku": "AUDIO-011",
+            "stock": 42,
+            "images": [
+                "{{product_11}}"
+            ],
+            "shortDesc": "Professional-grade studio monitoring headphones.",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Flat frequency response for accurate mixing."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Driver": "50mm",
+                "Impedance": "32 Ohm"
+            }
+        },
+        {
+            "name": "Wireless Earbuds",
+            "slug": "wireless-earbuds",
+            "categorySlug": "electronics",
+            "isFeatured": true,
+            "price": 159,
+            "salePrice": 129,
+            "sku": "AUDIO-012",
+            "stock": 80,
+            "images": [
+                "{{product_12}}"
+            ],
+            "shortDesc": "True wireless earbuds with spatial audio.",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "24-hour battery with charging case."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Battery": "6 hours + 18 hours case",
+                "ANC": "Adaptive"
+            }
+        },
+        {
+            "name": "Retro Sneakers",
+            "slug": "retro-sneakers",
+            "categorySlug": "fashion",
+            "isFeatured": false,
+            "price": 220,
+            "sku": "SHOE-013",
+            "stock": 35,
+            "images": [
+                "{{product_13}}"
+            ],
+            "shortDesc": "Classic basketball-inspired high-top sneakers.",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Iconic design remastered."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Upper": "Leather & Suede",
+                "Sole": "Rubber"
+            }
+        },
+        {
+            "name": "Premium Cotton T-Shirt",
+            "slug": "premium-cotton-tshirt",
+            "categorySlug": "fashion",
+            "isFeatured": false,
+            "price": 65,
+            "sku": "TEE-014",
+            "stock": 150,
+            "images": [
+                "{{product_14}}"
+            ],
+            "shortDesc": "100% organic cotton with relaxed fit.",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Sustainably sourced and ethically made."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Material": "100% Organic Cotton",
+                "Fit": "Relaxed"
+            }
+        },
+        {
+            "name": "Leather Biker Jacket",
+            "slug": "leather-biker-jacket",
+            "categorySlug": "fashion",
+            "isFeatured": true,
+            "price": 599,
+            "salePrice": 499,
+            "sku": "JKT-015",
+            "stock": 15,
+            "images": [
+                "{{product_15}}"
+            ],
+            "shortDesc": "Genuine leather biker jacket with satin lining.",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Classic asymmetric design."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Material": "100% Leather",
+                "Lining": "Satin"
+            }
+        },
+        {
+            "name": "Travel Backpack",
+            "slug": "travel-backpack",
+            "categorySlug": "accessories",
+            "isFeatured": false,
+            "price": 189,
+            "sku": "BAG-016",
+            "stock": 55,
+            "images": [
+                "{{product_16}}"
+            ],
+            "shortDesc": "Water-resistant backpack with laptop compartment.",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "TSA-friendly design for travelers."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Capacity": "25L",
+                "Laptop": "15\" max"
+            }
+        },
+        {
+            "name": "Luxury Skincare Set",
+            "slug": "luxury-skincare-set",
+            "categorySlug": "home-living",
+            "isFeatured": false,
+            "price": 245,
+            "sku": "SKIN-017",
+            "stock": 30,
+            "images": [
+                "{{product_17}}"
+            ],
+            "shortDesc": "Complete skincare routine with premium ingredients.",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Cleanser, toner, serum, and moisturizer."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Items": "4 products",
+                "Skin Type": "All"
+            }
+        },
+        {
+            "name": "Mechanical Keyboard Pro",
+            "slug": "mechanical-keyboard-pro",
+            "categorySlug": "electronics",
+            "isFeatured": false,
+            "price": 179,
+            "sku": "TECH-018",
+            "stock": 40,
+            "images": [
+                "{{product_18}}"
+            ],
+            "shortDesc": "Premium mechanical keyboard with RGB backlighting.",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Cherry MX switches with hot-swap support."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Switches": "Cherry MX Brown",
+                "Layout": "Full-size"
+            }
+        },
+        {
+            "name": "Gaming Mouse",
+            "slug": "gaming-mouse",
+            "categorySlug": "electronics",
+            "isFeatured": false,
+            "price": 89,
+            "sku": "TECH-019",
+            "stock": 65,
+            "images": [
+                "{{product_19}}"
+            ],
+            "shortDesc": "Ultra-lightweight gaming mouse with optical sensor.",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "26K DPI for competitive gaming."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "DPI": "26,000",
+                "Weight": "63g"
+            }
+        },
+        {
+            "name": "Bi-fold Wallet",
+            "slug": "bi-fold-wallet",
+            "categorySlug": "accessories",
+            "isFeatured": false,
+            "price": 95,
+            "sku": "ACC-020",
+            "stock": 75,
+            "images": [
+                "{{product_20}}"
+            ],
+            "shortDesc": "Slim leather wallet with RFID protection.",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Full-grain leather with 6 card slots."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Material": "Full-Grain Leather",
+                "RFID": "Protected"
+            }
+        },
+        {
+            "name": "Ceramic Vase Set",
+            "slug": "ceramic-vase-set",
+            "categorySlug": "home-living",
+            "isFeatured": false,
+            "price": 75,
+            "sku": "HOME-021",
+            "stock": 45,
+            "images": [
+                "{{product_1}}"
+            ],
+            "shortDesc": "Handcrafted ceramic vases in modern design.",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Set of 3 vases in varying sizes."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Material": "Ceramic",
+                "Set": "3 pieces"
+            }
+        },
+        {
+            "name": "Aromatherapy Diffuser",
+            "slug": "aromatherapy-diffuser",
+            "categorySlug": "home-living",
+            "isFeatured": false,
+            "price": 65,
+            "sku": "HOME-022",
+            "stock": 55,
+            "images": [
+                "{{product_5}}"
+            ],
+            "shortDesc": "Ultrasonic diffuser with ambient lighting.",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Create a relaxing atmosphere."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Capacity": "300ml",
+                "Timer": "1/3/6 hours"
+            }
+        },
+        {
+            "name": "Smart Fitness Tracker",
+            "slug": "smart-fitness-tracker",
+            "categorySlug": "sports-fitness",
+            "isFeatured": true,
+            "price": 129,
+            "sku": "FIT-023",
+            "stock": 80,
+            "images": [
+                "{{product_10}}"
+            ],
+            "shortDesc": "Track your health metrics 24/7",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Advanced fitness tracking with heart rate and sleep monitoring."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Battery": "7 days",
+                "Water Resistance": "50m"
+            }
+        },
+        {
+            "name": "Yoga Mat Premium",
+            "slug": "yoga-mat-premium",
+            "categorySlug": "sports-fitness",
+            "isFeatured": false,
+            "price": 79,
+            "sku": "FIT-024",
+            "stock": 60,
+            "images": [
+                "{{product_7}}"
+            ],
+            "shortDesc": "Non-slip eco-friendly yoga mat",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Premium TPE material for comfort."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Material": "TPE",
+                "Size": "183x61cm"
+            }
+        },
+        {
+            "name": "Resistance Bands Set",
+            "slug": "resistance-bands-set",
+            "categorySlug": "sports-fitness",
+            "isFeatured": false,
+            "price": 35,
+            "sku": "FIT-025",
+            "stock": 100,
+            "images": [
+                "{{product_9}}"
+            ],
+            "shortDesc": "5-piece resistance band set",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Complete set for home workouts."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Pieces": "5 bands",
+                "Levels": "Light to Heavy"
+            }
+        },
+        {
+            "name": "Face Serum Vitamin C",
+            "slug": "face-serum-vitamin-c",
+            "categorySlug": "beauty-care",
+            "isFeatured": true,
+            "price": 45,
+            "sku": "BEA-026",
+            "stock": 70,
+            "images": [
+                "{{product_17}}"
+            ],
+            "shortDesc": "Brightening vitamin C serum",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Pure vitamin C for glowing skin."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Size": "30ml",
+                "Vitamin C": "20%"
+            }
+        },
+        {
+            "name": "Hair Dryer Pro",
+            "slug": "hair-dryer-pro",
+            "categorySlug": "beauty-care",
+            "isFeatured": false,
+            "price": 159,
+            "sku": "BEA-027",
+            "stock": 35,
+            "images": [
+                "{{product_11}}"
+            ],
+            "shortDesc": "Professional ionic hair dryer",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Fast drying with ionic technology."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Power": "1800W",
+                "Settings": "3 heat/2 speed"
+            }
+        },
+        {
+            "name": "USB-C Hub 10-in-1",
+            "slug": "usb-c-hub-10-in-1",
+            "categorySlug": "electronics",
+            "isFeatured": false,
+            "price": 69,
+            "sku": "TECH-028",
+            "stock": 90,
+            "images": [
+                "{{product_18}}"
+            ],
+            "shortDesc": "Complete connectivity solution",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "All ports you need in one hub."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Ports": "10",
+                "Power": "100W PD"
+            }
+        },
+        {
+            "name": "Webcam 4K Pro",
+            "slug": "webcam-4k-pro",
+            "categorySlug": "electronics",
+            "isFeatured": true,
+            "price": 149,
+            "sku": "TECH-029",
+            "stock": 45,
+            "images": [
+                "{{product_3}}"
+            ],
+            "shortDesc": "4K webcam with auto-focus",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Crystal clear video calls."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Resolution": "4K",
+                "FPS": "30fps"
+            }
+        },
+        {
+            "name": "Portable Charger 20000mAh",
+            "slug": "portable-charger-20000",
+            "categorySlug": "electronics",
+            "isFeatured": false,
+            "price": 59,
+            "sku": "TECH-030",
+            "stock": 120,
+            "images": [
+                "{{product_4}}"
+            ],
+            "shortDesc": "High capacity power bank",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Charge your devices multiple times."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Capacity": "20000mAh",
+                "Ports": "3"
+            }
+        },
+        {
+            "name": "Silk Scarf Designer",
+            "slug": "silk-scarf-designer",
+            "categorySlug": "fashion",
+            "isFeatured": false,
+            "price": 120,
+            "sku": "FASH-031",
+            "stock": 40,
+            "images": [
+                "{{product_14}}"
+            ],
+            "shortDesc": "100% silk designer scarf",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Handcrafted silk scarf."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Material": "100% Silk",
+                "Size": "90x90cm"
+            }
+        },
+        {
+            "name": "Denim Jacket Classic",
+            "slug": "denim-jacket-classic",
+            "categorySlug": "fashion",
+            "isFeatured": true,
+            "price": 189,
+            "sku": "FASH-032",
+            "stock": 30,
+            "images": [
+                "{{product_15}}"
+            ],
+            "shortDesc": "Classic fit denim jacket",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Timeless denim style."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Material": "Cotton Denim",
+                "Fit": "Classic"
+            }
+        },
+        {
+            "name": "Card Holder Minimalist",
+            "slug": "card-holder-minimalist",
+            "categorySlug": "accessories",
+            "isFeatured": false,
+            "price": 45,
+            "sku": "ACC-033",
+            "stock": 85,
+            "images": [
+                "{{product_20}}"
+            ],
+            "shortDesc": "Slim card holder with RFID",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Minimalist design for essentials."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Slots": "6",
+                "RFID": "Protected"
+            }
+        },
+        {
+            "name": "Desk Lamp LED",
+            "slug": "desk-lamp-led",
+            "categorySlug": "home-living",
+            "isFeatured": false,
+            "price": 89,
+            "sku": "HOME-034",
+            "stock": 55,
+            "images": [
+                "{{product_1}}"
+            ],
+            "shortDesc": "Adjustable LED desk lamp",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Eye-care LED lighting."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Brightness": "5 levels",
+                "Color": "3 modes"
+            }
+        },
+        {
+            "name": "Plant Pot Set Ceramic",
+            "slug": "plant-pot-set-ceramic",
+            "categorySlug": "home-living",
+            "isFeatured": false,
+            "price": 55,
+            "sku": "HOME-035",
+            "stock": 65,
+            "images": [
+                "{{product_5}}"
+            ],
+            "shortDesc": "Set of 3 ceramic plant pots",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Modern minimalist design."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Set": "3 pieces",
+                "Material": "Ceramic"
+            }
+        },
+        {
+            "name": "Smart Fitness Tracker",
+            "slug": "smart-fitness-tracker",
+            "categorySlug": "sports-fitness",
+            "isFeatured": true,
+            "price": 129,
+            "sku": "FIT-023",
+            "stock": 80,
+            "images": [
+                "{{product_10}}"
+            ],
+            "shortDesc": "Track your health metrics 24/7",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Advanced fitness tracking with heart rate and sleep monitoring."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Battery": "7 days",
+                "Water Resistance": "50m"
+            }
+        },
+        {
+            "name": "Yoga Mat Premium",
+            "slug": "yoga-mat-premium",
+            "categorySlug": "sports-fitness",
+            "isFeatured": false,
+            "price": 79,
+            "sku": "FIT-024",
+            "stock": 60,
+            "images": [
+                "{{product_7}}"
+            ],
+            "shortDesc": "Non-slip eco-friendly yoga mat",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Premium TPE material for comfort."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Material": "TPE",
+                "Size": "183x61cm"
+            }
+        },
+        {
+            "name": "Resistance Bands Set",
+            "slug": "resistance-bands-set",
+            "categorySlug": "sports-fitness",
+            "isFeatured": false,
+            "price": 35,
+            "sku": "FIT-025",
+            "stock": 100,
+            "images": [
+                "{{product_9}}"
+            ],
+            "shortDesc": "5-piece resistance band set",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Complete set for home workouts."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Pieces": "5 bands",
+                "Levels": "Light to Heavy"
+            }
+        },
+        {
+            "name": "Face Serum Vitamin C",
+            "slug": "face-serum-vitamin-c",
+            "categorySlug": "beauty-care",
+            "isFeatured": true,
+            "price": 45,
+            "sku": "BEA-026",
+            "stock": 70,
+            "images": [
+                "{{product_17}}"
+            ],
+            "shortDesc": "Brightening vitamin C serum",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Pure vitamin C for glowing skin."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Size": "30ml",
+                "Vitamin C": "20%"
+            }
+        },
+        {
+            "name": "Hair Dryer Pro",
+            "slug": "hair-dryer-pro",
+            "categorySlug": "beauty-care",
+            "isFeatured": false,
+            "price": 159,
+            "sku": "BEA-027",
+            "stock": 35,
+            "images": [
+                "{{product_11}}"
+            ],
+            "shortDesc": "Professional ionic hair dryer",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Fast drying with ionic technology."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Power": "1800W",
+                "Settings": "3 heat/2 speed"
+            }
+        },
+        {
+            "name": "USB-C Hub 10-in-1",
+            "slug": "usb-c-hub-10-in-1",
+            "categorySlug": "electronics",
+            "isFeatured": false,
+            "price": 69,
+            "sku": "TECH-028",
+            "stock": 90,
+            "images": [
+                "{{product_18}}"
+            ],
+            "shortDesc": "Complete connectivity solution",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "All ports you need in one hub."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Ports": "10",
+                "Power": "100W PD"
+            }
+        },
+        {
+            "name": "Webcam 4K Pro",
+            "slug": "webcam-4k-pro",
+            "categorySlug": "electronics",
+            "isFeatured": true,
+            "price": 149,
+            "sku": "TECH-029",
+            "stock": 45,
+            "images": [
+                "{{product_3}}"
+            ],
+            "shortDesc": "4K webcam with auto-focus",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Crystal clear video calls."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Resolution": "4K",
+                "FPS": "30fps"
+            }
+        },
+        {
+            "name": "Portable Charger 20000mAh",
+            "slug": "portable-charger-20000",
+            "categorySlug": "electronics",
+            "isFeatured": false,
+            "price": 59,
+            "sku": "TECH-030",
+            "stock": 120,
+            "images": [
+                "{{product_4}}"
+            ],
+            "shortDesc": "High capacity power bank",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Charge your devices multiple times."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Capacity": "20000mAh",
+                "Ports": "3"
+            }
+        },
+        {
+            "name": "Silk Scarf Designer",
+            "slug": "silk-scarf-designer",
+            "categorySlug": "fashion",
+            "isFeatured": false,
+            "price": 120,
+            "sku": "FASH-031",
+            "stock": 40,
+            "images": [
+                "{{product_14}}"
+            ],
+            "shortDesc": "100% silk designer scarf",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Handcrafted silk scarf."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Material": "100% Silk",
+                "Size": "90x90cm"
+            }
+        },
+        {
+            "name": "Denim Jacket Classic",
+            "slug": "denim-jacket-classic",
+            "categorySlug": "fashion",
+            "isFeatured": true,
+            "price": 189,
+            "sku": "FASH-032",
+            "stock": 30,
+            "images": [
+                "{{product_15}}"
+            ],
+            "shortDesc": "Classic fit denim jacket",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Timeless denim style."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Material": "Cotton Denim",
+                "Fit": "Classic"
+            }
+        },
+        {
+            "name": "Card Holder Minimalist",
+            "slug": "card-holder-minimalist",
+            "categorySlug": "accessories",
+            "isFeatured": false,
+            "price": 45,
+            "sku": "ACC-033",
+            "stock": 85,
+            "images": [
+                "{{product_20}}"
+            ],
+            "shortDesc": "Slim card holder with RFID",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Minimalist design for essentials."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Slots": "6",
+                "RFID": "Protected"
+            }
+        },
+        {
+            "name": "Desk Lamp LED",
+            "slug": "desk-lamp-led",
+            "categorySlug": "home-living",
+            "isFeatured": false,
+            "price": 89,
+            "sku": "HOME-034",
+            "stock": 55,
+            "images": [
+                "{{product_1}}"
+            ],
+            "shortDesc": "Adjustable LED desk lamp",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Eye-care LED lighting."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Brightness": "5 levels",
+                "Color": "3 modes"
+            }
+        },
+        {
+            "name": "Plant Pot Set Ceramic",
+            "slug": "plant-pot-set-ceramic",
+            "categorySlug": "home-living",
+            "isFeatured": false,
+            "price": 55,
+            "sku": "HOME-035",
+            "stock": 65,
+            "images": [
+                "{{product_5}}"
+            ],
+            "shortDesc": "Set of 3 ceramic plant pots",
+            "description": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Modern minimalist design."
+                        }
+                    }
+                ]
+            },
+            "specs": {
+                "Set": "3 pieces",
+                "Material": "Ceramic"
+            }
+        }
+    ],
+    "postCategories": [
+        {
+            "name": "Style Guide",
+            "slug": "style-guide",
+            "description": "Fashion tips and styling advice."
+        },
+        {
+            "name": "Product Reviews",
+            "slug": "product-reviews",
+            "description": "In-depth reviews of our products."
+        },
+        {
+            "name": "Lifestyle",
+            "slug": "lifestyle",
+            "description": "Living well with quality products."
+        },
+        {
+            "name": "Trends",
+            "slug": "trends",
+            "description": "Latest trends in fashion and tech."
+        },
+        {
+            "name": "Shopping Tips",
+            "slug": "shopping-tips",
+            "description": "Smart shopping advice."
+        },
+        {
+            "name": "Tech News",
+            "slug": "tech-news",
+            "description": "Latest technology updates"
+        },
+        {
+            "name": "Wellness",
+            "slug": "wellness",
+            "description": "Health and wellness tips"
+        },
+        {
+            "name": "Tech News",
+            "slug": "tech-news",
+            "description": "Latest technology updates"
+        },
+        {
+            "name": "Wellness",
+            "slug": "wellness",
+            "description": "Health and wellness tips"
+        }
+    ],
+    "posts": [
+        {
+            "title": "The Ultimate Guide to Minimalist Fashion",
+            "slug": "ultimate-guide-minimalist-fashion",
+            "categorySlug": "style-guide",
+            "isFeatured": true,
+            "excerpt": "Discover the art of capsule wardrobes and how to build a timeless collection.",
+            "featuredImage": "{{blog_2}}",
+            "tags": "fashion,minimalism,style",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Minimalist fashion is about quality over quantity. Learn how to build a wardrobe that works."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "The Capsule Wardrobe",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "A capsule wardrobe consists of essential, versatile pieces that can be mixed and matched."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Top 10 Accessories Every Man Needs",
+            "slug": "top-accessories-men-need",
+            "categorySlug": "style-guide",
+            "isFeatured": true,
+            "excerpt": "Elevate your style with these essential accessories.",
+            "featuredImage": "{{blog_3}}",
+            "tags": "accessories,men,style",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "From watches to bags, these accessories complete any outfit."
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "data": {
+                            "style": "ordered",
+                            "items": [
+                                "Quality watch",
+                                "Leather belt",
+                                "Sunglasses",
+                                "Wallet",
+                                "Good bag"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "How to Choose the Perfect Watch",
+            "slug": "how-to-choose-perfect-watch",
+            "categorySlug": "product-reviews",
+            "isFeatured": false,
+            "excerpt": "A comprehensive guide to finding your ideal timepiece.",
+            "featuredImage": "{{product_1}}",
+            "tags": "watches,guide,accessories",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Choosing, a watch is a personal decision that reflects your style and needs."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Wireless Headphones: What to Look For",
+            "slug": "wireless-headphones-guide",
+            "categorySlug": "product-reviews",
+            "isFeatured": true,
+            "excerpt": "Navigate the world of wireless audio with confidence.",
+            "featuredImage": "{{product_2}}",
+            "tags": "electronics,headphones,guide",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "From ANC to battery life, here's what matters in wireless headphones."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Sustainable Fashion: A Beginner's Guide",
+            "slug": "sustainable-fashion-guide",
+            "categorySlug": "lifestyle",
+            "isFeatured": false,
+            "excerpt": "Make eco-conscious choices without sacrificing style.",
+            "featuredImage": "{{blog_4}}",
+            "tags": "sustainability,fashion,eco",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Learn how to shop sustainably and build an ethical wardrobe."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Spring Fashion Trends 2024",
+            "slug": "spring-fashion-trends-2024",
+            "categorySlug": "trends",
+            "isFeatured": true,
+            "excerpt": "What's hot this season and how to wear it.",
+            "featuredImage": "{{blog_5}}",
+            "tags": "trends,spring,fashion",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "From bold colors to relaxed silhouettes, spring 2024 is all about self-expression."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Smart Shopping: Getting Quality for Less",
+            "slug": "smart-shopping-quality-for-less",
+            "categorySlug": "shopping-tips",
+            "isFeatured": false,
+            "excerpt": "Tips for finding the best deals without compromising on quality.",
+            "featuredImage": "{{blog_1}}",
+            "tags": "shopping,tips,deals",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Smart shopping is about knowing when to invest and when to save."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "The Art of Gift Giving",
+            "slug": "art-of-gift-giving",
+            "categorySlug": "shopping-tips",
+            "isFeatured": false,
+            "excerpt": "How to choose thoughtful gifts that make an impact.",
+            "featuredImage": "{{blog_3}}",
+            "tags": "gifts,shopping,guide",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "A well-chosen gift shows you know and care about the recipient."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Building a Home Office That Inspires",
+            "slug": "building-home-office-inspires",
+            "categorySlug": "lifestyle",
+            "isFeatured": false,
+            "excerpt": "Create a productive and stylish workspace at home.",
+            "featuredImage": "{{blog_4}}",
+            "tags": "home,office,lifestyle",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Your home office should be both functional and inspiring."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Tech Essentials for Digital Nomads",
+            "slug": "tech-essentials-digital-nomads",
+            "categorySlug": "product-reviews",
+            "isFeatured": false,
+            "excerpt": "Must-have gadgets for working from anywhere.",
+            "featuredImage": "{{product_18}}",
+            "tags": "tech,travel,digital",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "From laptops to portable chargers, these are the essentials for location-independent work."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Skincare Basics: A No-Nonsense Guide",
+            "slug": "skincare-basics-guide",
+            "categorySlug": "lifestyle",
+            "isFeatured": true,
+            "excerpt": "Simple routines for healthier skin.",
+            "featuredImage": "{{product_17}}",
+            "tags": "skincare,beauty,guide",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Good skincare doesn't have to be complicated."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "The Rise of Athleisure",
+            "slug": "rise-of-athleisure",
+            "categorySlug": "trends",
+            "isFeatured": false,
+            "excerpt": "How sportswear became everyday fashion.",
+            "featuredImage": "{{product_9}}",
+            "tags": "athleisure,fashion,trends",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "From gym to street, athleisure has transformed how we dress."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Investing in Quality: When to Splurge",
+            "slug": "investing-quality-when-to-splurge",
+            "categorySlug": "shopping-tips",
+            "isFeatured": false,
+            "excerpt": "Items worth investing in for the long term.",
+            "featuredImage": "{{blog_2}}",
+            "tags": "quality,investment,shopping",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Some items are worth paying more for. Here's what to prioritize."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Weekend Bag Essentials",
+            "slug": "weekend-bag-essentials",
+            "categorySlug": "lifestyle",
+            "isFeatured": false,
+            "excerpt": "What to pack for the perfect getaway.",
+            "featuredImage": "{{product_8}}",
+            "tags": "travel,packing,weekend",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Pack smart for your next weekend trip with these essentials."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "How to Care for Leather Products",
+            "slug": "how-to-care-leather-products",
+            "categorySlug": "product-reviews",
+            "isFeatured": false,
+            "excerpt": "Keep your leather items looking their best.",
+            "featuredImage": "{{product_15}}",
+            "tags": "leather,care,maintenance",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Proper care extends the life of your leather goods significantly."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "The Perfect Fragrance for Every Occasion",
+            "slug": "perfect-fragrance-every-occasion",
+            "categorySlug": "style-guide",
+            "isFeatured": false,
+            "excerpt": "Choosing the right scent for work, dates, and more.",
+            "featuredImage": "{{product_5}}",
+            "tags": "fragrance,style,occasions",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Your fragrance is part of your signature style."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Summer Style: Staying Cool and Stylish",
+            "slug": "summer-style-cool-stylish",
+            "categorySlug": "trends",
+            "isFeatured": true,
+            "excerpt": "Fashion tips for beating the heat in style.",
+            "featuredImage": "{{blog_5}}",
+            "tags": "summer,style,fashion",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Stay comfortable without sacrificing your style this summer."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Desk Organization for Productivity",
+            "slug": "desk-organization-productivity",
+            "categorySlug": "lifestyle",
+            "isFeatured": false,
+            "excerpt": "Clear desk, clear mind: organizing for success.",
+            "featuredImage": "{{product_18}}",
+            "tags": "organization,productivity,workspace",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "A well-organized desk can boost your productivity significantly."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Choosing the Right Sunglasses for Your Face",
+            "slug": "choosing-sunglasses-face-shape",
+            "categorySlug": "style-guide",
+            "isFeatured": false,
+            "excerpt": "Find frames that complement your features.",
+            "featuredImage": "{{product_6}}",
+            "tags": "sunglasses,style,guide",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "The right sunglasses can enhance your entire look."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Technology and Fashion: The Wearable Revolution",
+            "slug": "technology-fashion-wearable",
+            "categorySlug": "trends",
+            "isFeatured": false,
+            "excerpt": "How tech is changing what we wear.",
+            "featuredImage": "{{product_10}}",
+            "tags": "tech,fashion,wearables",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "From smartwatches to smart fabrics, technology is revolutionizing fashion."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Best Fitness Gadgets of 2024",
+            "slug": "best-fitness-gadgets-2024",
+            "categorySlug": "tech-news",
+            "isFeatured": true,
+            "excerpt": "Top fitness technology to track your health goals.",
+            "featuredImage": "{{product_10}}",
+            "tags": "fitness,tech,gadgets",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Explore the latest fitness technology innovations."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Morning Routines for Success",
+            "slug": "morning-routines-success",
+            "categorySlug": "wellness",
+            "isFeatured": false,
+            "excerpt": "Start your day right with these healthy habits.",
+            "featuredImage": "{{blog_7}}",
+            "tags": "wellness,lifestyle,habits",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Building a strong morning routine sets the tone for your entire day."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Home Office Setup Guide 2024",
+            "slug": "home-office-setup-2024",
+            "categorySlug": "lifestyle",
+            "isFeatured": true,
+            "excerpt": "Create the perfect work-from-home environment.",
+            "featuredImage": "{{product_18}}",
+            "tags": "home,office,productivity",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Essential tips for setting up your home office."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Smartphone Photography Tips",
+            "slug": "smartphone-photography-tips",
+            "categorySlug": "tech-news",
+            "isFeatured": false,
+            "excerpt": "Take professional photos with your phone.",
+            "featuredImage": "{{product_4}}",
+            "tags": "photography,smartphone,tips",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Master mobile photography with these expert tips."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Mindfulness in Modern Life",
+            "slug": "mindfulness-modern-life",
+            "categorySlug": "wellness",
+            "isFeatured": true,
+            "excerpt": "Finding peace in a busy world.",
+            "featuredImage": "{{blog_4}}",
+            "tags": "mindfulness,wellness,mental health",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Practical mindfulness techniques for everyday life."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Best Accessories Under $50",
+            "slug": "best-accessories-under-50",
+            "categorySlug": "shopping-tips",
+            "isFeatured": false,
+            "excerpt": "Affordable accessories that look expensive.",
+            "featuredImage": "{{product_6}}",
+            "tags": "accessories,budget,style",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Quality accessories at affordable prices."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Men's Style Essentials 2024",
+            "slug": "mens-style-essentials-2024",
+            "categorySlug": "style-guide",
+            "isFeatured": false,
+            "excerpt": "Must-have items for the modern gentleman.",
+            "featuredImage": "{{blog_3}}",
+            "tags": "men,fashion,essentials",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Build a versatile wardrobe with these essentials."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Smart Home Buying Guide",
+            "slug": "smart-home-buying-guide",
+            "categorySlug": "tech-news",
+            "isFeatured": false,
+            "excerpt": "Transform your home with smart technology.",
+            "featuredImage": "{{blog_6}}",
+            "tags": "smart home,tech,guide",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Complete guide to smart home devices."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Fall Fashion Preview",
+            "slug": "fall-fashion-preview",
+            "categorySlug": "trends",
+            "isFeatured": true,
+            "excerpt": "What's trending this fall season.",
+            "featuredImage": "{{blog_2}}",
+            "tags": "fall,fashion,trends",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Get ready for fall with these style trends."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Healthy Snacks for Work",
+            "slug": "healthy-snacks-work",
+            "categorySlug": "wellness",
+            "isFeatured": false,
+            "excerpt": "Fuel your workday with nutritious snacks.",
+            "featuredImage": "{{blog_1}}",
+            "tags": "health,snacks,work",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Nutritious snack ideas for busy professionals."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Laptop Buying Guide 2024",
+            "slug": "laptop-buying-guide-2024",
+            "categorySlug": "product-reviews",
+            "isFeatured": true,
+            "excerpt": "Find the perfect laptop for your needs.",
+            "featuredImage": "{{product_18}}",
+            "tags": "laptop,tech,buying guide",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Compare the best laptops of the year."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Weekend Outfit Ideas",
+            "slug": "weekend-outfit-ideas",
+            "categorySlug": "style-guide",
+            "isFeatured": false,
+            "excerpt": "Casual looks for your days off.",
+            "featuredImage": "{{blog_5}}",
+            "tags": "weekend,casual,outfits",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Effortless style for your weekend activities."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Best Coffee Accessories",
+            "slug": "best-coffee-accessories",
+            "categorySlug": "product-reviews",
+            "isFeatured": false,
+            "excerpt": "Upgrade your coffee experience.",
+            "featuredImage": "{{product_1}}",
+            "tags": "coffee,accessories,home",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Essential accessories for coffee lovers."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Winter Skincare Routine",
+            "slug": "winter-skincare-routine",
+            "categorySlug": "wellness",
+            "isFeatured": false,
+            "excerpt": "Protect your skin in cold weather.",
+            "featuredImage": "{{product_17}}",
+            "tags": "skincare,winter,beauty",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Keep your skin hydrated during winter."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Gift Ideas for Tech Lovers",
+            "slug": "gift-ideas-tech-lovers",
+            "categorySlug": "shopping-tips",
+            "isFeatured": true,
+            "excerpt": "Perfect gifts for the tech enthusiast.",
+            "featuredImage": "{{product_12}}",
+            "tags": "gifts,tech,ideas",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Top tech gifts for any occasion."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Best Fitness Gadgets of 2024",
+            "slug": "best-fitness-gadgets-2024",
+            "categorySlug": "tech-news",
+            "isFeatured": true,
+            "excerpt": "Top fitness technology to track your health goals.",
+            "featuredImage": "{{product_10}}",
+            "tags": "fitness,tech,gadgets",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Explore the latest fitness technology innovations."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Morning Routines for Success",
+            "slug": "morning-routines-success",
+            "categorySlug": "wellness",
+            "isFeatured": false,
+            "excerpt": "Start your day right with these healthy habits.",
+            "featuredImage": "{{blog_7}}",
+            "tags": "wellness,lifestyle,habits",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Building a strong morning routine sets the tone for your entire day."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Home Office Setup Guide 2024",
+            "slug": "home-office-setup-2024",
+            "categorySlug": "lifestyle",
+            "isFeatured": true,
+            "excerpt": "Create the perfect work-from-home environment.",
+            "featuredImage": "{{product_18}}",
+            "tags": "home,office,productivity",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Essential tips for setting up your home office."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Smartphone Photography Tips",
+            "slug": "smartphone-photography-tips",
+            "categorySlug": "tech-news",
+            "isFeatured": false,
+            "excerpt": "Take professional photos with your phone.",
+            "featuredImage": "{{product_4}}",
+            "tags": "photography,smartphone,tips",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Master mobile photography with these expert tips."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Mindfulness in Modern Life",
+            "slug": "mindfulness-modern-life",
+            "categorySlug": "wellness",
+            "isFeatured": true,
+            "excerpt": "Finding peace in a busy world.",
+            "featuredImage": "{{blog_4}}",
+            "tags": "mindfulness,wellness,mental health",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Practical mindfulness techniques for everyday life."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Best Accessories Under $50",
+            "slug": "best-accessories-under-50",
+            "categorySlug": "shopping-tips",
+            "isFeatured": false,
+            "excerpt": "Affordable accessories that look expensive.",
+            "featuredImage": "{{product_6}}",
+            "tags": "accessories,budget,style",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Quality accessories at affordable prices."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Men's Style Essentials 2024",
+            "slug": "mens-style-essentials-2024",
+            "categorySlug": "style-guide",
+            "isFeatured": false,
+            "excerpt": "Must-have items for the modern gentleman.",
+            "featuredImage": "{{blog_3}}",
+            "tags": "men,fashion,essentials",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Build a versatile wardrobe with these essentials."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Smart Home Buying Guide",
+            "slug": "smart-home-buying-guide",
+            "categorySlug": "tech-news",
+            "isFeatured": false,
+            "excerpt": "Transform your home with smart technology.",
+            "featuredImage": "{{blog_6}}",
+            "tags": "smart home,tech,guide",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Complete guide to smart home devices."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Fall Fashion Preview",
+            "slug": "fall-fashion-preview",
+            "categorySlug": "trends",
+            "isFeatured": true,
+            "excerpt": "What's trending this fall season.",
+            "featuredImage": "{{blog_2}}",
+            "tags": "fall,fashion,trends",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Get ready for fall with these style trends."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Healthy Snacks for Work",
+            "slug": "healthy-snacks-work",
+            "categorySlug": "wellness",
+            "isFeatured": false,
+            "excerpt": "Fuel your workday with nutritious snacks.",
+            "featuredImage": "{{blog_1}}",
+            "tags": "health,snacks,work",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Nutritious snack ideas for busy professionals."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Laptop Buying Guide 2024",
+            "slug": "laptop-buying-guide-2024",
+            "categorySlug": "product-reviews",
+            "isFeatured": true,
+            "excerpt": "Find the perfect laptop for your needs.",
+            "featuredImage": "{{product_18}}",
+            "tags": "laptop,tech,buying guide",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Compare the best laptops of the year."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Weekend Outfit Ideas",
+            "slug": "weekend-outfit-ideas",
+            "categorySlug": "style-guide",
+            "isFeatured": false,
+            "excerpt": "Casual looks for your days off.",
+            "featuredImage": "{{blog_5}}",
+            "tags": "weekend,casual,outfits",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Effortless style for your weekend activities."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Best Coffee Accessories",
+            "slug": "best-coffee-accessories",
+            "categorySlug": "product-reviews",
+            "isFeatured": false,
+            "excerpt": "Upgrade your coffee experience.",
+            "featuredImage": "{{product_1}}",
+            "tags": "coffee,accessories,home",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Essential accessories for coffee lovers."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Winter Skincare Routine",
+            "slug": "winter-skincare-routine",
+            "categorySlug": "wellness",
+            "isFeatured": false,
+            "excerpt": "Protect your skin in cold weather.",
+            "featuredImage": "{{product_17}}",
+            "tags": "skincare,winter,beauty",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Keep your skin hydrated during winter."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "title": "Gift Ideas for Tech Lovers",
+            "slug": "gift-ideas-tech-lovers",
+            "categorySlug": "shopping-tips",
+            "isFeatured": true,
+            "excerpt": "Perfect gifts for the tech enthusiast.",
+            "featuredImage": "{{product_12}}",
+            "tags": "gifts,tech,ideas",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Top tech gifts for any occasion."
+                        }
+                    }
+                ]
+            }
         }
     ],
     "menus": [
@@ -630,14 +2968,19 @@
                     "order": 2
                 },
                 {
+                    "label": "Blog",
+                    "url": "/blog",
+                    "order": 3
+                },
+                {
                     "label": "FAQ",
                     "url": "/faq",
-                    "order": 3
+                    "order": 4
                 },
                 {
                     "label": "Contact",
                     "url": "/contact",
-                    "order": 4
+                    "order": 5
                 }
             ]
         },

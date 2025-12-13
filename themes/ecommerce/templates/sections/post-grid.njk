@@ -1,0 +1,41 @@
+{# Post Grid Section Template #}
+<section class="section-post-grid blog-section">
+    <div class="container">
+        {% if section.settings.title %}
+            <div class="section-header">
+                <h2>{{ section.settings.title }}</h2>
+                {% if section.settings.subtitle %}<p>{{ section.settings.subtitle }}</p>{% endif %}
+            </div>
+        {% endif %}
+        
+        <div class="blog-grid" style="grid-template-columns: repeat({{ section.settings.columns or 3 }}, 1fr);">
+            {% set displayPosts = sectionPosts[section.id] or [] %}
+            {% for post in displayPosts %}
+                <article class="blog-card">
+                    <a href="/blog/{{ post.slug }}" class="blog-image">
+                        {% if post.featuredImage %}
+                            <img src="{{ post.featuredImage }}" alt="{{ post.title }}" loading="lazy">
+                        {% else %}
+                            <div class="placeholder-image"></div>
+                        {% endif %}
+                    </a>
+                    <div class="blog-content">
+                        {% if post.category %}<span class="blog-category">{{ post.category.name }}</span>{% endif %}
+                        <h3><a href="/blog/{{ post.slug }}">{{ post.title }}</a></h3>
+                        {% if section.settings.showExcerpt %}<p>{{ post.excerpt | truncate(100) }}</p>{% endif %}
+                        <div class="blog-meta">
+                            <span>{{ post.createdAt | date }}</span>
+                            <span>{{ post.content | readingTime }}</span>
+                        </div>
+                    </div>
+                </article>
+            {% else %}
+                <p class="empty-state">No posts found</p>
+            {% endfor %}
+        </div>
+        
+        <div class="section-footer">
+            <a href="/blog" class="btn btn-outline">View All Posts</a>
+        </div>
+    </div>
+</section>

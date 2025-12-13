@@ -1,0 +1,24 @@
+{# Breaking News Ticker #}
+<div class="breaking-news">
+    <div class="container breaking-news-inner">
+        <span class="breaking-label">{{ section.settings.label | default('TIN NÓNG') }}</span>
+        <div class="breaking-ticker">
+            <div class="ticker-track">
+                {% if section.settings.items and section.settings.items.length %}
+                    {% for item in section.settings.items %}
+                    <a href="{{ item.url | default('#') }}" class="ticker-item">
+                        {{ item.text }}
+                    </a>
+                    {% endfor %}
+                {% else %}
+                    {# Fallback to latest posts #}
+                    {% for post in posts | slice(0, 5) %}
+                    <a href="/blog/{{ post.slug }}" class="ticker-item">
+                        {{ post.title }}
+                    </a>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

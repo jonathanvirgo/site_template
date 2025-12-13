@@ -1,0 +1,99 @@
+{% extends "layouts/default.njk" %}
+{% block bodyClass %}page-archive{% endblock %}
+{% block content %}
+<!-- Page Header -->
+<section class="page-header blog-header">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <a href="/blog">Blog</a>
+      <span>/</span>
+      <span>{{ category.name }}</span>
+    </nav>
+    <h1>{{ category.name }}</h1>
+    {% if category.description %}
+      <p>{{ category.description }}</p>
+    {% endif %}
+  </div>
+</section>
+
+<!-- Blog Grid -->
+<section class="blog-section">
+  <div class="container">
+    {% if posts and posts.length %}
+    <div class="blog-grid">
+      {% for post in posts %}
+      <article class="blog-card">
+        <a href="/blog/{{ post.slug }}" class="blog-image">
+          {% if post.featuredImage %}
+            <img src="{{ post.featuredImage }}" alt="{{ post.title }}" loading="lazy">
+          {% else %}
+            <div class="placeholder-image">
+              <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1"><rect x="4" y="8" width="40" height="32" rx="4"/><line x1="4" y1="16" x2="44" y2="16"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
+          {% endif %}
+        </a>
+        <div class="blog-content">
+          <span class="blog-category">{{ category.name }}</span>
+          <h3><a href="/blog/{{ post.slug }}">{{ post.title }}</a></h3>
+          <p>{{ post.excerpt | truncate(120) }}</p>
+          <div class="blog-footer">
+            <div class="blog-author">
+              <div class="author-avatar">
+                {% if post.author and post.author.avatar %}
+                  <img src="{{ post.author.avatar }}" alt="{{ post.author.name }}">
+                {% else %}
+                  <span>{{ post.author.name[0] if post.author else 'A' }}</span>
+                {% endif %}
+              </div>
+              <span class="author-name">{{ post.author.name if post.author else 'Admin' }}</span>
+            </div>
+            <div class="blog-meta">
+              <span>{{ post.createdAt | date }}</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+
+    {% if hasMore %}
+    <div class="pagination">
+      {% if currentPage > 1 %}
+        <a href="?page={{ currentPage - 1 }}" class="btn btn-outline">← Previous</a>
+      {% endif %}
+      <span class="page-info">Page {{ currentPage }}</span>
+      <a href="?page={{ currentPage + 1 }}" class="btn btn-outline">Next →</a>
+    </div>
+    {% endif %}
+    {% else %}
+    <div class="empty-state">
+      <svg width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="8" y="8" width="48" height="48" rx="8"/><line x1="16" y1="20" x2="48" y2="20"/><line x1="16" y1="28" x2="40" y2="28"/><line x1="16" y1="36" x2="44" y2="36"/></svg>
+      <h3>No posts in this category</h3>
+      <p>Check back soon for new articles!</p>
+      <a href="/blog" class="btn btn-primary">View All Posts</a>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<!-- All Categories -->
+{% if categories and categories.length %}
+<section class="categories-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Browse All Categories</h2>
+    </div>
+    <div class="categories-grid">
+      {% for cat in categories %}
+      <a href="/blog/category/{{ cat.slug }}" class="category-card {% if cat.id == category.id %}active{% endif %}">
+        <h3>{{ cat.name }}</h3>
+        <p>{{ cat._count.posts }} articles</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

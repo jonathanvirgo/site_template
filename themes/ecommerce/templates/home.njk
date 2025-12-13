@@ -1,65 +1,294 @@
 {% extends "layouts/default.njk" %}
 {% block bodyClass %}page-home{% endblock %}
 {% block content %}
-{% for block in page.content.blocks %}
-  {% if block.type == 'hero' %}
-  <section class="hero">
-    <div class="container">
-      <span class="tagline">{{ block.data.tagline }}</span>
-      <h1>{{ block.data.title }}</h1>
-      <p class="subtitle">{{ block.data.subtitle }}</p>
-      <div class="hero-buttons">
-        <a href="{{ block.data.cta.url }}" class="btn btn-primary">{{ block.data.cta.text }}</a>
-        <a href="{{ block.data.secondaryCta.url }}" class="btn btn-link">{{ block.data.secondaryCta.text }} ↓</a>
-      </div>
+
+{# Render Dynamic Sections from Visual Builder #}
+{% if page.content and page.content.sections and page.content.sections.length %}
+    {% for section in page.content.sections %}
+        {% if section.type == 'hero' %}
+            {% include "sections/hero.njk" %}
+        {% elif section.type == 'top_bar' %}
+            {% include "sections/top-bar.njk" %}
+        {% elif section.type == 'breaking_news' %}
+            {% include "sections/breaking-news.njk" %}
+        {% elif section.type == 'featured_news' %}
+            {% include "sections/featured-news.njk" %}
+        {% elif section.type == 'news_category' %}
+            {% include "sections/news-category.njk" %}
+        {% elif section.type == 'product_category_banner' %}
+            {% include "sections/product-category-banner.njk" %}
+        {% elif section.type == 'brand_logos' %}
+            {% include "sections/brand-logos.njk" %}
+        {% elif section.type == 'product_grid' or section.type == 'product_carousel' %}
+            {% include "sections/product-grid.njk" %}
+        {% elif section.type == 'post_grid' or section.type == 'post_slider' %}
+            {% include "sections/post-grid.njk" %}
+        {% elif section.type == 'categories' %}
+            {% include "sections/categories.njk" %}
+        {% elif section.type == 'banner' %}
+            {% include "sections/banner.njk" %}
+        {% elif section.type == 'newsletter' %}
+            {% include "sections/newsletter.njk" %}
+        {% elif section.type == 'trust_badges' %}
+            {% include "sections/trust-badges.njk" %}
+        {% elif section.type == 'rich_text' %}
+            {% include "sections/rich-text.njk" %}
+        {% elif section.type == 'spacer' %}
+            {% include "sections/spacer.njk" %}
+        {% endif %}
+    {% endfor %}
+{% else %}
+    {# Default News Magazine + E-commerce Layout #}
+    
+    {# Breaking News #}
+    <div class="breaking-news">
+        <div class="container breaking-news-inner">
+            <span class="breaking-label">TIN NÓNG</span>
+            <div class="breaking-ticker">
+                <div class="ticker-track">
+                    {% for post in posts | slice(0, 5) %}
+                    <a href="/blog/{{ post.slug }}" class="ticker-item">
+                        {{ post.title }}
+                    </a>
+                    {% endfor %}
+                    {% for post in posts | slice(0, 5) %}
+                    <a href="/blog/{{ post.slug }}" class="ticker-item">
+                        {{ post.title }}
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="hero-image"><img src="{{ block.data.image }}" alt="Product"></div>
-  </section>
-  {% elif block.type == 'product-showcase' %}
-  <section class="showcase" id="features">
-    <div class="container">
-      <h2>{{ block.data.title }}</h2>
-      <p>{{ block.data.description }}</p>
-    </div>
-    <div class="showcase-image"><img src="{{ block.data.image }}" alt="Product"></div>
-  </section>
-  {% elif block.type == 'features-split' %}
-  <section class="features-split">
-    <div class="container">
-      {% for item in block.data.items %}
-      <div class="feature-row">
-        <div class="feature-content"><h3>{{ item.title }}</h3><p>{{ item.description }}</p></div>
-        <div class="feature-image"><img src="{{ item.image }}" alt="{{ item.title }}"></div>
-      </div>
-      {% endfor %}
-    </div>
-  </section>
-  {% elif block.type == 'product-gallery' %}
-  <section class="gallery">
-    <div class="container"><h2>{{ block.data.title }}</h2></div>
-    <div class="gallery-scroll">
-      {% for img in block.data.images %}<img src="{{ img }}" alt="Product">{% endfor %}
-    </div>
-  </section>
-  {% elif block.type == 'specs' %}
-  <section class="specs" id="specs">
-    <div class="container">
-      <h2>{{ block.data.title }}</h2>
-      <div class="specs-grid">
-        {% for item in block.data.items %}
-        <div class="spec-item"><span class="spec-value">{{ item.value }}</span><span class="spec-label">{{ item.label }}</span></div>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-  {% elif block.type == 'cta' %}
-  <section class="cta">
-    <div class="container">
-      <h2>{{ block.data.title }}</h2>
-      <p>{{ block.data.description }}</p>
-      <a href="{{ block.data.buttonUrl }}" class="btn btn-primary btn-lg">{{ block.data.buttonText }}</a>
-    </div>
-  </section>
-  {% endif %}
-{% endfor %}
+    
+    {# Featured News Section #}
+    <section class="featured-news-section">
+        <div class="container">
+            <div class="featured-news-grid">
+                {# Main Featured Story #}
+                <div class="featured-main">
+                    {% if posts and posts.length %}
+                    {% set featured = posts[0] %}
+                    <a href="/blog/{{ featured.slug }}" class="featured-card featured-large">
+                        <div class="featured-image">
+                            {% if featured.featuredImage %}
+                            <img src="{{ featured.featuredImage }}" alt="{{ featured.title }}" loading="lazy">
+                            {% else %}
+                            <div class="featured-image-placeholder"></div>
+                            {% endif %}
+                        </div>
+                        <div class="featured-overlay">
+                            {% if featured.category %}
+                            <span class="featured-category">{{ featured.category.name | default(featured.category) }}</span>
+                            {% endif %}
+                            <h2 class="featured-title">{{ featured.title }}</h2>
+                            <p class="featured-excerpt">{{ featured.excerpt | truncate(150) }}</p>
+                            <div class="featured-meta">
+                                <span class="meta-date">{{ featured.createdAt | date('DD/MM/YYYY') }}</span>
+                            </div>
+                        </div>
+                    </a>
+                    {% endif %}
+                </div>
+                
+                {# Side Stories #}
+                <div class="featured-side">
+                    {% for item in posts | slice(1, 5) %}
+                    <a href="/blog/{{ item.slug }}" class="featured-card featured-small">
+                        <div class="featured-image">
+                            {% if item.featuredImage %}
+                            <img src="{{ item.featuredImage }}" alt="{{ item.title }}" loading="lazy">
+                            {% else %}
+                            <div class="featured-image-placeholder"></div>
+                            {% endif %}
+                        </div>
+                        <div class="featured-content">
+                            {% if item.category %}
+                            <span class="featured-category">{{ item.category.name | default(item.category) }}</span>
+                            {% endif %}
+                            <h3 class="featured-title">{{ item.title }}</h3>
+                            <span class="meta-date">{{ item.createdAt | date('DD/MM/YYYY') }}</span>
+                        </div>
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    {# Product Category Section 1 #}
+    {% if products and products.length %}
+    <section class="product-category-section">
+        <div class="container">
+            <div class="section-header-row">
+                <h2 class="section-title">
+                    <span class="title-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                    </span>
+                    Sản phẩm nổi bật
+                </h2>
+                <a href="/products" class="view-all-link">
+                    Xem tất cả
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="product-banner-grid">
+                <div class="category-banner">
+                    <div class="banner-placeholder">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                            <polyline points="21 15 16 10 5 21"></polyline>
+                        </svg>
+                        <span>Banner danh mục</span>
+                    </div>
+                </div>
+                
+                <div class="category-products">
+                    {% for product in products | slice(0, 6) %}
+                    <div class="product-mini-card">
+                        <a href="/products/{{ product.slug }}" class="product-mini-image">
+                            {% if product.featuredImage %}
+                            <img src="{{ product.featuredImage }}" alt="{{ product.name }}" loading="lazy">
+                            {% else %}
+                            <div class="product-image-placeholder">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                </svg>
+                            </div>
+                            {% endif %}
+                            {% if product.salePrice %}
+                            <span class="product-badge badge-sale">-{{ ((product.price - product.salePrice) / product.price * 100) | round }}%</span>
+                            {% endif %}
+                        </a>
+                        <div class="product-mini-info">
+                            <h4 class="product-mini-name">
+                                <a href="/products/{{ product.slug }}">{{ product.name | truncate(40) }}</a>
+                            </h4>
+                            <div class="product-mini-price">
+                                {% if product.salePrice %}
+                                <span class="price-sale">{{ product.salePrice | currency('') }}₫</span>
+                                <span class="price-original">{{ product.price | currency('') }}₫</span>
+                                {% else %}
+                                <span class="price-current">{{ product.price | currency('') }}₫</span>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+    
+    {# News Category Section #}
+    {% if posts and posts.length > 5 %}
+    <section class="news-category-section bg-alt">
+        <div class="container">
+            <div class="section-header-row">
+                <h2 class="section-title">
+                    <span class="title-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </span>
+                    Tin tức mới nhất
+                </h2>
+                <a href="/blog" class="view-all-link">
+                    Xem tất cả
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="news-category-grid">
+                {% for post in posts | slice(5, 11) %}
+                <article class="news-category-card">
+                    <a href="/blog/{{ post.slug }}" class="card-image-link">
+                        {% if post.featuredImage %}
+                        <img src="{{ post.featuredImage }}" alt="{{ post.title }}" loading="lazy">
+                        {% else %}
+                        <div class="card-image-placeholder">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
+                        {% endif %}
+                    </a>
+                    <div class="card-content">
+                        {% if post.category %}
+                        <a href="/blog/category/{{ post.category.slug | default(post.category | lower | replace(' ', '-')) }}" class="card-category">
+                            {{ post.category.name | default(post.category) }}
+                        </a>
+                        {% endif %}
+                        <h3 class="card-title">
+                            <a href="/blog/{{ post.slug }}">{{ post.title }}</a>
+                        </h3>
+                        <p class="card-excerpt">{{ post.excerpt | truncate(100) }}</p>
+                        <div class="card-meta">
+                            <span class="meta-date">{{ post.createdAt | date('DD/MM/YYYY') }}</span>
+                        </div>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+    
+    {# Brand Logos #}
+    <section class="brand-logos-section">
+        <div class="container">
+            <div class="section-header-row">
+                <h2 class="section-title">Đối tác của chúng tôi</h2>
+            </div>
+            <div class="brand-logos-track">
+                {% for i in range(6) %}
+                <div class="brand-logo-item brand-logo-placeholder">
+                    <svg width="80" height="40" viewBox="0 0 80 40" fill="none">
+                        <rect width="80" height="40" rx="4" fill="#E5E7EB"/>
+                        <text x="40" y="24" text-anchor="middle" fill="#9CA3AF" font-size="10">Logo {{ loop.index }}</text>
+                    </svg>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    
+    {# Newsletter #}
+    <section class="newsletter-section section-newsletter">
+        <div class="container">
+            <div class="newsletter-box">
+                <div class="newsletter-content">
+                    <h2>Đăng ký nhận tin</h2>
+                    <p>Nhận thông tin sản phẩm mới và ưu đãi đặc biệt</p>
+                </div>
+                <form class="newsletter-form-inline">
+                    <input type="email" placeholder="Nhập email của bạn...">
+                    <button type="submit" class="btn btn-primary">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
 {% endblock %}

@@ -2,55 +2,61 @@
     "images": [
         {
             "placeholder": "{{hero_image}}",
-            "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1600&q=80",
-            "filename": "hero-team.jpg",
-            "alt": "Modern office team collaboration"
+            "url": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80",
+            "filename": "hero-office.jpg",
+            "alt": "Modern office space"
         },
         {
             "placeholder": "{{feature_1}}",
+            "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80",
+            "filename": "feature-team.jpg",
+            "alt": "Team collaboration"
+        },
+        {
+            "placeholder": "{{feature_2}}",
             "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
             "filename": "feature-analytics.jpg",
             "alt": "Analytics dashboard"
         },
         {
-            "placeholder": "{{feature_2}}",
-            "url": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80",
-            "filename": "feature-security.jpg",
-            "alt": "Security concept"
-        },
-        {
             "placeholder": "{{feature_3}}",
-            "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-            "filename": "feature-automation.jpg",
-            "alt": "Automation dashboard"
+            "url": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80",
+            "filename": "feature-integration.jpg",
+            "alt": "System integration"
         },
         {
-            "placeholder": "{{testimonial_1}}",
+            "placeholder": "{{case_1}}",
+            "url": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80",
+            "filename": "case-startup.jpg",
+            "alt": "Startup office"
+        },
+        {
+            "placeholder": "{{case_2}}",
+            "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80",
+            "filename": "case-enterprise.jpg",
+            "alt": "Enterprise team"
+        },
+        {
+            "placeholder": "{{team_1}}",
             "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
-            "filename": "testimonial-1.jpg",
-            "alt": "Business professional"
+            "filename": "team-ceo.jpg",
+            "alt": "CEO portrait"
         },
         {
-            "placeholder": "{{testimonial_2}}",
+            "placeholder": "{{team_2}}",
             "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
-            "filename": "testimonial-2.jpg",
-            "alt": "Business professional"
+            "filename": "team-cto.jpg",
+            "alt": "CTO portrait"
         },
         {
-            "placeholder": "{{testimonial_3}}",
+            "placeholder": "{{team_3}}",
             "url": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80",
-            "filename": "testimonial-3.jpg",
-            "alt": "Business professional"
-        },
-        {
-            "placeholder": "{{about_image}}",
-            "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80",
-            "filename": "about-team.jpg",
-            "alt": "Team meeting"
+            "filename": "team-coo.jpg",
+            "alt": "COO portrait"
         },
         {
             "placeholder": "{{thumbnail}}",
-            "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80",
+            "url": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
             "filename": "thumbnail.jpg",
             "alt": "Theme thumbnail"
         }
@@ -61,79 +67,88 @@
             "slug": "home",
             "template": "home",
             "isHomepage": true,
-            "excerpt": "The modern platform for your business growth.",
+            "excerpt": "The modern platform for growing businesses.",
             "featuredImage": "{{hero_image}}",
             "content": {
                 "blocks": [
                     {
                         "type": "hero",
                         "data": {
-                            "title": "Infrastructure for the internet",
-                            "subtitle": "Millions of companies use our platform to accept payments, grow revenue, and accelerate their business.",
-                            "cta": {
-                                "text": "Start now →",
-                                "url": "/pricing"
+                            "title": "Build Something Amazing",
+                            "subtitle": "The all-in-one platform that helps you grow your business faster.",
+                            "primaryButton": {
+                                "text": "Start Free Trial",
+                                "url": "#pricing"
                             },
-                            "secondaryCta": {
-                                "text": "Contact sales",
-                                "url": "/contact"
-                            },
-                            "showLogos": true,
-                            "logos": [
-                                "Stripe",
-                                "Airbnb",
-                                "Shopify",
-                                "Slack",
-                                "Zoom"
-                            ]
+                            "secondaryButton": {
+                                "text": "Watch Demo",
+                                "url": "#demo"
+                            }
+                        }
+                    },
+                    {
+                        "type": "logos",
+                        "data": {
+                            "title": "Trusted by 10,000+ companies worldwide"
                         }
                     },
                     {
                         "type": "features",
                         "data": {
-                            "title": "A fully integrated suite of products",
-                            "subtitle": "Everything you need to build a world-class business",
+                            "title": "Everything you need to scale",
                             "items": [
                                 {
-                                    "icon": "chart",
-                                    "title": "Real-time Analytics",
-                                    "description": "Get instant insights into your business performance with our powerful analytics dashboard.",
+                                    "title": "Team Collaboration",
+                                    "description": "Work together seamlessly with real-time editing and commenting.",
                                     "image": "{{feature_1}}"
                                 },
                                 {
-                                    "icon": "shield",
-                                    "title": "Enterprise Security",
-                                    "description": "Bank-grade security to keep your data safe. SOC 2 Type II certified.",
+                                    "title": "Powerful Analytics",
+                                    "description": "Understand your data with beautiful, actionable dashboards.",
                                     "image": "{{feature_2}}"
                                 },
                                 {
-                                    "icon": "zap",
-                                    "title": "Automation",
-                                    "description": "Automate repetitive tasks and workflows to focus on what matters.",
+                                    "title": "Seamless Integrations",
+                                    "description": "Connect with 500+ tools you already use.",
                                     "image": "{{feature_3}}"
                                 }
                             ]
                         }
                     },
                     {
-                        "type": "stats",
+                        "type": "pricing",
                         "data": {
-                            "items": [
+                            "title": "Simple, transparent pricing",
+                            "plans": [
                                 {
-                                    "value": "99.9%",
-                                    "label": "Uptime SLA"
+                                    "name": "Starter",
+                                    "price": 29,
+                                    "features": [
+                                        "5 users",
+                                        "10GB storage",
+                                        "Basic analytics"
+                                    ]
                                 },
                                 {
-                                    "value": "100M+",
-                                    "label": "API requests/day"
+                                    "name": "Pro",
+                                    "price": 79,
+                                    "featured": true,
+                                    "features": [
+                                        "Unlimited users",
+                                        "100GB storage",
+                                        "Advanced analytics",
+                                        "Priority support"
+                                    ]
                                 },
                                 {
-                                    "value": "190+",
-                                    "label": "Countries"
-                                },
-                                {
-                                    "value": "24/7",
-                                    "label": "Support"
+                                    "name": "Enterprise",
+                                    "price": "Custom",
+                                    "features": [
+                                        "Unlimited everything",
+                                        "Dedicated support",
+                                        "Custom integrations",
+                                        "SLA guarantee"
+                                    ]
                                 }
                             ]
                         }
@@ -141,109 +156,150 @@
                     {
                         "type": "testimonials",
                         "data": {
-                            "title": "Trusted by industry leaders",
-                            "items": [
-                                {
-                                    "quote": "This platform has transformed how we handle payments. The API is incredibly well-designed.",
-                                    "author": "John Smith",
-                                    "role": "CTO, TechCorp",
-                                    "image": "{{testimonial_1}}"
-                                },
-                                {
-                                    "quote": "We've seen a 40% increase in conversion since switching. The analytics are game-changing.",
-                                    "author": "Sarah Johnson",
-                                    "role": "VP Product, StartupX",
-                                    "image": "{{testimonial_2}}"
-                                },
-                                {
-                                    "quote": "The best developer experience I've encountered. Documentation is world-class.",
-                                    "author": "Mike Chen",
-                                    "role": "Lead Engineer, Fintech Inc",
-                                    "image": "{{testimonial_3}}"
-                                }
-                            ]
+                            "title": "Loved by teams everywhere"
                         }
                     },
                     {
                         "type": "cta",
                         "data": {
                             "title": "Ready to get started?",
-                            "description": "Create an account instantly and start building today.",
-                            "buttonText": "Start free trial",
-                            "buttonUrl": "/pricing"
+                            "subtitle": "Join 10,000+ companies already using our platform.",
+                            "buttonText": "Start Free Trial"
                         }
                     }
                 ]
             },
-            "seoTitle": "Business Platform - Infrastructure for Growth",
-            "seoDesc": "The modern platform for your business. Accept payments, grow revenue, and accelerate with enterprise-grade tools."
+            "seoTitle": "Business Pro - The Modern Platform for Growing Businesses",
+            "seoDesc": "The all-in-one platform that helps you grow your business faster. Trusted by 10,000+ companies."
         },
         {
-            "title": "Pricing",
-            "slug": "pricing",
+            "title": "Features",
+            "slug": "features",
             "template": "page",
-            "excerpt": "Simple, transparent pricing for every stage of your business.",
+            "excerpt": "Explore all the features that make us different.",
             "content": {
                 "blocks": [
                     {
                         "type": "heading",
                         "data": {
-                            "text": "Pricing",
+                            "text": "Features",
                             "level": 1
                         }
                     },
                     {
                         "type": "paragraph",
                         "data": {
-                            "text": "Choose the plan that's right for your business. All plans include core features."
+                            "text": "Everything you need to run your business, all in one place."
                         }
                     },
                     {
-                        "type": "pricing",
+                        "type": "feature-grid",
+                        "data": {
+                            "features": [
+                                {
+                                    "title": "Real-time Collaboration",
+                                    "description": "Work together with your team in real-time. See changes as they happen.",
+                                    "icon": "users"
+                                },
+                                {
+                                    "title": "Smart Analytics",
+                                    "description": "Get insights that matter with AI-powered analytics and reporting.",
+                                    "icon": "chart"
+                                },
+                                {
+                                    "title": "Workflow Automation",
+                                    "description": "Automate repetitive tasks and focus on what matters.",
+                                    "icon": "lightning"
+                                },
+                                {
+                                    "title": "Custom Integrations",
+                                    "description": "Connect with 500+ tools through our API and pre-built integrations.",
+                                    "icon": "plug"
+                                },
+                                {
+                                    "title": "Enterprise Security",
+                                    "description": "Bank-level encryption and compliance with SOC 2, GDPR, and HIPAA.",
+                                    "icon": "shield"
+                                },
+                                {
+                                    "title": "24/7 Support",
+                                    "description": "Get help whenever you need it from our dedicated support team.",
+                                    "icon": "headset"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Features - Business Pro",
+            "seoDesc": "Explore powerful features including real-time collaboration, analytics, and 500+ integrations."
+        },
+        {
+            "title": "Pricing",
+            "slug": "pricing",
+            "template": "page",
+            "excerpt": "Simple, transparent pricing for every team size.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Simple, Transparent Pricing",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "No hidden fees. No surprises. Try free for 14 days."
+                        }
+                    },
+                    {
+                        "type": "pricing-table",
                         "data": {
                             "plans": [
                                 {
                                     "name": "Starter",
-                                    "price": "$29",
-                                    "period": "/month",
-                                    "description": "Perfect for small teams getting started",
+                                    "price": 29,
+                                    "period": "month",
+                                    "description": "Perfect for small teams getting started.",
                                     "features": [
                                         "Up to 5 users",
                                         "10GB storage",
                                         "Basic analytics",
-                                        "Email support"
-                                    ],
-                                    "cta": "Get started"
+                                        "Email support",
+                                        "Core integrations"
+                                    ]
                                 },
                                 {
-                                    "name": "Professional",
-                                    "price": "$99",
-                                    "period": "/month",
-                                    "description": "For growing teams that need more",
+                                    "name": "Pro",
+                                    "price": 79,
+                                    "period": "month",
+                                    "description": "For growing teams that need more power.",
                                     "features": [
-                                        "Up to 25 users",
+                                        "Unlimited users",
                                         "100GB storage",
                                         "Advanced analytics",
                                         "Priority support",
+                                        "All integrations",
+                                        "Custom workflows",
                                         "API access"
                                     ],
-                                    "cta": "Get started",
-                                    "popular": true
+                                    "featured": true
                                 },
                                 {
                                     "name": "Enterprise",
                                     "price": "Custom",
-                                    "period": "",
-                                    "description": "For large organizations with custom needs",
+                                    "description": "For large organizations with custom needs.",
                                     "features": [
-                                        "Unlimited users",
-                                        "Unlimited storage",
-                                        "Custom analytics",
-                                        "Dedicated support",
+                                        "Unlimited everything",
+                                        "Dedicated success manager",
                                         "Custom integrations",
-                                        "SLA guarantee"
-                                    ],
-                                    "cta": "Contact sales"
+                                        "SLA guarantee",
+                                        "SSO & SAML",
+                                        "Audit logs",
+                                        "On-premise option"
+                                    ]
                                 }
                             ]
                         }
@@ -251,34 +307,33 @@
                     {
                         "type": "faq",
                         "data": {
-                            "title": "Frequently asked questions",
+                            "title": "Pricing FAQ",
                             "items": [
                                 {
                                     "question": "Can I change plans later?",
-                                    "answer": "Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately."
-                                },
-                                {
-                                    "question": "What payment methods do you accept?",
-                                    "answer": "We accept all major credit cards, PayPal, and bank transfers for annual plans."
+                                    "answer": "Yes, you can upgrade or downgrade at any time. Changes take effect immediately."
                                 },
                                 {
                                     "question": "Is there a free trial?",
-                                    "answer": "Yes, all plans come with a 14-day free trial. No credit card required."
+                                    "answer": "Yes! All plans include a 14-day free trial. No credit card required."
+                                },
+                                {
+                                    "question": "What payment methods do you accept?",
+                                    "answer": "We accept all major credit cards, PayPal, and wire transfer for Enterprise plans."
                                 }
                             ]
                         }
                     }
                 ]
             },
-            "seoTitle": "Pricing - Simple, Transparent Plans",
-            "seoDesc": "Choose the right plan for your business. All plans include core features with no hidden fees."
+            "seoTitle": "Pricing - Business Pro",
+            "seoDesc": "Simple, transparent pricing. Starter at $29/mo, Pro at $79/mo. Try free for 14 days."
         },
         {
             "title": "About",
             "slug": "about",
             "template": "page",
-            "excerpt": "Learn about our mission and team.",
-            "featuredImage": "{{about_image}}",
+            "excerpt": "Our mission, story, and the team behind the platform.",
             "content": {
                 "blocks": [
                     {
@@ -291,15 +346,7 @@
                     {
                         "type": "paragraph",
                         "data": {
-                            "text": "We're on a mission to increase the GDP of the internet. Founded in 2015, we've grown from a small startup to a global company serving millions of businesses."
-                        }
-                    },
-                    {
-                        "type": "image",
-                        "data": {
-                            "src": "{{about_image}}",
-                            "alt": "Our team",
-                            "caption": "Our global team building the future of commerce"
+                            "text": "We're on a mission to help every business work smarter. Founded in 2019, we've grown from a small startup to a team of 150+ people serving customers in over 80 countries."
                         }
                     },
                     {
@@ -307,43 +354,179 @@
                         "data": {
                             "items": [
                                 {
-                                    "value": "1000+",
-                                    "label": "Employees"
+                                    "value": "10,000+",
+                                    "label": "Customers"
                                 },
                                 {
-                                    "value": "25",
+                                    "value": "150+",
+                                    "label": "Team Members"
+                                },
+                                {
+                                    "value": "80+",
                                     "label": "Countries"
                                 },
                                 {
-                                    "value": "$10B+",
-                                    "label": "Processed annually"
+                                    "value": "$50M+",
+                                    "label": "Raised"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Our Story",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "We started because we were frustrated with the existing tools. They were either too simple and limited, or too complex and impossible to use. We believed there had to be a better way—software that's both powerful and delightful to use."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Leadership",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "team",
+                        "data": {
+                            "members": [
+                                {
+                                    "name": "Sarah Chen",
+                                    "role": "CEO & Co-founder",
+                                    "image": "{{team_1}}",
+                                    "bio": "Previously VP at Stripe. Stanford MBA."
+                                },
+                                {
+                                    "name": "Marcus Johnson",
+                                    "role": "CTO & Co-founder",
+                                    "image": "{{team_2}}",
+                                    "bio": "Ex-Google engineering lead. MIT CS."
+                                },
+                                {
+                                    "name": "Elena Rodriguez",
+                                    "role": "COO",
+                                    "image": "{{team_3}}",
+                                    "bio": "Former McKinsey partner. Harvard MBA."
                                 }
                             ]
                         }
                     }
                 ]
             },
-            "seoTitle": "About - Our Mission and Team",
-            "seoDesc": "Learn about our mission to increase the GDP of the internet and the team making it happen."
+            "seoTitle": "About - Business Pro",
+            "seoDesc": "Learn about our mission to help every business work smarter. 10,000+ customers in 80+ countries."
         },
         {
-            "title": "Contact",
-            "slug": "contact",
+            "title": "Case Studies",
+            "slug": "case-studies",
             "template": "page",
-            "excerpt": "Get in touch with our sales team.",
+            "excerpt": "See how companies are succeeding with our platform.",
             "content": {
                 "blocks": [
                     {
                         "type": "heading",
                         "data": {
-                            "text": "Contact Sales",
+                            "text": "Case Studies",
                             "level": 1
                         }
                     },
                     {
                         "type": "paragraph",
                         "data": {
-                            "text": "Ready to learn more? Our team is here to help you find the right solution for your business."
+                            "text": "See how leading companies are using our platform to transform their operations."
+                        }
+                    },
+                    {
+                        "type": "case-study-card",
+                        "data": {
+                            "title": "How TechStart Increased Productivity by 40%",
+                            "company": "TechStart Inc.",
+                            "industry": "Technology",
+                            "image": "{{case_1}}",
+                            "excerpt": "A fast-growing startup streamlined their operations and scaled from 20 to 200 employees.",
+                            "metrics": [
+                                {
+                                    "value": "40%",
+                                    "label": "Productivity increase"
+                                },
+                                {
+                                    "value": "60%",
+                                    "label": "Less time in meetings"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "case-study-card",
+                        "data": {
+                            "title": "Enterprise Corp Saves $2M Annually",
+                            "company": "Enterprise Corp",
+                            "industry": "Manufacturing",
+                            "image": "{{case_2}}",
+                            "excerpt": "A Fortune 500 company consolidated 15 tools into one platform, reducing costs and complexity.",
+                            "metrics": [
+                                {
+                                    "value": "$2M",
+                                    "label": "Annual savings"
+                                },
+                                {
+                                    "value": "15→1",
+                                    "label": "Tools consolidated"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Case Studies - Business Pro",
+            "seoDesc": "See how leading companies increased productivity and saved millions with our platform."
+        },
+        {
+            "title": "Contact",
+            "slug": "contact",
+            "template": "page",
+            "excerpt": "Get in touch with our sales and support team.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Contact Us",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Have questions? We'd love to hear from you."
+                        }
+                    },
+                    {
+                        "type": "contact-options",
+                        "data": {
+                            "options": [
+                                {
+                                    "title": "Sales",
+                                    "description": "Talk to our sales team about enterprise plans.",
+                                    "email": "sales@example.com"
+                                },
+                                {
+                                    "title": "Support",
+                                    "description": "Get help with your existing account.",
+                                    "email": "support@example.com"
+                                },
+                                {
+                                    "title": "Partnerships",
+                                    "description": "Explore partnership opportunities.",
+                                    "email": "partners@example.com"
+                                }
+                            ]
                         }
                     },
                     {
@@ -355,13 +538,115 @@
                                 "company",
                                 "message"
                             ],
-                            "submitText": "Submit"
+                            "submitText": "Send Message"
                         }
                     }
                 ]
             },
-            "seoTitle": "Contact Sales",
-            "seoDesc": "Get in touch with our sales team to learn more about our platform."
+            "seoTitle": "Contact - Business Pro",
+            "seoDesc": "Get in touch with our sales and support team."
+        },
+        {
+            "title": "Privacy Policy",
+            "slug": "privacy",
+            "template": "page",
+            "excerpt": "Our privacy policy and data practices.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Privacy Policy",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Last updated: January 2024. Your privacy is important to us. This policy explains how we collect, use, and protect your data."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Data We Collect",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "We collect information you provide (account info, content), usage data (how you use our service), and technical data (IP address, browser type) to provide and improve our services."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Security",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "We use industry-standard encryption and security measures. We're SOC 2 Type II certified and comply with GDPR and CCPA."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Privacy Policy - Business Pro",
+            "seoDesc": "Learn how we protect your privacy and handle your data."
+        },
+        {
+            "title": "Terms of Service",
+            "slug": "terms",
+            "template": "page",
+            "excerpt": "Terms and conditions for using our platform.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Terms of Service",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "By using our service, you agree to these terms. Please read them carefully."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Your Account",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "You're responsible for maintaining the security of your account and all activities that occur under it. Choose a strong password and keep it confidential."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Acceptable Use",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "You agree to use our service only for lawful purposes and in accordance with these terms. You may not use the service to violate any laws or infringe on others' rights."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Terms of Service - Business Pro",
+            "seoDesc": "Terms and conditions for using our platform."
         }
     ],
     "menus": [
@@ -371,8 +656,8 @@
             "location": "header",
             "items": [
                 {
-                    "label": "Products",
-                    "url": "/#features",
+                    "label": "Features",
+                    "url": "/features",
                     "order": 1
                 },
                 {
@@ -381,21 +666,44 @@
                     "order": 2
                 },
                 {
+                    "label": "Case Studies",
+                    "url": "/case-studies",
+                    "order": 3
+                },
+                {
                     "label": "About",
                     "url": "/about",
-                    "order": 3
+                    "order": 4
+                }
+            ]
+        },
+        {
+            "name": "Footer Links",
+            "slug": "footer-menu",
+            "location": "footer",
+            "items": [
+                {
+                    "label": "Privacy",
+                    "url": "/privacy",
+                    "order": 1
+                },
+                {
+                    "label": "Terms",
+                    "url": "/terms",
+                    "order": 2
                 },
                 {
                     "label": "Contact",
                     "url": "/contact",
-                    "order": 4
+                    "order": 3
                 }
             ]
         }
     ],
     "settings": {
-        "site_name": "Business Platform",
-        "site_tagline": "Infrastructure for the internet",
-        "footer_copyright": "© 2024 Business Platform, Inc. All rights reserved."
+        "site_name": "Business Pro",
+        "site_tagline": "The Modern Platform for Growing Businesses",
+        "primary_cta": "Start Free Trial",
+        "footer_copyright": "© 2024 Business Pro. All rights reserved."
     }
 }

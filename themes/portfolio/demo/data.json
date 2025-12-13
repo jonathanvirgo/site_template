@@ -1,50 +1,56 @@
 {
     "images": [
         {
+            "placeholder": "{{hero_image}}",
+            "url": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=1600&q=80",
+            "filename": "hero-design.jpg",
+            "alt": "Designer workspace with laptop and creative tools"
+        },
+        {
             "placeholder": "{{project_1}}",
-            "url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80",
-            "filename": "project-1.jpg",
-            "alt": "Abstract design project"
+            "url": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80",
+            "filename": "project-branding.jpg",
+            "alt": "Brand identity design"
         },
         {
             "placeholder": "{{project_2}}",
-            "url": "https://images.unsplash.com/photo-1634017839464-5c339bbe3c35?w=800&q=80",
-            "filename": "project-2.jpg",
-            "alt": "Digital art project"
+            "url": "https://images.unsplash.com/photo-1545235617-9465d2a55698?w=800&q=80",
+            "filename": "project-mobile.jpg",
+            "alt": "Mobile app design"
         },
         {
             "placeholder": "{{project_3}}",
-            "url": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80",
-            "filename": "project-3.jpg",
-            "alt": "Brand design project"
+            "url": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80",
+            "filename": "project-web.jpg",
+            "alt": "Website design"
         },
         {
             "placeholder": "{{project_4}}",
-            "url": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&q=80",
-            "filename": "project-4.jpg",
-            "alt": "UI design project"
+            "url": "https://images.unsplash.com/photo-1558655146-d09347e92766?w=800&q=80",
+            "filename": "project-packaging.jpg",
+            "alt": "Product packaging design"
         },
         {
             "placeholder": "{{project_5}}",
-            "url": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80",
-            "filename": "project-5.jpg",
-            "alt": "Photography project"
+            "url": "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&q=80",
+            "filename": "project-ui.jpg",
+            "alt": "UI design system"
         },
         {
             "placeholder": "{{project_6}}",
-            "url": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&q=80",
-            "filename": "project-6.jpg",
-            "alt": "Art installation"
+            "url": "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800&q=80",
+            "filename": "project-illustration.jpg",
+            "alt": "Digital illustration"
         },
         {
-            "placeholder": "{{profile}}",
-            "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
-            "filename": "profile.jpg",
-            "alt": "Designer profile"
+            "placeholder": "{{portrait}}",
+            "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
+            "filename": "portrait.jpg",
+            "alt": "Designer portrait"
         },
         {
             "placeholder": "{{thumbnail}}",
-            "url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=80",
+            "url": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&q=80",
             "filename": "thumbnail.jpg",
             "alt": "Theme thumbnail"
         }
@@ -55,85 +61,42 @@
             "slug": "home",
             "template": "home",
             "isHomepage": true,
-            "excerpt": "Creative designer crafting digital experiences.",
-            "featuredImage": "{{project_1}}",
+            "excerpt": "I design digital experiences that people love.",
+            "featuredImage": "{{hero_image}}",
             "content": {
                 "blocks": [
                     {
                         "type": "hero",
                         "data": {
-                            "title": "Hello, I'm Alex",
-                            "subtitle": "Creative Director & Digital Designer",
-                            "description": "I create stunning digital experiences that connect brands with their audience.",
-                            "cta": {
-                                "text": "View my work",
-                                "url": "#projects"
-                            }
+                            "title": "Hello, I'm Alex Chen",
+                            "subtitle": "A product designer creating digital experiences that are intuitive, accessible, and beautiful.",
+                            "image": "{{portrait}}"
                         }
                     },
                     {
-                        "type": "projects-grid",
+                        "type": "project-grid",
                         "data": {
                             "title": "Selected Work",
-                            "projects": [
-                                {
-                                    "title": "Abstract Dimensions",
-                                    "category": "Digital Art",
-                                    "image": "{{project_1}}",
-                                    "url": "/project-1"
-                                },
-                                {
-                                    "title": "Neon Dreams",
-                                    "category": "Brand Identity",
-                                    "image": "{{project_2}}",
-                                    "url": "/project-2"
-                                },
-                                {
-                                    "title": "Minimal Brand",
-                                    "category": "Branding",
-                                    "image": "{{project_3}}",
-                                    "url": "/project-3"
-                                },
-                                {
-                                    "title": "Dashboard UI",
-                                    "category": "UI/UX Design",
-                                    "image": "{{project_4}}",
-                                    "url": "/project-4"
-                                },
-                                {
-                                    "title": "Urban Stories",
-                                    "category": "Photography",
-                                    "image": "{{project_5}}",
-                                    "url": "/project-5"
-                                },
-                                {
-                                    "title": "Gallery Space",
-                                    "category": "Installation",
-                                    "image": "{{project_6}}",
-                                    "url": "/project-6"
-                                }
-                            ]
+                            "count": 6
                         }
                     },
                     {
-                        "type": "cta",
+                        "type": "clients",
                         "data": {
-                            "title": "Let's work together",
-                            "description": "Have a project in mind? Let's create something amazing.",
-                            "buttonText": "Get in touch",
-                            "buttonUrl": "/contact"
+                            "title": "Clients I've worked with"
                         }
                     }
                 ]
             },
-            "seoTitle": "Alex Designer - Creative Director & Digital Designer",
-            "seoDesc": "Portfolio of Alex, a creative director specializing in brand identity, UI/UX, and digital design."
+            "seoTitle": "Alex Chen - Product Designer",
+            "seoDesc": "Product designer creating intuitive, accessible, and beautiful digital experiences."
         },
         {
             "title": "About",
             "slug": "about",
             "template": "page",
-            "excerpt": "Learn about my creative journey.",
+            "featuredImage": "{{portrait}}",
+            "excerpt": "Designer, thinker, and maker based in San Francisco.",
             "content": {
                 "blocks": [
                     {
@@ -144,16 +107,71 @@
                         }
                     },
                     {
-                        "type": "image",
+                        "type": "paragraph",
                         "data": {
-                            "src": "{{profile}}",
-                            "alt": "Alex Designer"
+                            "text": "I'm a product designer with 8+ years of experience creating digital products for startups and Fortune 500 companies. I believe design is about solving problems, not just making things look pretty."
                         }
                     },
                     {
                         "type": "paragraph",
                         "data": {
-                            "text": "I'm a creative director with 10+ years of experience crafting digital experiences for leading brands. Based in San Francisco, I specialize in brand identity, UI/UX design, and creative direction."
+                            "text": "Currently, I work as a Senior Product Designer at a leading tech company, where I lead design for products used by millions of people daily. Previously, I've worked with brands like Airbnb, Uber, and Spotify."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "My Approach",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "I start every project by understanding the problem deeply. Who are the users? What are their goals and frustrations? Only after this research do I start sketching and prototyping. Design without understanding is just decoration."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Skills",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "skills",
+                        "data": {
+                            "categories": [
+                                {
+                                    "name": "Design",
+                                    "skills": [
+                                        "UI/UX Design",
+                                        "Design Systems",
+                                        "Prototyping",
+                                        "User Research",
+                                        "Interaction Design"
+                                    ]
+                                },
+                                {
+                                    "name": "Tools",
+                                    "skills": [
+                                        "Figma",
+                                        "Sketch",
+                                        "Adobe Creative Suite",
+                                        "Framer",
+                                        "Principle"
+                                    ]
+                                },
+                                {
+                                    "name": "Technical",
+                                    "skills": [
+                                        "HTML/CSS",
+                                        "React basics",
+                                        "Design tokens",
+                                        "Accessibility (WCAG)"
+                                    ]
+                                }
+                            ]
                         }
                     },
                     {
@@ -164,39 +182,171 @@
                         }
                     },
                     {
-                        "type": "list",
+                        "type": "experience",
                         "data": {
-                            "style": "unordered",
                             "items": [
-                                "Creative Director at Studio X (2020-present)",
-                                "Senior Designer at Digital Agency (2017-2020)",
-                                "UI Designer at Tech Startup (2014-2017)"
+                                {
+                                    "title": "Senior Product Designer",
+                                    "company": "Tech Co",
+                                    "period": "2021 - Present"
+                                },
+                                {
+                                    "title": "Product Designer",
+                                    "company": "Design Studio",
+                                    "period": "2018 - 2021"
+                                },
+                                {
+                                    "title": "UI Designer",
+                                    "company": "Startup Inc",
+                                    "period": "2016 - 2018"
+                                }
                             ]
                         }
                     }
                 ]
             },
-            "seoTitle": "About - Creative Journey",
-            "seoDesc": "Learn about my creative journey and experience in design."
+            "seoTitle": "About - Alex Chen",
+            "seoDesc": "8+ years experience designing digital products for startups and Fortune 500 companies."
         },
         {
-            "title": "Contact",
-            "slug": "contact",
+            "title": "Work",
+            "slug": "work",
             "template": "page",
-            "excerpt": "Get in touch for collaborations.",
+            "excerpt": "Selected projects and case studies.",
             "content": {
                 "blocks": [
                     {
                         "type": "heading",
                         "data": {
-                            "text": "Let's Talk",
+                            "text": "Work",
                             "level": 1
                         }
                     },
                     {
                         "type": "paragraph",
                         "data": {
-                            "text": "Interested in working together? Drop me a message and let's discuss your project."
+                            "text": "A selection of projects I've worked on. Click any project to see the full case study."
+                        }
+                    },
+                    {
+                        "type": "project-grid",
+                        "data": {
+                            "showAll": true
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Work - Alex Chen",
+            "seoDesc": "Portfolio of product design work including apps, websites, and design systems."
+        },
+        {
+            "title": "Services",
+            "slug": "services",
+            "template": "page",
+            "excerpt": "Design services I offer for brands and startups.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Services",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "I offer design services for startups, agencies, and established brands looking to create or improve their digital products."
+                        }
+                    },
+                    {
+                        "type": "services-list",
+                        "data": {
+                            "services": [
+                                {
+                                    "title": "Product Design",
+                                    "description": "End-to-end design for web and mobile applications. From research and wireframes to polished UI and prototypes.",
+                                    "price": "From $10,000"
+                                },
+                                {
+                                    "title": "Design Systems",
+                                    "description": "Scalable component libraries and design tokens that help your team build consistently and efficiently.",
+                                    "price": "From $15,000"
+                                },
+                                {
+                                    "title": "Brand Identity",
+                                    "description": "Logo design, visual identity, and brand guidelines that capture your company's personality.",
+                                    "price": "From $8,000"
+                                },
+                                {
+                                    "title": "UX Audit",
+                                    "description": "In-depth analysis of your existing product with actionable recommendations for improvement.",
+                                    "price": "From $3,000"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Process",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "process",
+                        "data": {
+                            "steps": [
+                                {
+                                    "title": "Discovery",
+                                    "description": "Understand your business, users, and goals."
+                                },
+                                {
+                                    "title": "Research",
+                                    "description": "Competitor analysis, user interviews, and data review."
+                                },
+                                {
+                                    "title": "Design",
+                                    "description": "Wireframes, visual design, and interactive prototypes."
+                                },
+                                {
+                                    "title": "Delivery",
+                                    "description": "Final assets, documentation, and developer handoff."
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Services - Alex Chen",
+            "seoDesc": "Product design, design systems, brand identity, and UX audits for startups and brands."
+        },
+        {
+            "title": "Contact",
+            "slug": "contact",
+            "template": "page",
+            "excerpt": "Let's work together on your next project.",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Get in Touch",
+                            "level": 1
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Have a project in mind? I'd love to hear about it. Send me a message and I'll get back to you within 24 hours."
+                        }
+                    },
+                    {
+                        "type": "contact-info",
+                        "data": {
+                            "email": "hello@alexchen.design",
+                            "location": "San Francisco, CA",
+                            "availability": "Currently accepting new projects"
                         }
                     },
                     {
@@ -205,15 +355,232 @@
                             "fields": [
                                 "name",
                                 "email",
+                                "project_type",
+                                "budget",
                                 "message"
                             ],
                             "submitText": "Send Message"
                         }
+                    },
+                    {
+                        "type": "social-links",
+                        "data": {
+                            "links": [
+                                {
+                                    "platform": "Dribbble",
+                                    "url": "https://dribbble.com"
+                                },
+                                {
+                                    "platform": "LinkedIn",
+                                    "url": "https://linkedin.com"
+                                },
+                                {
+                                    "platform": "Twitter",
+                                    "url": "https://twitter.com"
+                                }
+                            ]
+                        }
                     }
                 ]
             },
-            "seoTitle": "Contact",
-            "seoDesc": "Get in touch for collaborations and projects."
+            "seoTitle": "Contact - Alex Chen",
+            "seoDesc": "Let's work together. Get in touch about your next design project."
+        },
+        {
+            "title": "Fintech App Redesign",
+            "slug": "project-fintech-app",
+            "template": "page",
+            "excerpt": "Redesigning a mobile banking experience for 2M+ users.",
+            "featuredImage": "{{project_2}}",
+            "content": {
+                "blocks": [
+                    {
+                        "type": "project-header",
+                        "data": {
+                            "title": "Fintech App Redesign",
+                            "client": "FinanceApp Inc.",
+                            "role": "Lead Product Designer",
+                            "year": "2023"
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "FinanceApp approached us to redesign their mobile banking app. The existing app was functional but dated, with a confusing navigation and poor accessibility scores. Our goal was to create a modern, intuitive experience that would increase user engagement and reduce support tickets."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "The Challenge",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "The app had grown organically over 5 years, resulting in inconsistent patterns and a fragmented user experience. Users complained about difficulty finding key features, and the support team was overwhelmed with basic navigation questions."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "The Solution",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "We conducted extensive user research, including interviews with 20 users and analysis of support tickets. Based on our findings, we simplified the navigation, created a design system with reusable components, and improved accessibility to WCAG AA standards."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Results",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "stats",
+                        "data": {
+                            "items": [
+                                {
+                                    "value": "45%",
+                                    "label": "Increase in daily active users"
+                                },
+                                {
+                                    "value": "60%",
+                                    "label": "Reduction in support tickets"
+                                },
+                                {
+                                    "value": "4.8★",
+                                    "label": "New App Store rating"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Fintech App Redesign - Case Study",
+            "seoDesc": "How we redesigned a mobile banking app, increasing DAU by 45% and reducing support tickets by 60%."
+        }
+    ],
+    "postCategories": [
+        {
+            "name": "Design",
+            "slug": "design",
+            "description": "Thoughts on design process and craft."
+        },
+        {
+            "name": "Career",
+            "slug": "career",
+            "description": "Lessons from my design career."
+        }
+    ],
+    "posts": [
+        {
+            "title": "Why Every Designer Should Learn to Code",
+            "slug": "designers-should-learn-code",
+            "categorySlug": "career",
+            "isFeatured": true,
+            "excerpt": "Coding made me a better designer. Here's why you should try it too.",
+            "featuredImage": "{{project_5}}",
+            "tags": [
+                "design",
+                "coding",
+                "skills"
+            ],
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "When I started learning HTML and CSS, I didn't expect it to change how I think about design. But three years later, I can confidently say that coding has made me a significantly better product designer."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Understanding Constraints",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Before learning to code, I would often design things that were technically possible but expensive to implement. Understanding the underlying technology helps me make better trade-off decisions and design within realistic constraints."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Better Collaboration",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Speaking the same language as engineers has transformed my working relationships. We can have more nuanced conversations about implementation details, and I can provide more helpful specifications and documentation."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Why Every Designer Should Learn to Code",
+            "seoDesc": "How learning HTML, CSS, and JavaScript made me a better product designer."
+        },
+        {
+            "title": "Building Your First Design System",
+            "slug": "building-first-design-system",
+            "categorySlug": "design",
+            "isFeatured": false,
+            "excerpt": "A practical guide to creating a design system from scratch.",
+            "featuredImage": "{{project_1}}",
+            "tags": [
+                "design systems",
+                "components",
+                "process"
+            ],
+            "content": {
+                "blocks": [
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Design systems have become essential for any product team working at scale. But starting one from scratch can feel overwhelming. Here's a practical approach I've used successfully at multiple companies."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Start With an Audit",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Before building anything new, document what already exists. Screenshot every button, input, and component in your product. You'll likely find dozens of variations that should be consolidated."
+                        }
+                    },
+                    {
+                        "type": "heading",
+                        "data": {
+                            "text": "Define Your Tokens",
+                            "level": 2
+                        }
+                    },
+                    {
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Design tokens are the foundation. Start with colors, typography, and spacing. These should be named semantically (color-primary, not blue-500) so they can change without breaking your system."
+                        }
+                    }
+                ]
+            },
+            "seoTitle": "Building Your First Design System",
+            "seoDesc": "A step-by-step guide to creating a design system from scratch for your product team."
         }
     ],
     "menus": [
@@ -224,7 +591,7 @@
             "items": [
                 {
                     "label": "Work",
-                    "url": "/#projects",
+                    "url": "/work",
                     "order": 1
                 },
                 {
@@ -233,18 +600,21 @@
                     "order": 2
                 },
                 {
+                    "label": "Services",
+                    "url": "/services",
+                    "order": 3
+                },
+                {
                     "label": "Contact",
                     "url": "/contact",
-                    "order": 3
+                    "order": 4
                 }
             ]
         }
     ],
     "settings": {
-        "site_name": "Alex Designer",
-        "site_tagline": "Creative Director & Digital Designer",
-        "social_dribbble": "https://dribbble.com/example",
-        "social_instagram": "https://instagram.com/example",
-        "footer_copyright": "© 2024 Alex Designer"
+        "site_name": "Alex Chen",
+        "site_tagline": "Product Designer",
+        "footer_copyright": "© 2024 Alex Chen. All rights reserved."
     }
 }

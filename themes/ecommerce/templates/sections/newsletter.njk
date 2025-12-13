@@ -1,0 +1,15 @@
+{# Newsletter Section Template #}
+<section class="newsletter-section section-newsletter">
+    <div class="container">
+        <div class="newsletter-box">
+            <div class="newsletter-content">
+                <h2>{{ section.settings.title or 'Subscribe to Our Newsletter' }}</h2>
+                {% if section.settings.subtitle %}<p>{{ section.settings.subtitle }}</p>{% endif %}
+            </div>
+            <form class="newsletter-form-inline">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn btn-primary btn-lg">{{ section.settings.buttonText or 'Subscribe' }}</button>
+            </form>
+        </div>
+    </div>
+</section>

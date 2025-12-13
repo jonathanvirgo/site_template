@@ -1,0 +1,150 @@
+{% extends "layouts/default.njk" %}
+{% block bodyClass %}page-blog{% endblock %}
+{% block content %}
+<!-- Page Header -->
+<section class="page-header blog-header">
+  <div class="container">
+    <h1>Blog</h1>
+    <p>Tips, trends, and insights from our team</p>
+  </div>
+</section>
+
+<!-- Featured Posts -->
+{% if featuredPosts and featuredPosts.length %}
+<section class="featured-posts">
+  <div class="container">
+    <div class="featured-grid">
+      {% for post in featuredPosts %}
+      <article class="featured-post {% if loop.first %}featured-main{% endif %}">
+        <a href="/blog/{{ post.slug }}" class="post-image">
+          {% if post.featuredImage %}
+            <img src="{{ post.featuredImage }}" alt="{{ post.title }}" loading="lazy">
+          {% else %}
+            <div class="placeholder-image"></div>
+          {% endif %}
+          <div class="post-overlay">
+            {% if post.category %}
+              <span class="post-category">{{ post.category.name }}</span>
+            {% endif %}
+            <h2>{{ post.title }}</h2>
+            <div class="post-meta">
+              <span class="post-date">{{ post.createdAt | date }}</span>
+              <span class="post-reading">{{ post.content | readingTime }}</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- Blog Grid -->
+<section class="blog-section">
+  <div class="container">
+    <div class="blog-layout">
+      <!-- Main Content -->
+      <div class="blog-main">
+        <div class="section-header-inline">
+          <h2>Latest Articles</h2>
+        </div>
+        
+        {% if posts and posts.length %}
+        <div class="blog-grid">
+          {% for post in posts %}
+          <article class="blog-card">
+            <a href="/blog/{{ post.slug }}" class="blog-image">
+              {% if post.featuredImage %}
+                <img src="{{ post.featuredImage }}" alt="{{ post.title }}" loading="lazy">
+              {% else %}
+                <div class="placeholder-image">
+                  <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1"><rect x="4" y="8" width="40" height="32" rx="4"/><line x1="4" y1="16" x2="44" y2="16"/><circle cx="12" cy="12" r="2"/></svg>
+                </div>
+              {% endif %}
+            </a>
+            <div class="blog-content">
+              {% if post.category %}
+                <a href="/blog/category/{{ post.category.slug }}" class="blog-category">{{ post.category.name }}</a>
+              {% endif %}
+              <h3><a href="/blog/{{ post.slug }}">{{ post.title }}</a></h3>
+              <p>{{ post.excerpt | truncate(120) }}</p>
+              <div class="blog-footer">
+                <div class="blog-author">
+                  <div class="author-avatar">
+                    {% if post.author and post.author.avatar %}
+                      <img src="{{ post.author.avatar }}" alt="{{ post.author.name }}">
+                    {% else %}
+                      <span>{{ post.author.name[0] if post.author else 'A' }}</span>
+                    {% endif %}
+                  </div>
+                  <span class="author-name">{{ post.author.name if post.author else 'Admin' }}</span>
+                </div>
+                <div class="blog-meta">
+                  <span>{{ post.createdAt | date }}</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+
+        {% if hasMore %}
+        <div class="pagination">
+          {% if currentPage > 1 %}
+            <a href="?page={{ currentPage - 1 }}" class="btn btn-outline">← Previous</a>
+          {% endif %}
+          <span class="page-info">Page {{ currentPage }}</span>
+          <a href="?page={{ currentPage + 1 }}" class="btn btn-outline">Next →</a>
+        </div>
+        {% endif %}
+        {% else %}
+        <div class="empty-state">
+          <svg width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="8" y="8" width="48" height="48" rx="8"/><line x1="16" y1="20" x2="48" y2="20"/><line x1="16" y1="28" x2="40" y2="28"/><line x1="16" y1="36" x2="44" y2="36"/></svg>
+          <h3>No posts yet</h3>
+          <p>Check back soon for new articles!</p>
+        </div>
+        {% endif %}
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="blog-sidebar">
+        <div class="sidebar-widget">
+          <h3>Categories</h3>
+          <ul class="category-list">
+            {% for cat in categories %}
+            <li>
+              <a href="/blog/category/{{ cat.slug }}">
+                {{ cat.name }}
+                <span class="count">{{ cat._count.posts }}</span>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <div class="sidebar-widget subscribe-widget">
+          <h3>Subscribe</h3>
+          <p>Get the latest posts delivered to your inbox</p>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3>Popular Tags</h3>
+          <div class="tags-cloud">
+            <a href="#" class="tag">Lifestyle</a>
+            <a href="#" class="tag">Design</a>
+            <a href="#" class="tag">Technology</a>
+            <a href="#" class="tag">Tips</a>
+            <a href="#" class="tag">Trends</a>
+            <a href="#" class="tag">Style</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+{% endblock %}

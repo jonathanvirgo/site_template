@@ -1,0 +1,48 @@
+{# Product Grid Section Template #}
+<section class="section-product-grid">
+    <div class="container">
+        {% if section.settings.title %}
+            <div class="section-header">
+                <h2>{{ section.settings.title }}</h2>
+                {% if section.settings.subtitle %}<p>{{ section.settings.subtitle }}</p>{% endif %}
+            </div>
+        {% endif %}
+        
+        <div class="products-grid" style="grid-template-columns: repeat({{ section.settings.columns or 4 }}, 1fr);">
+            {% set displayProducts = sectionProducts[section.id] or [] %}
+            {% for product in displayProducts %}
+                <article class="product-card">
+                    <a href="/products/{{ product.slug }}" class="product-image">
+                        {% if product.salePrice %}<span class="badge badge-sale">Sale</span>{% endif %}
+                        {% if product.images and product.images[0] %}
+                            <img src="{{ product.images[0] }}" alt="{{ product.name }}" loading="lazy">
+                        {% else %}
+                            <div class="placeholder-image"></div>
+                        {% endif %}
+                    </a>
+                    <div class="product-info">
+                        {% if product.category %}<span class="product-category">{{ product.category.name }}</span>{% endif %}
+                        <h3><a href="/products/{{ product.slug }}">{{ product.name }}</a></h3>
+                        <p class="product-desc">{{ product.shortDesc | truncate(60) }}</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                {% if product.salePrice %}
+                                    <span class="price-current">{{ product.salePrice | currency(settings.currency_symbol or '$') }}</span>
+                                    <span class="price-original">{{ product.price | currency(settings.currency_symbol or '$') }}</span>
+                                {% else %}
+                                    <span class="price-current">{{ product.price | currency(settings.currency_symbol or '$') }}</span>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            {% else %}
+                <p class="empty-state">No products found</p>
+            {% endfor %}
+        </div>
+        
+        <div class="section-footer">
+            <a href="/products" class="btn btn-outline">View All Products</a>
+        </div>
+    </div>
+</section>

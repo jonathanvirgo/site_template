@@ -1,0 +1,149 @@
+{% extends "layouts/default.njk" %}
+{% block bodyClass %}page-products{% endblock %}
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <span>Products</span>
+      {% if currentCategory %}
+        <span>/</span>
+        <span>{{ currentCategory.name }}</span>
+      {% endif %}
+    </nav>
+    <h1>{{ currentCategory.name if currentCategory else 'All Products' }}</h1>
+    <p>{{ currentCategory.description if currentCategory else 'Discover our curated collection of premium products' }}</p>
+  </div>
+</section>
+
+<!-- Products Section -->
+<section class="products-section">
+  <div class="container">
+    <div class="products-layout">
+      <!-- Sidebar -->
+      <aside class="products-sidebar">
+        <div class="sidebar-widget">
+          <h3>Categories</h3>
+          <ul class="category-list">
+            <li>
+              <a href="/products" class="{% if not currentCategory %}active{% endif %}">
+                All Products
+                <span class="count">{{ products.length }}</span>
+              </a>
+            </li>
+            {% for cat in categories %}
+            <li>
+              <a href="/products/category/{{ cat.slug }}" class="{% if currentCategory and currentCategory.id == cat.id %}active{% endif %}">
+                {{ cat.name }}
+                <span class="count">{{ cat._count.products }}</span>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        
+        <div class="sidebar-widget">
+          <h3>Price Range</h3>
+          <div class="price-filter">
+            <input type="range" min="0" max="1000" value="1000" class="price-slider">
+            <div class="price-inputs">
+              <span>$0</span>
+              <span>$1000+</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Products Grid -->
+      <div class="products-main">
+        <div class="products-toolbar">
+          <div class="results-count">
+            Showing <strong>{{ products.length }}</strong> products
+          </div>
+          <div class="sort-options">
+            <label>Sort by:</label>
+            <select class="sort-select">
+              <option value="newest">Newest</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="name">Name</option>
+            </select>
+          </div>
+        </div>
+
+        {% if products and products.length %}
+        <div class="products-grid">
+          {% for product in products %}
+          <article class="product-card">
+            <a href="/products/{{ product.slug }}" class="product-image">
+              {% if product.salePrice %}
+                <span class="badge badge-sale">{{ ((1 - product.salePrice / product.price) * 100) | round }}% Off</span>
+              {% endif %}
+              {% if product.stock < 5 and product.stock > 0 %}
+                <span class="badge badge-low">Low Stock</span>
+              {% endif %}
+              {% if product.images and product.images[0] %}
+                <img src="{{ product.images[0] }}" alt="{{ product.name }}" loading="lazy">
+              {% else %}
+                <div class="placeholder-image">
+                  <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="40" height="40" rx="4"/><circle cx="16" cy="16" r="4"/><path d="M44 32l-12-12-28 28"/></svg>
+                </div>
+              {% endif %}
+              <div class="product-actions">
+                <button class="btn-action" title="Add to Wishlist">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                </button>
+                <button class="btn-action btn-quick-view" title="Quick View">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+              </div>
+            </a>
+            <div class="product-info">
+              {% if product.category %}
+                <a href="/products/category/{{ product.category.slug }}" class="product-category">{{ product.category.name }}</a>
+              {% endif %}
+              <h3><a href="/products/{{ product.slug }}">{{ product.name }}</a></h3>
+              <div class="product-rating">
+                <div class="stars">★★★★★</div>
+                <span class="rating-count">({{ (product.id * 7 + 12) }})</span>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">
+                  {% if product.salePrice %}
+                    <span class="price-current">{{ product.salePrice | currency(settings.currency_symbol or '$') }}</span>
+                    <span class="price-original">{{ product.price | currency(settings.currency_symbol or '$') }}</span>
+                  {% else %}
+                    <span class="price-current">{{ product.price | currency(settings.currency_symbol or '$') }}</span>
+                  {% endif %}
+                </div>
+                <a href="/products/{{ product.slug }}" class="btn btn-primary btn-sm">View Details</a>
+              </div>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+
+        {% if hasMore %}
+        <div class="pagination">
+          {% if currentPage > 1 %}
+            <a href="?page={{ currentPage - 1 }}" class="btn btn-outline">← Previous</a>
+          {% endif %}
+          <span class="page-info">Page {{ currentPage }}</span>
+          <a href="?page={{ currentPage + 1 }}" class="btn btn-outline">Next →</a>
+        </div>
+        {% endif %}
+        {% else %}
+        <div class="empty-state">
+          <svg width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="8" y="8" width="48" height="48" rx="8"/><line x1="24" y1="24" x2="40" y2="40"/><line x1="40" y1="24" x2="24" y2="40"/></svg>
+          <h3>No products found</h3>
+          <p>Try adjusting your filters or browse all products</p>
+          <a href="/products" class="btn btn-primary">View All Products</a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -103,6 +103,25 @@ router.get('/', async (req, res) => {
     }
 });
 
+// Get product by slug (for frontend)
+router.get('/slug/:slug', async (req, res) => {
+    try {
+        const { slug } = req.params;
+        const product = await prisma.product.findUnique({
+            where: { slug },
+            include: { category: true }
+        });
+
+        if (!product) {
+            return res.status(404).json({ success: false, error: 'Product not found' });
+        }
+
+        res.json({ success: true, data: product });
+    } catch (error) {
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
 // Get single product
 router.get('/:id', async (req, res) => {
     try {

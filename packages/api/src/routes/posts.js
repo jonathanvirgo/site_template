@@ -104,6 +104,34 @@ router.get('/', async (req, res) => {
     }
 });
 
+// Get post by slug (for frontend)
+router.get('/slug/:slug', async (req, res) => {
+    try {
+        const { slug } = req.params;
+        const post = await prisma.post.findUnique({
+            where: { slug },
+            include: {
+                category: true,
+                author: { select: { id: true, name: true, avatar: true } }
+            }
+        });
+
+        if (!post) {
+            return res.status(404).json({ success: false, error: 'Post not found' });
+        }
+
+        // Increment views
+        await prisma.post.update({
+            where: { id: post.id },
+            data: { views: { increment: 1 } }
+        });
+
+        res.json({ success: true, data: post });
+    } catch (error) {
+        res.status(500).json({ success: false, error: error.message });
+    }
+});
+
 // Get single post
 router.get('/:id', async (req, res) => {
     try {

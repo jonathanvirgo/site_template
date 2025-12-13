@@ -1,0 +1,250 @@
+{% extends "layouts/default.njk" %}
+{% block bodyClass %}page-product{% endblock %}
+{% block content %}
+<!-- Breadcrumb -->
+<section class="breadcrumb-section">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <a href="/products">Products</a>
+      {% if product.category %}
+        <span>/</span>
+        <a href="/products/category/{{ product.category.slug }}">{{ product.category.name }}</a>
+      {% endif %}
+      <span>/</span>
+      <span>{{ product.name }}</span>
+    </nav>
+  </div>
+</section>
+
+<!-- Product Detail -->
+<section class="product-detail">
+  <div class="container">
+    <div class="product-layout">
+      <!-- Product Gallery -->
+      <div class="product-gallery">
+        <div class="gallery-main">
+          {% if product.images and product.images.length %}
+            <img src="{{ product.images[0] }}" alt="{{ product.name }}" id="main-image">
+          {% else %}
+            <div class="placeholder-image large">
+              <svg width="80" height="80" fill="none" stroke="currentColor" stroke-width="1"><rect x="8" y="8" width="64" height="64" rx="8"/><circle cx="28" cy="28" r="8"/><path d="M72 56l-20-20-44 44"/></svg>
+            </div>
+          {% endif %}
+          {% if product.salePrice %}
+            <span class="badge badge-sale badge-lg">Sale</span>
+          {% endif %}
+        </div>
+        {% if product.images and product.images.length > 1 %}
+        <div class="gallery-thumbs">
+          {% for img in product.images %}
+            <button class="thumb {% if loop.first %}active{% endif %}" data-image="{{ img }}">
+              <img src="{{ img }}" alt="Thumbnail {{ loop.index }}">
+            </button>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+
+      <!-- Product Info -->
+      <div class="product-info-detail">
+        {% if product.category %}
+          <a href="/products/category/{{ product.category.slug }}" class="product-category-link">{{ product.category.name }}</a>
+        {% endif %}
+        
+        <h1>{{ product.name }}</h1>
+        
+        <div class="product-meta">
+          <div class="product-rating">
+            <div class="stars">★★★★★</div>
+            <span class="rating-value">4.9</span>
+            <span class="rating-count">({{ (product.id * 7 + 23) }} reviews)</span>
+          </div>
+          {% if product.sku %}
+            <span class="product-sku">SKU: {{ product.sku }}</span>
+          {% endif %}
+        </div>
+
+        <div class="product-price-detail">
+          {% if product.salePrice %}
+            <span class="price-current">{{ product.salePrice | currency(settings.currency_symbol or '$') }}</span>
+            <span class="price-original">{{ product.price | currency(settings.currency_symbol or '$') }}</span>
+            <span class="price-saved">Save {{ (product.price - product.salePrice) | currency(settings.currency_symbol or '$') }}</span>
+          {% else %}
+            <span class="price-current">{{ product.price | currency(settings.currency_symbol or '$') }}</span>
+          {% endif %}
+        </div>
+
+        {% if product.shortDesc %}
+        <p class="product-short-desc">{{ product.shortDesc }}</p>
+        {% endif %}
+
+        <!-- Stock Status -->
+        <div class="stock-status {% if product.stock > 10 %}in-stock{% elif product.stock > 0 %}low-stock{% else %}out-of-stock{% endif %}">
+          {% if product.stock > 10 %}
+            <svg width="16" height="16" fill="currentColor"><circle cx="8" cy="8" r="6"/></svg>
+            In Stock
+          {% elif product.stock > 0 %}
+            <svg width="16" height="16" fill="currentColor"><circle cx="8" cy="8" r="6"/></svg>
+            Only {{ product.stock }} left
+          {% else %}
+            <svg width="16" height="16" fill="currentColor"><circle cx="8" cy="8" r="6"/></svg>
+            Out of Stock
+          {% endif %}
+        </div>
+
+        <!-- Add to Cart -->
+        <div class="product-actions-detail">
+          <div class="quantity-selector">
+            <button class="qty-btn" data-action="decrease">−</button>
+            <input type="number" value="1" min="1" max="{{ product.stock }}" class="qty-input">
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+          <button class="btn btn-primary btn-lg btn-add-cart" {% if product.stock == 0 %}disabled{% endif %}>
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
+            Add to Cart
+          </button>
+          <button class="btn btn-outline btn-wishlist">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </button>
+        </div>
+
+        <!-- Shipping Info -->
+        <div class="shipping-info">
+          <div class="info-item">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="8" width="16" height="12" rx="2"/><path d="M18 8l4 4v4a2 2 0 01-2 2h-2"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+            <span>Free shipping on orders over $100</span>
+          </div>
+          <div class="info-item">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12a9 9 0 1018 0 9 9 0 00-18 0z"/><path d="M12 6v6l4 2"/></svg>
+            <span>Delivery in 3-5 business days</span>
+          </div>
+          <div class="info-item">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 14l-4-4 4-4"/><path d="M5 10h12a2 2 0 012 2v6"/></svg>
+            <span>30-day easy returns</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Product Tabs -->
+<section class="product-tabs">
+  <div class="container">
+    <div class="tabs-nav">
+      <button class="tab-btn active" data-tab="description">Description</button>
+      <button class="tab-btn" data-tab="specs">Specifications</button>
+      <button class="tab-btn" data-tab="reviews">Reviews</button>
+    </div>
+    <div class="tabs-content">
+      <div class="tab-panel active" id="description">
+        {% if product.description and product.description.blocks %}
+          {% for block in product.description.blocks %}
+            {% if block.type == 'paragraph' %}
+              <p>{{ block.data.text }}</p>
+            {% elif block.type == 'heading' %}
+              <h{{ block.data.level or 2 }}>{{ block.data.text }}</h{{ block.data.level or 2 }}>
+            {% elif block.type == 'list' %}
+              {% if block.data.style == 'ordered' %}
+                <ol>{% for item in block.data.items %}<li>{{ item }}</li>{% endfor %}</ol>
+              {% else %}
+                <ul>{% for item in block.data.items %}<li>{{ item }}</li>{% endfor %}</ul>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          <p>{{ product.shortDesc or 'No description available.' }}</p>
+        {% endif %}
+      </div>
+      <div class="tab-panel" id="specs">
+        {% if product.specs %}
+        <table class="specs-table">
+          <tbody>
+            {% for key, value in product.specs %}
+            <tr>
+              <th>{{ key }}</th>
+              <td>{{ value }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        {% else %}
+          <p>No specifications available.</p>
+        {% endif %}
+      </div>
+      <div class="tab-panel" id="reviews">
+        <div class="reviews-summary">
+          <div class="rating-overview">
+            <span class="big-rating">4.9</span>
+            <div class="stars">★★★★★</div>
+            <span>Based on {{ (product.id * 7 + 23) }} reviews</span>
+          </div>
+        </div>
+        <div class="review-item">
+          <div class="review-header">
+            <div class="reviewer">
+              <div class="avatar">JD</div>
+              <div>
+                <strong>John D.</strong>
+                <div class="stars small">★★★★★</div>
+              </div>
+            </div>
+            <span class="review-date">2 days ago</span>
+          </div>
+          <p>Excellent product! Exactly as described and arrived quickly. The quality exceeded my expectations.</p>
+        </div>
+        <div class="review-item">
+          <div class="review-header">
+            <div class="reviewer">
+              <div class="avatar">SM</div>
+              <div>
+                <strong>Sarah M.</strong>
+                <div class="stars small">★★★★★</div>
+              </div>
+            </div>
+            <span class="review-date">1 week ago</span>
+          </div>
+          <p>Love it! Great value for money. Would definitely recommend to others.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Related Products -->
+{% if relatedProducts and relatedProducts.length %}
+<section class="related-products">
+  <div class="container">
+    <div class="section-header">
+      <h2>You Might Also Like</h2>
+    </div>
+    <div class="products-grid products-grid-4">
+      {% for item in relatedProducts %}
+      <article class="product-card">
+        <a href="/products/{{ item.slug }}" class="product-image">
+          {% if item.images and item.images[0] %}
+            <img src="{{ item.images[0] }}" alt="{{ item.name }}" loading="lazy">
+          {% else %}
+            <div class="placeholder-image"></div>
+          {% endif %}
+        </a>
+        <div class="product-info">
+          <h3><a href="/products/{{ item.slug }}">{{ item.name }}</a></h3>
+          <div class="product-price">
+            {% if item.salePrice %}
+              <span class="price-current">{{ item.salePrice | currency(settings.currency_symbol or '$') }}</span>
+              <span class="price-original">{{ item.price | currency(settings.currency_symbol or '$') }}</span>
+            {% else %}
+              <span class="price-current">{{ item.price | currency(settings.currency_symbol or '$') }}</span>
+            {% endif %}
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

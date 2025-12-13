@@ -1,0 +1,12 @@
+{# Banner/CTA Section Template #}
+<section class="section-banner" style="background: {{ section.settings.backgroundColor or '#0071e3' }}; {% if section.settings.backgroundImage %}background-image: url('{{ section.settings.backgroundImage }}'); background-size: cover;{% endif %}">
+    <div class="container">
+        <div class="banner-content" style="color: {{ section.settings.textColor or '#ffffff' }};">
+            <h2>{{ section.settings.title or 'Special Offer' }}</h2>
+            {% if section.settings.subtitle %}<p>{{ section.settings.subtitle }}</p>{% endif %}
+            {% if section.settings.buttonText %}
+                <a href="{{ section.settings.buttonUrl or '#' }}" class="btn btn-primary btn-lg">{{ section.settings.buttonText }}</a>
+            {% endif %}
+        </div>
+    </div>
+</section>

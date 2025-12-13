@@ -26,6 +26,7 @@ export default api;
 export const themeApi = {
     getAll: () => api.get('/themes'),
     getOne: (slug) => api.get(`/themes/${slug}`),
+    getPages: (slug) => api.get(`/themes/${slug}/pages`),
     activate: (slug) => api.post(`/themes/${slug}/activate`),
     importDemo: (slug) => api.post(`/themes/${slug}/import-demo`),
     updateSettings: (slug, settings) => api.put(`/themes/${slug}/settings`, { settings }),

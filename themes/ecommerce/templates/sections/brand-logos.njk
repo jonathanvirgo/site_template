@@ -1,0 +1,36 @@
+{# Brand Logos Section #}
+<section class="brand-logos-section {% if section.settings.background == 'alt' %}bg-alt{% endif %}">
+    <div class="container">
+        {% if section.settings.title %}
+        <div class="section-header-row">
+            <h2 class="section-title">{{ section.settings.title }}</h2>
+        </div>
+        {% endif %}
+        
+        <div class="brand-logos-track">
+            {% if section.settings.logos and section.settings.logos.length %}
+                {% for logo in section.settings.logos %}
+                <div class="brand-logo-item">
+                    {% if logo.url %}
+                    <a href="{{ logo.url }}" target="_blank" rel="noopener">
+                        <img src="{{ logo.image }}" alt="{{ logo.name | default('Partner') }}" loading="lazy">
+                    </a>
+                    {% else %}
+                    <img src="{{ logo.image }}" alt="{{ logo.name | default('Partner') }}" loading="lazy">
+                    {% endif %}
+                </div>
+                {% endfor %}
+            {% else %}
+                {# Placeholder logos #}
+                {% for i in range(6) %}
+                <div class="brand-logo-item brand-logo-placeholder">
+                    <svg width="80" height="40" viewBox="0 0 80 40" fill="none">
+                        <rect width="80" height="40" rx="4" fill="#E5E7EB"/>
+                        <text x="40" y="24" text-anchor="middle" fill="#9CA3AF" font-size="10">Logo</text>
+                    </svg>
+                </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</section>

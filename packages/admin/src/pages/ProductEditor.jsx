@@ -9,7 +9,7 @@ const { TextArea } = Input;
 
 export default function ProductEditor() {
     const { id } = useParams();
-    const isNew = id === 'new';
+    const isNew = !id || id === 'new';
     const [form] = Form.useForm();
     const [loading, setLoading] = useState(!isNew);
     const [saving, setSaving] = useState(false);
