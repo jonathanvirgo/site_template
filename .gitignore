@@ -37,3 +37,7 @@ uploads/*
 # Cache
 .cache/
 .parcel-cache/
+
+# Temporary files
+.agent/
+.shared/
